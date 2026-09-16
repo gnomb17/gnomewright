@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gnomewright — Handcrafted Terrain & Tabletop Community</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,600&family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --void-1: #120C1E;
+    --void-2: #1C1430;
+    --void-3: #241B3C;
+    --panel: #F2E6C6;
+    --panel-2: #E8D8AC;
+    --ink: #2A2013;
+    --ink-soft: #5C4A34;
+    --cream: #F4EEDC;
+    --cream-soft: #C9BFA0;
+    --gold: #D8A94E;
+    --gold-bright: #F1CC7E;
+    --ember: #E2793F;
+    --arcane: #9B72CC;
+    --moss: #4C8062;
+    --border-gold: rgba(216,169,78,0.45);
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-body: 'Karla', -apple-system, sans-serif;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--void-1);
+    color: var(--cream);
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  section, header, footer { scroll-margin-top: 88px; }
+  img, svg { max-width: 100%; display: block; }
+  a { color: inherit; }
+  p { margin: 0; }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    margin: 0;
+    line-height: 1.08;
+  }
+
+  .wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 32px;
+    position: relative;
+  }
+
+  /* ---------- AMBIENT BACKGROUND ---------- */
+  .starfield {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    background:
+      radial-gradient(ellipse at 25% 8%, rgba(155,114,204,0.16), transparent 45%),
+      radial-gradient(ellipse at 80% 0%, rgba(216,169,78,0.10), transparent 40%),
+      linear-gradient(180deg, var(--void-1) 0%, var(--void-2) 50%, var(--void-1) 100%);
+  }
+
+  .starfield svg { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.55; }
+
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.25; }
+    50% { opacity: 0.95; }
+  }
+  .star-tw { animation: twinkle 4s ease-in-out infinite; }
+  @media (prefers-reduced-motion: reduce) { .star-tw { animation: none; opacity: 0.6; } }
+
+  /* ---------- NAV ---------- */
+  .site-nav {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: rgba(18, 12, 30, 0.72);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-gold);
+  }
+
+  .site-nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 78px; }
+
+  .brandmark {
+    display: flex; align-items: center; gap: 12px;
+    font-family: var(--font-display); font-weight: 700; font-size: 1.32rem;
+    color: var(--gold-bright); text-decoration: none; letter-spacing: 0.2px;
+  }
+  .brandmark svg { width: 36px; height: 36px; }
+
+  .nav-links { display: flex; gap: 32px; list-style: none; margin: 0; padding: 0; }
+  .nav-links a {
+    text-decoration: none; font-weight: 600; font-size: 0.95rem; color: var(--cream-soft);
+    border-bottom: 2px solid transparent; padding-bottom: 3px; transition: color 0.15s ease, border-color 0.15s ease;
+  }
+  .nav-links a:hover, .nav-links a:focus-visible { color: var(--gold-bright); border-color: var(--gold); }
+
+  .nav-toggle { display: none; }
+
+  /* ---------- BUTTONS ---------- */
+  .btn {
+    display: inline-flex; align-items: center; gap: 9px;
+    font-family: var(--font-body); font-weight: 700; font-size: 0.98rem;
+    padding: 14px 28px; border-radius: 3px; text-decoration: none;
+    border: 1.5px solid transparent; cursor: pointer;
+  }
+  .btn-primary {
+    background: linear-gradient(135deg, var(--gold-bright), var(--gold) 60%, var(--ember));
+    color: #241505; border-color: var(--gold);
+    box-shadow: 0 6px 24px -8px rgba(216,169,78,0.55);
+  }
+  .btn-primary:hover { filter: brightness(1.08); }
+  .btn-ghost { background: transparent; color: var(--cream); border-color: var(--cream-soft); }
+  .btn-ghost:hover { background: rgba(244,238,220,0.08); border-color: var(--gold-bright); color: var(--gold-bright); }
+
+  .badge-soon {
+    display: inline-block; font-size: 0.72rem; font-weight: 700; color: var(--void-1);
+    background: var(--moss); opacity: 0.92; border-radius: 999px; padding: 3px 11px; margin-left: 10px; white-space: nowrap;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero { position: relative; padding: 70px 0 20px; overflow: hidden; }
+
+  .hero .wrap {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: center;
+  }
+
+  .hero-copy .kicker {
+    font-family: var(--font-display); font-style: italic; font-weight: 500;
+    color: var(--gold-bright); font-size: 1.1rem; margin-bottom: 16px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.7rem, 5.4vw, 4.3rem); font-weight: 700; max-width: 11ch;
+    background: linear-gradient(135deg, var(--gold-bright), var(--gold) 55%, var(--cream));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    filter: drop-shadow(0 2px 18px rgba(216,169,78,0.25));
+  }
+
+  .hero-copy .tagline { margin-top: 24px; font-size: 1.16rem; color: var(--cream-soft); max-width: 46ch; }
+  .hero-actions { margin-top: 36px; display: flex; gap: 16px; flex-wrap: wrap; }
+
+  .hero-art { position: relative; }
+
+  /* ---------- FLOURISH DIVIDER ---------- */
+  .flourish { display: flex; justify-content: center; padding: 8px 0 0; }
+  .flourish svg { width: 220px; height: 28px; opacity: 0.75; }
+
+  /* ---------- SECTION SHELLS ---------- */
+  .band { padding: 100px 0; position: relative; }
+
+  .section-head { max-width: 640px; margin-bottom: 52px; }
+  .section-head.center { margin-left: auto; margin-right: auto; text-align: center; }
+  .section-head h2 {
+    font-size: clamp(1.95rem, 3.2vw, 2.5rem); font-weight: 700; color: var(--gold-bright);
+  }
+  .section-head .dek { margin-top: 16px; font-size: 1.08rem; color: var(--cream-soft); max-width: 58ch; }
+  .section-head.center .dek { margin-left: auto; margin-right: auto; }
+
+  /* ---------- JOURNAL PAGE (workbench) ---------- */
+  .journal {
+    background: var(--panel);
+    color: var(--ink);
+    padding: 56px;
+    clip-path: polygon(0% 1.5%, 2% 0%, 98% 0.5%, 100% 2%, 99.5% 98%, 97% 100%, 2% 99.3%, 0% 97.5%);
+    box-shadow: 0 30px 60px -20px rgba(0,0,0,0.55), 0 0 0 1px rgba(216,169,78,0.35);
+    display: grid; grid-template-columns: 0.82fr 1.18fr; gap: 52px; align-items: center;
+  }
+  .journal h2 { color: var(--ink); }
+  .journal .section-head { margin-bottom: 22px; }
+  .journal p { color: var(--ink-soft); font-size: 1.04rem; margin-bottom: 15px; }
+  .journal p:last-child { margin-bottom: 0; }
+  .journal strong { color: var(--ink); }
+
+  /* ---------- OFFER CARDS ---------- */
+  .offer-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+
+  .offer-card {
+    background: linear-gradient(180deg, rgba(242,230,198,0.06), rgba(242,230,198,0.02));
+    border: 1px solid var(--border-gold);
+    padding: 36px 28px 30px;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 94%, 92% 100%, 0 100%);
+  }
+  .offer-card::before {
+    content: ""; position: absolute; top: 0; left: 0; width: 46px; height: 3px; background: var(--gold);
+  }
+  .offer-card .icon-wrap {
+    width: 58px; height: 58px; border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, rgba(216,169,78,0.28), rgba(216,169,78,0.05));
+    border: 1px solid var(--border-gold);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 24px;
+  }
+  .offer-card svg { width: 30px; height: 30px; }
+  .offer-card h3 { font-size: 1.28rem; font-weight: 700; color: var(--gold-bright); margin-bottom: 12px; }
+  .offer-card p { color: var(--cream-soft); font-size: 0.99rem; }
+
+  /* ---------- GUILD ---------- */
+  .guild { text-align: center; }
+  .guild-emblem { width: 148px; margin: 0 auto 30px; }
+  .guild h2 { font-size: clamp(2rem, 3.4vw, 2.6rem); color: var(--gold-bright); }
+  .guild p.dek2 { margin: 18px auto 0; max-width: 54ch; color: var(--cream-soft); font-size: 1.08rem; }
+  .guild .hero-actions { justify-content: center; margin-top: 32px; }
+
+  /* ---------- FIND US: MAP ---------- */
+  .map-panel {
+    background: var(--panel-2);
+    padding: 46px 44px;
+    box-shadow: 0 30px 60px -20px rgba(0,0,0,0.55), 0 0 0 1px rgba(216,169,78,0.35);
+    clip-path: polygon(1% 0%, 99% 1%, 100% 40%, 99.3% 100%, 3% 99%, 0% 60%);
+  }
+  .map-panel .section-head h2 { color: var(--ink); }
+  .map-panel .section-head .dek { color: var(--ink-soft); }
+
+  .map-route { margin-top: 20px; }
+
+  .map-legend {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 34px;
+  }
+  .map-legend-item { display: flex; gap: 12px; align-items: flex-start; }
+  .map-legend-item svg { width: 24px; height: 24px; flex-shrink: 0; color: var(--ember); margin-top: 2px; }
+  .map-legend-item h3 { font-size: 1.02rem; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+  .map-legend-item p { font-size: 0.92rem; color: var(--ink-soft); }
+
+  /* ---------- FOOTER ---------- */
+  footer { padding: 64px 0 32px; border-top: 1px solid var(--border-gold); position: relative; }
+  .footer-top {
+    display: flex; justify-content: space-between; align-items: flex-start; gap: 32px; flex-wrap: wrap;
+    padding-bottom: 36px; border-bottom: 1px solid rgba(244,238,220,0.12);
+  }
+  .footer-brand { display: flex; align-items: center; gap: 10px; font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; color: var(--gold-bright); }
+  .footer-brand svg { width: 30px; height: 30px; }
+  .footer-tag { margin-top: 10px; color: var(--cream-soft); font-size: 0.95rem; max-width: 34ch; }
+  .footer-links { display: flex; gap: 44px; flex-wrap: wrap; }
+  .footer-links h4 { font-size: 0.82rem; font-weight: 700; color: var(--gold); margin-bottom: 13px; }
+  .footer-links ul { list-style: none; margin: 0; padding: 0; }
+  .footer-links li { margin-bottom: 9px; }
+  .footer-links a { text-decoration: none; color: var(--cream); font-size: 0.94rem; }
+  .footer-links a:hover { color: var(--gold-bright); }
+  .footer-bottom { margin-top: 24px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; color: var(--cream-soft); font-size: 0.85rem; }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 900px) {
+    .hero .wrap { grid-template-columns: 1fr; }
+    .journal { grid-template-columns: 1fr; padding: 40px 28px; }
+    .offer-grid { grid-template-columns: 1fr; }
+    .map-legend { grid-template-columns: 1fr; }
+    .nav-links {
+      position: absolute; top: 78px; left: 0; right: 0;
+      background: rgba(18,12,30,0.97); border-bottom: 1px solid var(--border-gold);
+      flex-direction: column; padding: 18px 32px 26px; gap: 16px; display: none;
+    }
+    .nav-toggle {
+      display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px;
+      border: 1px solid var(--border-gold); background: transparent; cursor: pointer; color: var(--cream);
+    }
+    #nav-check:checked ~ .nav-links { display: flex; }
+    .footer-top { flex-direction: column; }
+  }
+
+  /* ---------- PHOTO SLOTS ----------
+     To add a background photo to any .photo-frame element:
+     add a style attribute like:  style="background-image:url('data:image/jpeg;base64,PASTE_BASE64_HERE')"
+     Published pages can't load external image URLs, so the photo must be
+     embedded as a base64 data URI directly in the style attribute.
+     The readability overlay (scrim) appears automatically once an image is set. */
+  .photo-frame { position: relative; }
+  .photo-frame[style*="background-image"] {
+    background-size: cover; background-position: center; background-repeat: no-repeat;
+  }
+  .photo-frame[style*="background-image"]::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+  }
+  .photo-frame.dark[style*="background-image"]::after {
+    background: linear-gradient(180deg, rgba(18,12,30,0.35), rgba(18,12,30,0.85));
+  }
+  .photo-frame.light[style*="background-image"]::after {
+    background: linear-gradient(180deg, rgba(242,230,198,0.6), rgba(242,230,198,0.88));
+  }
+  .photo-frame > .wrap, .photo-frame.journal-inner { position: relative; z-index: 1; }
+</style>
+</head>
+<body>
+
+<div class="starfield" aria-hidden="true">
+  <svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 1200 1200">
+    <g fill="#F4EEDC">
+      <circle class="star-tw" cx="60" cy="40" r="1.6" style="animation-delay:0s"/>
+      <circle class="star-tw" cx="180" cy="120" r="1.2" style="animation-delay:0.6s"/>
+      <circle class="star-tw" cx="330" cy="60" r="1.8" style="animation-delay:1.1s"/>
+      <circle class="star-tw" cx="500" cy="150" r="1.3" style="animation-delay:1.6s"/>
+      <circle class="star-tw" cx="650" cy="30" r="1.5" style="animation-delay:0.3s"/>
+      <circle class="star-tw" cx="800" cy="100" r="1.7" style="animation-delay:2.1s"/>
+      <circle class="star-tw" cx="950" cy="70" r="1.3" style="animation-delay:1.4s"/>
+      <circle class="star-tw" cx="1100" cy="160" r="1.6" style="animation-delay:0.8s"/>
+      <circle class="star-tw" cx="90" cy="300" r="1.2" style="animation-delay:1.9s"/>
+      <circle class="star-tw" cx="260" cy="260" r="1.5" style="animation-delay:0.4s"/>
+      <circle class="star-tw" cx="420" cy="330" r="1.1" style="animation-delay:1.2s"/>
+      <circle class="star-tw" cx="580" cy="280" r="1.4" style="animation-delay:2.4s"/>
+      <circle class="star-tw" cx="740" cy="340" r="1.3" style="animation-delay:0.9s"/>
+      <circle class="star-tw" cx="900" cy="290" r="1.6" style="animation-delay:1.7s"/>
+      <circle class="star-tw" cx="1050" cy="350" r="1.2" style="animation-delay:0.2s"/>
+      <circle class="star-tw" cx="150" cy="500" r="1.4" style="animation-delay:1.3s"/>
+      <circle class="star-tw" cx="380" cy="540" r="1.1" style="animation-delay:2.0s"/>
+      <circle class="star-tw" cx="620" cy="510" r="1.5" style="animation-delay:0.7s"/>
+      <circle class="star-tw" cx="880" cy="560" r="1.3" style="animation-delay:1.5s"/>
+      <circle class="star-tw" cx="1120" cy="520" r="1.6" style="animation-delay:0.5s"/>
+    </g>
+  </svg>
+</div>
+
+<header class="site-nav">
+  <div class="wrap">
+    <a href="#top" class="brandmark">
+      <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="var(--gold)" stroke-width="2"/><path d="M20 8c6 3 9 8 9 13 0 5-4 9-9 9s-9-4-9-9c0-5 3-10 9-13z" fill="var(--moss)"/><circle cx="20" cy="24" r="3" fill="var(--gold-bright)"/></svg>
+      Gnomewright
+    </a>
+    <input type="checkbox" id="nav-check" style="display:none;">
+    <label for="nav-check" class="nav-toggle" aria-label="Toggle menu">
+      <svg width="20" height="14" viewBox="0 0 20 14" fill="none"><path d="M0 1H20M0 7H20M0 13H20" stroke="currentColor" stroke-width="2"/></svg>
+    </label>
+    <ul class="nav-links">
+      <li><a href="#workbench">The Workbench</a></li>
+      <li><a href="#offerings">What We Make</a></li>
+      <li><a href="#guild">The Guild</a></li>
+      <li><a href="#find-us">Find Us</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero photo-frame dark">
+    <!-- Photo slot: add style="background-image:url('data:image/jpeg;base64,...')" to this <section> for a background photo (e.g. a misty forest or workshop scene) -->
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="kicker">A workshop for worlds you can hold</p>
+        <h1>Small forge. Big worlds.</h1>
+        <p class="tagline">Gnomewright designs, prints, and hand-finishes tabletop terrain and miniatures — and builds a home for the people who love making them as much as we do.</p>
+        <div class="hero-actions">
+          <a href="#offerings" class="btn btn-primary">See what we make</a>
+          <a href="#guild" class="btn btn-ghost">Join the guild</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <svg viewBox="0 0 560 560" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#F1CC7E" stop-opacity="0.9"/>
+              <stop offset="60%" stop-color="#F1CC7E" stop-opacity="0.15"/>
+              <stop offset="100%" stop-color="#F1CC7E" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="winGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#F1CC7E" stop-opacity="1"/>
+              <stop offset="100%" stop-color="#E2793F" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="hillFar" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#241B3C"/>
+              <stop offset="100%" stop-color="#1C1430"/>
+            </linearGradient>
+            <linearGradient id="roofGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#5F8F6E"/>
+              <stop offset="100%" stop-color="#3E6A4C"/>
+            </linearGradient>
+          </defs>
+
+          <circle cx="440" cy="90" r="90" fill="url(#moonGlow)"/>
+          <circle cx="440" cy="90" r="34" fill="#F4EEDC"/>
+          <circle cx="452" cy="80" r="30" fill="#1C1430" opacity="0.35"/>
+
+          <path d="M0 300 L60 250 L130 290 L210 220 L300 280 L390 235 L470 275 L560 240 L560 400 L0 400 Z" fill="url(#hillFar)"/>
+          <path d="M0 340 L90 300 L170 335 L260 285 L340 330 L430 295 L560 325 L560 420 L0 420 Z" fill="#2A2140"/>
+
+          <g class="star-tw" style="animation-delay:0.3s" opacity="0.9"><circle cx="120" cy="220" r="9" fill="url(#winGlow)"/></g>
+          <g class="star-tw" style="animation-delay:1.1s" opacity="0.9"><circle cx="380" cy="180" r="7" fill="url(#winGlow)"/></g>
+          <g class="star-tw" style="animation-delay:0.7s" opacity="0.85"><circle cx="480" cy="230" r="6" fill="url(#winGlow)"/></g>
+
+          <ellipse cx="280" cy="470" rx="220" ry="26" fill="#0D0916" opacity="0.5"/>
+
+          <path d="M150 400c0-52 50-94 112-94s112 42 112 94v20H150v-20z" fill="#3B2A2E"/>
+
+          <path d="M215 300c10-88-42-148-71-148s-81 60-71 148" stroke="#4A3540" stroke-width="12" stroke-linecap="round" fill="none"/>
+          <path d="M262 305c14 4 26 14 26 14" stroke="#4A3540" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.6"/>
+
+          <path d="M115 250c0-58 55-104 122-104s122 46 122 104v10H115v-10z" fill="url(#roofGrad)"/>
+          <path d="M170 246c0-38 30-68 67-68s67 30 67 68" fill="none" stroke="#2E4A38" stroke-width="3" opacity="0.4"/>
+
+          <rect x="100" y="260" width="275" height="150" rx="5" fill="#8C5A3A" stroke="#3B2A20" stroke-width="4"/>
+          <rect x="100" y="260" width="275" height="150" rx="5" fill="none" stroke="#B57847" stroke-width="1" opacity="0.4"/>
+
+          <circle cx="237" cy="335" r="40" fill="#2A1B12"/>
+          <circle cx="252" cy="335" r="5" fill="#F1CC7E"/>
+
+          <rect x="122" y="292" width="38" height="40" fill="url(#winGlow)"/>
+          <rect x="122" y="292" width="38" height="40" fill="none" stroke="#3B2A20" stroke-width="3"/>
+          <rect x="315" y="292" width="38" height="40" fill="url(#winGlow)"/>
+          <rect x="315" y="292" width="38" height="40" fill="none" stroke="#3B2A20" stroke-width="3"/>
+
+          <path d="M170 176c-6-20 6-34 6-34" stroke="#94897B" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.6"/>
+          <path d="M176 142c-10-8-6-22-6-22" stroke="#94897B" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.4"/>
+
+          <g transform="translate(150,222)">
+            <line x1="0" y1="0" x2="0" y2="20" stroke="#4A3320" stroke-width="3"/>
+            <rect x="-38" y="20" width="76" height="22" fill="#EFE0BC" stroke="#4A3320" stroke-width="2"/>
+            <text x="0" y="36" font-family="Fraunces, serif" font-size="11" fill="#2A2013" text-anchor="middle" font-weight="700">GNOMEWRIGHT</text>
+          </g>
+
+          <g opacity="0.9">
+            <rect x="400" y="440" width="34" height="20" fill="#2E2438"/>
+            <rect x="440" y="432" width="26" height="28" fill="#241B30"/>
+            <rect x="472" y="444" width="40" height="16" fill="#2E2438"/>
+          </g>
+
+          <g fill="#F1CC7E" opacity="0.85">
+            <circle class="star-tw" cx="90" cy="380" r="3" style="animation-delay:0.5s"/>
+            <circle class="star-tw" cx="70" cy="420" r="2.4" style="animation-delay:1.6s"/>
+            <circle class="star-tw" cx="470" cy="400" r="2.8" style="animation-delay:0.9s"/>
+            <circle class="star-tw" cx="500" cy="440" r="2.2" style="animation-delay:2.1s"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="flourish" aria-hidden="true">
+    <svg viewBox="0 0 220 28" fill="none"><path d="M0 14h70M150 14h70" stroke="var(--gold)" stroke-width="1.5"/><path d="M70 14c8-10 16-10 24 0 8 10 16 10 24 0 8-10 16-10 24 0 8 10 16 10 24 0" stroke="var(--gold)" stroke-width="1.5" fill="none"/><circle cx="110" cy="14" r="4" fill="var(--gold)"/></svg>
+  </div>
+
+  <section id="workbench" class="band">
+    <div class="wrap">
+      <!-- Photo slot: add style="background-image:url('data:image/jpeg;base64,...')" to this div for a parchment-toned background photo -->
+      <div class="journal photo-frame light">
+        <svg viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg">
+          <rect x="16" y="150" width="228" height="14" fill="#4A3320"/>
+          <rect x="26" y="164" width="14" height="72" fill="#6B4226"/>
+          <rect x="220" y="164" width="14" height="72" fill="#6B4226"/>
+          <rect x="42" y="106" width="36" height="44" fill="#A85A2C"/>
+          <circle cx="60" cy="104" r="17" fill="#C1832C"/>
+          <rect x="98" y="116" width="48" height="34" fill="#F2E6C6" stroke="#4A3320" stroke-width="3"/>
+          <path d="M98 116l24 21 24-21" stroke="#4A3320" stroke-width="3" fill="none"/>
+          <rect x="164" y="96" width="10" height="54" fill="#8A7658"/>
+          <path d="M159 96h20l-4 -18h-12z" fill="#4C8062"/>
+          <path d="M38 58c30-15 62-15 92 0" stroke="#6B4226" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <circle cx="38" cy="58" r="5" fill="#6B4226"/>
+          <circle cx="130" cy="58" r="5" fill="#6B4226"/>
+          <rect x="56" y="40" width="20" height="4" fill="#A85A2C" transform="rotate(22 56 40)"/>
+          <rect x="90" y="38" width="4" height="24" fill="#A85A2C"/>
+          <circle cx="92" cy="36" r="7" fill="none" stroke="#A85A2C" stroke-width="3"/>
+          <path d="M190 130l14 30 -14 8 -14-8z" fill="#D8A94E"/>
+        </svg>
+        <div>
+          <div class="section-head">
+            <h2>From the workbench</h2>
+          </div>
+          <p>Gnomewright started the way most good workshops do — with one printer, a pile of paint, and too many ideas for one tabletop. Every wall, ruin, and dungeon tile begins life as a digital sketch before it's printed layer by layer and finished by hand.</p>
+          <p>We're a <strong>one-gnome operation</strong> based in the north woods, which means every piece that leaves the shop has actually been touched, sanded, and painted by the person who designed it — not a warehouse.</p>
+          <p>What started as terrain for our own games is growing into something bigger: a full catalog of printable designs, and a place for other builders to trade ideas, tricks, and encouragement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="offerings" class="band">
+    <div class="wrap">
+      <div class="section-head center">
+        <h2>What we make</h2>
+        <p class="dek">Two ways to bring Gnomewright to your table: let us build it for you, or build it yourself.</p>
+      </div>
+      <div class="offer-grid">
+        <div class="offer-card">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 20l4-13h8l4 13H4z" stroke="var(--gold-bright)" stroke-width="1.6"/><path d="M9 20V12M15 20V12" stroke="var(--gold-bright)" stroke-width="1.6"/><path d="M12 2l2 4h-4l2-4z" fill="var(--gold-bright)"/></svg>
+          </div>
+          <h3>Finished terrain &amp; minis</h3>
+          <p>Printed, cleaned, primed, and hand-painted — ready to set straight onto your table, no assembly required.</p>
+        </div>
+        <div class="offer-card">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="1.5" stroke="var(--gold-bright)" stroke-width="1.6"/><path d="M8 8h8M8 12h8M8 16h5" stroke="var(--gold-bright)" stroke-width="1.6" stroke-linecap="round"/><path d="M15 3v4h4" stroke="var(--gold-bright)" stroke-width="1.6"/></svg>
+          </div>
+          <h3>Digital files (STLs)</h3>
+          <p>Print your own from a growing library of terrain and miniature designs, sized and tested for home printers.</p>
+        </div>
+        <div class="offer-card">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M5 4h11l3 3v13H5V4z" stroke="var(--gold-bright)" stroke-width="1.6"/><path d="M8 9h8M8 13h8M8 17h5" stroke="var(--gold-bright)" stroke-width="1.4"/><path d="M18 18l3.5 3.5" stroke="var(--gold-bright)" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Custom commissions</h3>
+          <p>Have a scene in your head — a keep, a shrine, a battlefield? We'll design and build it to fit your table.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="flourish" aria-hidden="true">
+    <svg viewBox="0 0 220 28" fill="none"><path d="M0 14h70M150 14h70" stroke="var(--gold)" stroke-width="1.5"/><path d="M70 14c8-10 16-10 24 0 8 10 16 10 24 0 8-10 16-10 24 0 8 10 16 10 24 0" stroke="var(--gold)" stroke-width="1.5" fill="none"/><circle cx="110" cy="14" r="4" fill="var(--gold)"/></svg>
+  </div>
+
+  <!-- Photo slot: add style="background-image:url('data:image/jpeg;base64,...')" to this <section> for a night-sky or crest backdrop photo -->
+  <section id="guild" class="band guild photo-frame dark">
+    <div class="wrap">
+      <svg class="guild-emblem" viewBox="0 0 160 160" fill="none">
+        <circle cx="80" cy="80" r="76" stroke="var(--gold)" stroke-width="2"/>
+        <circle cx="80" cy="80" r="64" stroke="var(--gold)" stroke-width="1" opacity="0.5"/>
+        <path d="M80 40c14 7 21 19 21 31 0 12-9 21-21 21s-21-9-21-21c0-12 7-24 21-31z" fill="var(--moss)"/>
+        <rect x="68" y="92" width="24" height="16" rx="2" fill="var(--gold)"/>
+        <path d="M40 120c8-14 22-22 40-22s32 8 40 22" stroke="var(--gold)" stroke-width="2" fill="none"/>
+        <path d="M25 80l10-10M135 80l-10-10M25 80l10 10M135 80l-10 10" stroke="var(--gold)" stroke-width="1.5" opacity="0.7"/>
+      </svg>
+      <h2>Join the Guild</h2>
+      <p class="dek2">A gathering place on Discord for terrain builders, painters, and dungeon masters — swap work-in-progress shots, trade printer settings, and geek out over the tabletop hobby with people who get it.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn btn-primary" aria-disabled="true">Join on Discord</a>
+        <span class="badge-soon">Opening soon</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="find-us" class="band">
+    <div class="wrap">
+      <!-- Photo slot: add style="background-image:url('data:image/jpeg;base64,...')" to this div for a parchment map texture photo -->
+      <div class="map-panel photo-frame light">
+        <div class="section-head">
+          <h2>Find Gnomewright</h2>
+          <p class="dek">The shop is being built alongside the workshop. Here's where we're headed.</p>
+        </div>
+        <svg class="map-route" viewBox="0 0 1000 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M60 100 C 220 30, 380 150, 500 70 S 780 20, 940 90" stroke="#A85A2C" stroke-width="2.5" stroke-dasharray="1 12" stroke-linecap="round"/>
+          <circle cx="60" cy="100" r="9" fill="#A85A2C"/>
+          <circle cx="500" cy="70" r="9" fill="#A85A2C"/>
+          <circle cx="940" cy="90" r="9" fill="#A85A2C"/>
+          <g transform="translate(880,20)" opacity="0.6">
+            <circle cx="20" cy="20" r="18" stroke="#8A6A3E" stroke-width="1.5" fill="none"/>
+            <path d="M20 4v8M20 28v8M4 20h8M28 20h8" stroke="#8A6A3E" stroke-width="1.5"/>
+          </g>
+        </svg>
+        <div class="map-legend">
+          <div class="map-legend-item">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 8l1-4h14l1 4M4 8v11a1 1 0 001 1h14a1 1 0 001-1V8M4 8h16M9 12h6" stroke="currentColor" stroke-width="1.6"/></svg>
+            <div><h3>Etsy shop <span class="badge-soon">Opening soon</span></h3><p>Finished, hand-painted terrain and miniatures, ready to ship.</p></div>
+          </div>
+          <div class="map-legend-item">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z" stroke="currentColor" stroke-width="1.6"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5" stroke="currentColor" stroke-width="1.6"/></svg>
+            <div><h3>Thangs library <span class="badge-soon">In progress</span></h3><p>Downloadable STL files for builders who print their own.</p></div>
+          </div>
+          <div class="map-legend-item">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-7.2 7-12a7 7 0 10-14 0c0 4.8 7 12 7 12z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9" r="2.6" stroke="currentColor" stroke-width="1.6"/></svg>
+            <div><h3>Conventions <span class="badge-soon">Booth season TBD</span></h3><p>Follow the Guild on Discord for dates once a table's booked.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Photo slot: add style="background-image:url('data:image/jpeg;base64,...')" to this footer for a forest/night backdrop photo -->
+<footer class="photo-frame dark">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">
+          <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="var(--gold)" stroke-width="2"/><path d="M20 8c6 3 9 8 9 13 0 5-4 9-9 9s-9-4-9-9c0-5 3-10 9-13z" fill="var(--moss)"/></svg>
+          Gnomewright
+        </div>
+        <p class="footer-tag">Handcrafted tabletop terrain, miniatures, and printable designs — made in the north woods.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#workbench">The Workbench</a></li>
+            <li><a href="#offerings">What We Make</a></li>
+            <li><a href="#guild">The Guild</a></li>
+            <li><a href="#find-us">Find Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Elsewhere</h4>
+          <ul>
+            <li><a href="#">Discord <span class="badge-soon" style="margin-left:6px;">soon</span></a></li>
+            <li><a href="#">Etsy <span class="badge-soon" style="margin-left:6px;">soon</span></a></li>
+            <li><a href="#">Thangs <span class="badge-soon" style="margin-left:6px;">soon</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Gnomewright. All terrain hand-forged.</span>
+      <span>Built one print at a time.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
