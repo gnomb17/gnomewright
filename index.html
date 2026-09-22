@@ -148,7 +148,9 @@
   .notice p:last-child { margin-bottom: 0; }
   .notice strong { color: var(--teal-bright); }
 
-  .project-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; }
+  .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+  @media (max-width: 860px) { .project-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .project-grid { grid-template-columns: 1fr; } }
   .project-card {
     border: 1px solid var(--border-accent);
     background: linear-gradient(180deg, rgba(123,211,201,0.05), rgba(123,211,201,0.015));
