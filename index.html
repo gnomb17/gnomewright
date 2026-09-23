@@ -176,6 +176,8 @@
   .photo-frame.missing img { display: none; }
   .photo-frame.missing span { display: block; }
   .photo-frame:not(.missing) img[src] { display: block; }
+  .banner-frame { aspect-ratio: 3 / 1; margin-bottom: 40px; }
+  .banner-frame img { object-fit: cover; }
   .photo-frame span { color: var(--cream-soft); font-size: 0.78rem; font-style: italic; }
   .file-label { display: none; }
   .project-stl { margin-bottom: 14px; }
@@ -520,6 +522,12 @@
         <div class="section-head center">
           <h2>Halloween Village</h2>
           <p class="dek">A featured collection of its own. A small, spooky town built to gather on one shelf, sold as individual pieces or as a full set.</p>
+        </div>
+
+        <div class="photo-frame banner-frame">
+          <!-- Banner photo slot. This one is meant to show the whole shelf display, not shrink to fit like the others. Suggested file name: halloween_banner.jpg -->
+          <img src="halloween_banner.jpg" alt="The full Halloween Village display" onerror="this.style.display='none';this.parentElement.classList.add('missing');">
+          <span>Photo coming soon</span>
         </div>
 
         <div class="notice">
