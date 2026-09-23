@@ -171,13 +171,13 @@
   }
   .photo-frame.stl-frame { aspect-ratio: 16 / 10; }
   .photo-frame[style*="background-image"] { background-size: cover; background-position: center; border-style: solid; }
-  .photo-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .photo-frame img { width: 100%; height: 100%; object-fit: contain; display: block; }
   .photo-frame span { display: none; }
   .photo-frame.missing img { display: none; }
   .photo-frame.missing span { display: block; }
   .photo-frame:not(.missing) img[src] { display: block; }
   .photo-frame span { color: var(--cream-soft); font-size: 0.78rem; font-style: italic; }
-  .file-label { display: block; margin-top: 5px; font-size: 0.68rem; color: var(--cream-soft); opacity: 0.55; font-family: monospace; text-align: center; word-break: break-all; overflow-wrap: anywhere; }
+  .file-label { display: none; }
   .project-stl { margin-bottom: 14px; }
   .project-meta { font-size: 0.85rem; color: var(--cream-soft); margin-bottom: 14px; }
   .project-badges { display: flex; gap: 8px; flex-wrap: wrap; }
