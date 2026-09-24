@@ -240,9 +240,9 @@
 <section class="hero">
   <div class="wrap hero-copy">
     <div class="hero-logo"><img src="logo.jpg" alt="Gnomewright, a gnome hand painting a terrain piece" onerror="this.parentElement.style.display='none';"></div>
-    <p class="kicker">Worlds built for wargaming tables, book nooks, and shelves worth collecting</p>
-    <h1>Small forge. Big worlds.</h1>
-    <p class="tagline">Gnomewright designs, prints, and hand finishes tabletop terrain and miniatures, and builds a home for the people who love making them as much as we do.</p>
+    <p class="kicker">Terrain and tiny worlds for wargamers, book nook builders, and collectors alike</p>
+    <h1>Built small. Played big.</h1>
+    <p class="tagline">We design, print, and hand finish tabletop terrain and miniatures, and we're building a community for people who love this hobby too.</p>
     <div class="hero-actions">
       <button class="btn btn-primary" onclick="activateTab('projects')">See the projects</button>
       <button class="btn btn-ghost" onclick="activateTab('guild')">Join the guild</button>
@@ -270,8 +270,8 @@
           <h2>From the workbench</h2>
         </div>
         <p>Gnomewright started the way most good workshops do, with one printer, a pile of paint, and too many ideas for one tabletop. Every wall, ruin, and dungeon tile starts as hard geometry in Fusion 360, then gets roughed up and given character in Blender, with cracks, moss, and weathering that make a wall look like it actually survived a siege.</p>
-        <p>Gnomewright is a solo gnome workshop based in the north woods, which means every piece that leaves the shop has actually been designed, printed, sanded, and painted by the same set of hands, not a warehouse and not a print farm.</p>
-        <p>What started as terrain for our own games is growing into something bigger, a full catalog of printable designs and a place for other builders to trade ideas, tricks, and encouragement.</p>
+        <p>Gnomewright is a solo gnome workshop based in the north woods, which means every piece that leaves the shop has actually been designed, printed, and painted by the same set of hands, not a warehouse and not a print farm.</p>
+        <p>We're just starting out, but we're looking forward to growing this into something bigger, a full catalog of printable designs and a real community of builders trading ideas, tricks, and encouragement along the way.</p>
       </div>
     </div>
   </section>
@@ -664,6 +664,8 @@
         <a href="https://discord.gg/sgGanAFED" class="btn btn-primary" target="_blank" rel="noopener">Join on Discord</a>
       </div>
 
+      <p class="dek2" style="margin-top:36px;">Gnomewright will be at Twin Cities Con, November 20 through 22, 2026 in Minneapolis, with more shows to be announced for 2027. <a href="#" onclick="activateTab('conventions');return false;" style="color: var(--moss-bright); text-decoration: underline;">Full convention details here</a>.</p>
+
       <div class="notice" style="text-align:center; margin-top:56px;">
         <p><strong>Got a question, want to talk shop, or just curious about anything Gnomewright, conventions included?</strong> Reach out however is easiest, we would love to hear from you.</p>
       </div>
@@ -692,6 +694,19 @@
         <a href="#" class="btn btn-ghost">Gnomewright on Facebook</a>
         <a href="https://www.tiktok.com/@gnomewright" class="btn btn-ghost" target="_blank" rel="noopener">Gnomewright on TikTok</a>
         <a href="mailto:gnomewright.contact@gmail.com" class="btn btn-ghost">Email us</a>
+      </div>
+
+      <div class="section-head center" style="margin-top:64px;">
+        <h2>Recommend a convention</h2>
+        <p class="dek">Know a show Gnomewright should check out? Tell us below, or browse conventions yourself on <a href="https://fancons.com/" target="_blank" rel="noopener" style="color: var(--moss-bright); text-decoration: underline;">fancons.com</a>.</p>
+      </div>
+      <div style="max-width:520px; margin:0 auto;">
+        <input type="text" id="con-name" placeholder="Convention name and location" style="width:100%; padding:14px 16px; margin-bottom:14px; background:var(--surface); border:1px solid var(--border-warm); color:var(--cream); font-family:var(--font-body); font-size:1rem;">
+        <textarea id="con-details" placeholder="Anything else we should know? Dates, why it might be a good fit, that sort of thing." rows="4" style="width:100%; padding:14px 16px; margin-bottom:14px; background:var(--surface); border:1px solid var(--border-warm); color:var(--cream); font-family:var(--font-body); font-size:1rem; resize:vertical;"></textarea>
+        <p id="con-status" style="display:none; color:var(--gold-bright); font-size:0.9rem; margin-bottom:14px;">Please add a convention name first.</p>
+        <div style="text-align:center;">
+          <button class="btn btn-primary" onclick="sendConRecommendation()">Send recommendation</button>
+        </div>
       </div>
     </div>
   </section>
@@ -780,6 +795,22 @@ document.addEventListener('DOMContentLoaded', function() {
     activateTab(hash);
   }
 });
+function sendConRecommendation() {
+  var nameField = document.getElementById('con-name');
+  var detailsField = document.getElementById('con-details');
+  var status = document.getElementById('con-status');
+  var name = nameField.value.trim();
+  var details = detailsField.value.trim();
+  if (!name) {
+    status.style.display = 'block';
+    nameField.focus();
+    return;
+  }
+  status.style.display = 'none';
+  var subject = encodeURIComponent('Convention recommendation: ' + name);
+  var body = encodeURIComponent('Convention: ' + name + '\n\nDetails: ' + details);
+  window.location.href = 'mailto:gnomewright.contact@gmail.com?subject=' + subject + '&body=' + body;
+}
 </script>
 
 </body>
