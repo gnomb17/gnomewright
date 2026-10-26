@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZWDXYRDW29"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ZWDXYRDW29');
-</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gnomewright</title>
@@ -29,13 +20,17 @@
     --cream: #ECE0C6;
     --cream-soft: #C9B98F;
     --moss: #5C7A45;
-    --moss-bright: #7DA35F;
-    --bark: #6B4226;
-    --bark-bright: #8A5A34;
-    --gold: #C79A3D;
-    --gold-bright: #DBB35C;
+    --rust: #A8472E;
+    --rust-bright: #C85A3C;
+    --amber: #B9752C;
+    --amber-bright: #D4903F;
+    --slate: #4F6E8C;
+    --slate-bright: #6D8CAA;
+    --slate-ink: #15222B;
+    --stone: #8D8778;
+    --stone-bright: #A8A192;
     --border: rgba(236,224,198,0.16);
-    --border-warm: rgba(107,66,38,0.45);
+    --border-warm: rgba(168,71,46,0.42);
     --font-display: 'Fraunces', Georgia, serif;
     --font-body: 'Vollkorn', Georgia, serif;
     --font-brand: 'Pirata One', 'Fraunces', serif;
@@ -48,8 +43,8 @@
   body {
     margin: 0;
     background:
-      radial-gradient(ellipse at 30% 0%, rgba(193,53,43,0.10), transparent 45%),
-      radial-gradient(ellipse at 80% 10%, rgba(107,66,38,0.14), transparent 40%),
+      radial-gradient(ellipse at 30% 0%, rgba(168,71,46,0.12), transparent 45%),
+      radial-gradient(ellipse at 80% 10%, rgba(185,117,44,0.12), transparent 40%),
       var(--bg);
     color: var(--cream);
     font-family: var(--font-body);
@@ -79,7 +74,7 @@
   .brandmark { display: flex; align-items: center; gap: 12px; text-decoration: none; }
   .brand-logo { height: 48px; width: auto; flex-shrink: 0; }
   .brand-logo img { height: 100%; width: auto; object-fit: contain; }
-  .brandmark span { font-weight: 700; font-size: 1.4rem; color: var(--moss-bright); }
+  .brandmark span { font-weight: 700; font-size: 1.4rem; color: var(--rust-bright); }
 
   .btn {
     display: inline-flex; align-items: center; gap: 9px;
@@ -88,15 +83,15 @@
     border: 1.5px solid transparent; cursor: pointer;
   }
   .btn-primary {
-    background: var(--bark); color: var(--cream); border-color: var(--bark);
+    background: var(--amber); color: var(--cream); border-color: var(--amber);
   }
-  .btn-primary:hover { background: var(--bark-bright); border-color: var(--bark-bright); }
+  .btn-primary:hover { background: var(--amber-bright); border-color: var(--amber-bright); }
   .btn-ghost { background: transparent; color: var(--cream); border-color: var(--cream-soft); }
   .btn-ghost:hover { background: rgba(236,224,198,0.08); border-color: var(--cream); }
 
   .badge-soon {
-    display: inline-block; font-size: 0.7rem; font-weight: 700; color: #2A1F0A;
-    background: var(--gold-bright); border-radius: 999px; padding: 4px 12px; white-space: nowrap;
+    display: inline-block; font-size: 0.7rem; font-weight: 700; color: var(--slate-ink);
+    background: var(--slate-bright); border-radius: 999px; padding: 4px 12px; white-space: nowrap;
   }
 
   .hero { padding: 60px 0 40px; text-align: center; }
@@ -105,7 +100,7 @@
   .hero-logo img { width: 100%; height: auto; object-fit: contain; }
   .kicker {
     font-family: var(--font-display); font-style: italic; font-weight: 500;
-    color: var(--moss-bright); font-size: 1.1rem; margin-bottom: 16px;
+    color: var(--rust-bright); font-size: 1.1rem; margin-bottom: 16px;
   }
   .hero h1 { font-size: clamp(2.4rem, 5vw, 3.6rem); font-weight: 900; font-style: italic; color: var(--cream); letter-spacing: 0.3px; }
   .tagline { margin-top: 22px; font-size: 1.14rem; color: var(--cream-soft); }
@@ -127,7 +122,7 @@
     padding: 18px 16px; cursor: pointer; white-space: nowrap;
   }
   .tab-btn:hover { color: var(--cream); }
-  .tab-btn.active { color: var(--moss-bright); border-bottom-color: var(--moss-bright); }
+  .tab-btn.active { color: var(--rust-bright); border-bottom-color: var(--rust-bright); }
 
   .tab-panel { display: none; }
   .tab-panel.active { display: block; }
@@ -135,7 +130,7 @@
   .band { padding: 64px 0 88px; }
   .section-head { max-width: 700px; margin-bottom: 40px; }
   .section-head.center { margin-left: auto; margin-right: auto; text-align: center; }
-  .section-head h2 { font-size: clamp(1.9rem, 3.2vw, 2.4rem); font-weight: 700; font-style: italic; color: var(--moss-bright); letter-spacing: 0.3px; }
+  .section-head h2 { font-size: clamp(1.9rem, 3.2vw, 2.4rem); font-weight: 700; font-style: italic; color: var(--rust-bright); letter-spacing: 0.3px; }
   .section-head .dek { margin-top: 14px; font-size: 1.06rem; color: var(--cream-soft); max-width: 62ch; }
   .section-head.center .dek { margin-left: auto; margin-right: auto; }
 
@@ -143,7 +138,7 @@
     background: var(--panel); color: var(--ink);
     padding: 48px 52px;
     clip-path: polygon(0% 1.5%, 2% 0%, 98% 0.5%, 100% 2%, 99.5% 98%, 97% 100%, 2% 99.3%, 0% 97.5%);
-    box-shadow: 0 30px 60px -20px rgba(0,0,0,0.5), 0 0 0 1px rgba(107,66,38,0.35);
+    box-shadow: 0 30px 60px -20px rgba(0,0,0,0.5), 0 0 0 1px rgba(168,71,46,0.32);
   }
   .panel h2 { color: var(--ink); }
   .panel .section-head { margin-bottom: 22px; }
@@ -153,13 +148,13 @@
 
   .notice {
     border: 1px solid var(--border-warm);
-    background: linear-gradient(180deg, rgba(193,53,43,0.07), rgba(193,53,43,0.02));
+    background: linear-gradient(180deg, rgba(168,71,46,0.08), rgba(168,71,46,0.02));
     padding: 26px 30px;
     margin-bottom: 44px;
   }
   .notice p { color: var(--cream-soft); font-size: 0.95rem; margin-bottom: 12px; }
   .notice p:last-child { margin-bottom: 0; }
-  .notice strong { color: var(--moss-bright); }
+  .notice strong { color: var(--rust-bright); }
 
   .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
   @media (max-width: 1000px) { .project-grid { grid-template-columns: repeat(2, 1fr); } }
@@ -169,10 +164,10 @@
     border: 1px solid var(--border);
     background: var(--surface);
     padding: 24px;
-    border-top: 3px solid var(--bark);
+    border-top: 3px solid var(--stone);
     min-width: 0;
   }
-  .project-card h3 { font-size: 1.15rem; font-weight: 700; color: var(--moss-bright); margin-bottom: 6px; }
+  .project-card h3 { font-size: 1.15rem; font-weight: 700; color: var(--rust-bright); margin-bottom: 6px; }
   .project-card .blurb { color: var(--cream-soft); font-size: 0.9rem; margin-bottom: 16px; font-style: italic; }
   .project-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
   .photo-frame {
@@ -200,20 +195,20 @@
   }
   .future-card .blurb { font-style: normal; }
 
-  .halloween-block { border: 1px solid var(--moss); padding: 44px; background: linear-gradient(180deg, rgba(193,53,43,0.06), rgba(75,122,61,0.03)); }
+  .halloween-block { border: 1px solid var(--moss); padding: 44px; background: linear-gradient(180deg, rgba(168,71,46,0.06), rgba(92,122,69,0.04)); }
   @media (max-width: 1300px) { .halloween-block .project-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 750px) { .halloween-block .project-grid { grid-template-columns: 1fr; } }
   @media (max-width: 900px) { .halloween-block { padding: 26px; } .panel { padding: 36px 26px; } }
 
   .guild { text-align: center; }
-  .guild h2 { font-size: clamp(2rem, 3.4vw, 2.6rem); color: var(--moss-bright); }
+  .guild h2 { font-size: clamp(2rem, 3.4vw, 2.6rem); color: var(--rust-bright); }
   .guild p.dek2 { margin: 18px auto 0; max-width: 54ch; color: var(--cream-soft); font-size: 1.08rem; }
   .guild .hero-actions { margin-top: 32px; }
 
   .find-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
   @media (max-width: 700px) { .find-grid { grid-template-columns: 1fr; } }
   .find-card { border-left: 3px solid var(--moss); padding: 6px 0 6px 20px; }
-  .find-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--moss-bright); margin-bottom: 6px; }
+  .find-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--rust-bright); margin-bottom: 6px; }
   .find-card p { color: var(--cream-soft); font-size: 0.94rem; }
 
   .contact-row { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; margin-top: 30px; }
@@ -223,15 +218,15 @@
     display: flex; justify-content: space-between; align-items: flex-start; gap: 32px; flex-wrap: wrap;
     padding-bottom: 34px; border-bottom: 1px solid var(--border);
   }
-  .footer-brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.2rem; color: var(--moss-bright); }
+  .footer-brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.2rem; color: var(--rust-bright); }
   .footer-brand .brand-logo { height: 34px; }
   .footer-tag { margin-top: 10px; color: var(--cream-soft); font-size: 0.95rem; max-width: 34ch; }
   .footer-links { display: flex; gap: 44px; flex-wrap: wrap; }
-  .footer-links h4 { font-size: 0.8rem; font-weight: 700; color: var(--moss-bright); margin-bottom: 12px; }
+  .footer-links h4 { font-size: 0.8rem; font-weight: 700; color: var(--amber-bright); margin-bottom: 12px; }
   .footer-links ul { list-style: none; margin: 0; padding: 0; }
   .footer-links li { margin-bottom: 9px; }
   .footer-links a { text-decoration: none; color: var(--cream); font-size: 0.94rem; }
-  .footer-links a:hover { color: var(--moss-bright); }
+  .footer-links a:hover { color: var(--rust-bright); }
   .footer-bottom { margin-top: 22px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; color: var(--cream-soft); font-size: 0.85rem; }
 </style>
 </head>
@@ -673,7 +668,7 @@
         <a href="https://discord.gg/sgGanAFED" class="btn btn-primary" target="_blank" rel="noopener">Join on Discord</a>
       </div>
 
-      <p class="dek2" style="margin-top:36px;">Gnomewright will be at Twin Cities Con, November 20 through 22, 2026 in Minneapolis, with more shows to be announced for 2027. <a href="#" onclick="activateTab('conventions');return false;" style="color: var(--moss-bright); text-decoration: underline;">Full convention details here</a>.</p>
+      <p class="dek2" style="margin-top:36px;">Gnomewright will be at Twin Cities Con, November 20 through 22, 2026 in Minneapolis, with more shows to be announced for 2027. <a href="#" onclick="activateTab('conventions');return false;" style="color: var(--rust-bright); text-decoration: underline;">Full convention details here</a>.</p>
 
       <div class="notice" style="text-align:center; margin-top:56px;">
         <p><strong>Got a question, want to talk shop, or just curious about anything Gnomewright, conventions included?</strong> Reach out however is easiest, we would love to hear from you.</p>
@@ -692,7 +687,7 @@
     <div class="wrap">
       <div class="section-head center">
         <h2>Conventions</h2>
-        <p class="dek">Twin Cities Con is the first stop on the calendar, running November 20 through 22, 2026 at the Minneapolis Convention Center. More events to be announced throughout 2027. A full vendor booth setup is planned to begin in 2027 as well. Visit the <a href="https://www.twincitiescon.com/" target="_blank" rel="noopener" style="color: var(--moss-bright); text-decoration: underline;">Twin Cities Con website</a> for details.</p>
+        <p class="dek">Twin Cities Con is the first stop on the calendar, running November 20 through 22, 2026 at the Minneapolis Convention Center. More events to be announced throughout 2027. A full vendor booth setup is planned to begin in 2027 as well. Visit the <a href="https://www.twincitiescon.com/" target="_blank" rel="noopener" style="color: var(--rust-bright); text-decoration: underline;">Twin Cities Con website</a> for details.</p>
       </div>
       <div class="notice" style="text-align:center;">
         <p>Want to meet up and see the work in person before then. Reach out through any of the links below and let us know.</p>
@@ -707,12 +702,12 @@
 
       <div class="section-head center" style="margin-top:64px;">
         <h2>Recommend a convention</h2>
-        <p class="dek">Know a show Gnomewright should check out? Tell us below, or browse conventions yourself on <a href="https://fancons.com/" target="_blank" rel="noopener" style="color: var(--moss-bright); text-decoration: underline;">fancons.com</a>.</p>
+        <p class="dek">Know a show Gnomewright should check out? Tell us below, or browse conventions yourself on <a href="https://fancons.com/" target="_blank" rel="noopener" style="color: var(--rust-bright); text-decoration: underline;">fancons.com</a>.</p>
       </div>
       <div style="max-width:520px; margin:0 auto;">
         <input type="text" id="con-name" placeholder="Convention name and location" style="width:100%; padding:14px 16px; margin-bottom:14px; background:var(--surface); border:1px solid var(--border-warm); color:var(--cream); font-family:var(--font-body); font-size:1rem;">
         <textarea id="con-details" placeholder="Anything else we should know? Dates, why it might be a good fit, that sort of thing." rows="4" style="width:100%; padding:14px 16px; margin-bottom:14px; background:var(--surface); border:1px solid var(--border-warm); color:var(--cream); font-family:var(--font-body); font-size:1rem; resize:vertical;"></textarea>
-        <p id="con-status" style="display:none; color:var(--gold-bright); font-size:0.9rem; margin-bottom:14px;">Please add a convention name first.</p>
+        <p id="con-status" style="display:none; color:var(--amber-bright); font-size:0.9rem; margin-bottom:14px;">Please add a convention name first.</p>
         <div style="text-align:center;">
           <button class="btn btn-primary" onclick="sendConRecommendation()">Send recommendation</button>
         </div>
