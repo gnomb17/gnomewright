@@ -3,29 +3,79 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gnomewright</title>
+<title>Gnomewright | Hand Painted Tabletop Terrain and Printable STL Files</title>
+<meta name="description" content="Gnomewright designs, 3D prints, and hand paints tabletop terrain for D&amp;D and wargaming. The Etsy shop opens December 1st. Join the guild on Discord.">
+<meta name="theme-color" content="#050D09">
+<link rel="canonical" href="https://gnomewright.com/">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gnomewright">
+<meta property="og:title" content="Gnomewright | Hand Painted Tabletop Terrain">
+<meta property="og:description" content="Terrain and tiny worlds for wargamers, book nook builders, and collectors. Designed, printed, and painted by one gnome. The Etsy shop opens December 1st.">
+<meta property="og:url" content="https://gnomewright.com/">
+<meta property="og:image" content="https://gnomewright.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gnomewright logo, a gnome painting a ruined stone tower">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gnomewright | Hand Painted Tabletop Terrain">
+<meta name="twitter:description" content="Designed, printed, and painted by one gnome. The Etsy shop opens December 1st.">
+<meta name="twitter:image" content="https://gnomewright.com/og-image.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Gnomewright",
+  "url": "https://gnomewright.com/",
+  "logo": "https://gnomewright.com/logo.png",
+  "description": "Gnomewright designs, 3D prints, and hand paints tabletop terrain and miniatures, and offers printable STL files.",
+  "sameAs": [
+    "https://gnomewright.etsy.com",
+    "https://www.facebook.com/share/1EmSV5TRPx/",
+    "https://www.instagram.com/gnomewright/",
+    "https://www.tiktok.com/@gnomewright",
+    "https://ko-fi.com/gnomewright"
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Alegreya:wght@400;500;700&family=Alegreya+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+<noscript><style>.tab-panel{display:block !important;}</style></noscript>
 <style>
   :root {
-    --bg: #0D1013;
-    --bg-raise: #12161B;
-    --surface: #171C21;
-    --surface-2: #1D232A;
-    --line: rgba(255,255,255,0.09);
-    --line-strong: rgba(255,255,255,0.18);
-    --ink: #ECEFF1;
-    --ink-dim: #9AA5AD;
-    --ember: #FF6A33;
-    --ember-deep: #E34F1C;
-    --ember-dim: rgba(255,106,51,0.14);
-    --venom: #8FE34A;
-    --venom-deep: #67B52C;
-    --violet: #AD7CE8;
-    --violet-deep: #8457BE;
-    --font-display: 'Cinzel', Georgia, serif;
-    --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+    --bg: #13271C;
+    --night: #050D09;
+    --floor: #08150F;
+    --card: #1D3C2C;
+    --frame: #10261B;
+    --line: rgba(200,232,200,0.22);
+    --rule: rgba(246,242,220,0.5);
+    --cream: #F6F2DC;
+    --cream-dim: #C6DABB;
+    --ink: #16261B;
+    --ember: #F07A2B;
+    --ember-hover: #FF9250;
+    --gold: #FFC857;
+    --gold-soft: #FFDE9E;
+    --glow: #7BE8C4;
+    --glow-soft: #C4F7E6;
+    --pumpkin: #FFB066;
+    --moon: #E4D4FF;
+    --moon-dim: #CBBFE8;
+    --font-display: 'Cinzel', 'Trajan Pro', Georgia, serif;
+    --font-body: 'Alegreya', 'Iowan Old Style', Georgia, serif;
+    --font-ui: 'Alegreya Sans', 'Trebuchet MS', system-ui, sans-serif;
+    --leaf-r: 6px 30px 6px 30px;
+    --leaf-r-sm: 4px 16px 4px 16px;
+    --nav-h: 72px;
+    --placeholder: url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22%3E%3Cg%20fill=%22%23F6F2DC%22%20fill-opacity=%22.13%22%3E%3Cpolygon%20points=%2227.0%2C36.0%2030.2%2C45.4%2028.6%2C45.4%2033.5%2C54.9%2030.2%2C54.9%2036.8%2C64.3%2031.9%2C64.3%2040.0%2C73.7%2014.0%2C73.7%2022.1%2C64.3%2017.2%2C64.3%2023.8%2C54.9%2020.5%2C54.9%2025.4%2C45.4%2023.8%2C45.4%22/%3E%3Cpolygon%20points=%2273.0%2C24.0%2077.0%2C35.9%2075.0%2C35.9%2081.0%2C47.8%2077.0%2C47.8%2085.0%2C59.7%2079.0%2C59.7%2089.0%2C71.6%2057.0%2C71.6%2067.0%2C59.7%2061.0%2C59.7%2069.0%2C47.8%2065.0%2C47.8%2071.0%2C35.9%2069.0%2C35.9%22/%3E%3Cpolygon%20points=%2212.0%2C52.0%2014.2%2C58.1%2013.1%2C58.1%2016.5%2C64.3%2014.2%2C64.3%2018.8%2C70.5%2015.4%2C70.5%2021.0%2C76.6%203.0%2C76.6%208.6%2C70.5%205.2%2C70.5%209.8%2C64.3%207.5%2C64.3%2010.9%2C58.1%209.8%2C58.1%22/%3E%3Crect%20x=%224%22%20y=%2281%22%20width=%2292%22%20height=%222.2%22%20rx=%221.1%22/%3E%3C/g%3E%3Cg%20transform=%22translate%2834%2044%29%20scale%28.54%29%22%20opacity=%22.85%22%3E%3Cpath%20d=%22M22%2030%20H38%20C38%2042%2037%2052%2035%2057%20H25%20C23%2052%2022%2042%2022%2030Z%22%20fill=%22%23F8EFD8%22/%3E%0A%3Cpath%20d=%22M22%2030%20H38%20C38%2033%2038%2035%2037.8%2037%20H22.2%20C22%2035%2022%2033%2022%2030Z%22%20fill=%22%23000%22%20opacity=%22.14%22/%3E%0A%3Cpath%20d=%22M4%2032%20C4%2015%2018%205%2030%205%20C42%205%2056%2015%2056%2032%20C56%2034%2054%2035%2052%2035%20H8%20C6%2035%204%2034%204%2032Z%22%20fill=%22%23D8473C%22/%3E%0A%3Cpath%20d=%22M9%2029%20C9%2019%2017%2011%2027%208.5%20C20%2013%2015%2020%2014%2029Z%22%20fill=%22%23FF9A8A%22%20opacity=%22.55%22/%3E%0A%3Ccircle%20cx=%2219%22%20cy=%2221%22%20r=%224.2%22%20fill=%22%23FFF6E2%22/%3E%0A%3Ccircle%20cx=%2235%22%20cy=%2214.5%22%20r=%223.2%22%20fill=%22%23FFF6E2%22/%3E%0A%3Ccircle%20cx=%2245%22%20cy=%2225%22%20r=%224%22%20fill=%22%23FFF6E2%22/%3E%0A%3Ccircle%20cx=%2228%22%20cy=%2227.5%22%20r=%222.4%22%20fill=%22%23FFF6E2%22/%3E%0A%3Cpath%20d=%22M4%2032%20C4%2034%206%2035%208%2035%20H52%20C54%2035%2056%2034%2056%2032%22%20fill=%22none%22%20stroke=%22%23000%22%20stroke-opacity=%22.18%22%20stroke-width=%221.2%22/%3E%3C/g%3E%3Cg%20transform=%22translate%2858%2062%29%20scale%28.28%29%22%20opacity=%22.85%22%3E%3Cpath%20d=%22M22%2030%20H38%20C38%2042%2037%2052%2035%2057%20H25%20C23%2052%2022%2042%2022%2030Z%22%20fill=%22%23DDF6EC%22/%3E%0A%3Cpath%20d=%22M22%2030%20H38%20C38%2033%2038%2035%2037.8%2037%20H22.2%20C22%2035%2022%2033%2022%2030Z%22%20fill=%22%23000%22%20opacity=%22.14%22/%3E%0A%3Cpath%20d=%22M4%2032%20C4%2015%2018%205%2030%205%20C42%205%2056%2015%2056%2032%20C56%2034%2054%2035%2052%2035%20H8%20C6%2035%204%2034%204%2032Z%22%20fill=%22%2319C3A0%22/%3E%0A%3Cpath%20d=%22M9%2029%20C9%2019%2017%2011%2027%208.5%20C20%2013%2015%2020%2014%2029Z%22%20fill=%22%239CFFE9%22%20opacity=%22.55%22/%3E%0A%3Ccircle%20cx=%2219%22%20cy=%2221%22%20r=%224.2%22%20fill=%22%23E2FFF7%22/%3E%0A%3Ccircle%20cx=%2235%22%20cy=%2214.5%22%20r=%223.2%22%20fill=%22%23E2FFF7%22/%3E%0A%3Ccircle%20cx=%2245%22%20cy=%2225%22%20r=%224%22%20fill=%22%23E2FFF7%22/%3E%0A%3Ccircle%20cx=%2228%22%20cy=%2227.5%22%20r=%222.4%22%20fill=%22%23E2FFF7%22/%3E%0A%3Cpath%20d=%22M4%2032%20C4%2034%206%2035%208%2035%20H52%20C54%2035%2056%2034%2056%2032%22%20fill=%22none%22%20stroke=%22%23000%22%20stroke-opacity=%22.18%22%20stroke-width=%221.2%22/%3E%3C/g%3E%3C/svg%3E");
+    --pattern: url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%22320%22%20height=%22320%22%20viewBox=%220%200%20320%20320%22%3E%3Cg%20fill=%22%23F6F2DC%22%20fill-opacity=%22.07%22%3E%3Cg%20transform=%22translate%2840%2038%29%20rotate%28-25%29%22%3E%3Cpath%20d=%22M-9%200%20C-5%20-6%205%20-6%209%200%20C5%206%20-5%206%20-9%200Z%22/%3E%3Cpath%20d=%22M-9%200%20H9%22%20fill=%22none%22%20stroke=%22%23F6F2DC%22%20stroke-width=%22.9%22/%3E%3C/g%3E%3Cg%20transform=%22translate%28238%2096%29%20rotate%2840%29%22%3E%3Cpath%20d=%22M-9%200%20C-5%20-6%205%20-6%209%200%20C5%206%20-5%206%20-9%200Z%22/%3E%3Cpath%20d=%22M-9%200%20H9%22%20fill=%22none%22%20stroke=%22%23F6F2DC%22%20stroke-width=%22.9%22/%3E%3C/g%3E%3Cg%20transform=%22translate%28120%20232%29%20rotate%2815%29%22%3E%3Cpath%20d=%22M-9%200%20C-5%20-6%205%20-6%209%200%20C5%206%20-5%206%20-9%200Z%22/%3E%3Cpath%20d=%22M-9%200%20H9%22%20fill=%22none%22%20stroke=%22%23F6F2DC%22%20stroke-width=%22.9%22/%3E%3C/g%3E%3Cg%20transform=%22translate%28290%20270%29%20rotate%28-50%29%22%3E%3Cpath%20d=%22M-9%200%20C-5%20-6%205%20-6%209%200%20C5%206%20-5%206%20-9%200Z%22/%3E%3Cpath%20d=%22M-9%200%20H9%22%20fill=%22none%22%20stroke=%22%23F6F2DC%22%20stroke-width=%22.9%22/%3E%3C/g%3E%3Cg%20transform=%22translate%28180%2040%29%20scale%281%29%22%3E%3Cpath%20d=%22M-9%200%20C-9%20-9%20-3%20-13%200%20-13%20C3%20-13%209%20-9%209%200Z%22/%3E%3Cpath%20d=%22M-3%200%20H3%20L2.2%209%20H-2.2Z%22/%3E%3C/g%3E%3Cg%20transform=%22translate%2870%20150%29%20scale%280.8%29%22%3E%3Cpath%20d=%22M-9%200%20C-9%20-9%20-3%20-13%200%20-13%20C3%20-13%209%20-9%209%200Z%22/%3E%3Cpath%20d=%22M-3%200%20H3%20L2.2%209%20H-2.2Z%22/%3E%3C/g%3E%3Cg%20transform=%22translate%28262%20190%29%20scale%280.9%29%22%3E%3Cpath%20d=%22M-9%200%20C-9%20-9%20-3%20-13%200%20-13%20C3%20-13%209%20-9%209%200Z%22/%3E%3Cpath%20d=%22M-3%200%20H3%20L2.2%209%20H-2.2Z%22/%3E%3C/g%3E%3Cg%20transform=%22translate%28206%20262%29%20rotate%2812%29%22%20fill=%22none%22%20stroke=%22%23F6F2DC%22%20stroke-width=%221.3%22%20stroke-linejoin=%22round%22%3E%3Cpolygon%20points=%220%2C-11%2010%2C-5.5%2010%2C5.5%200%2C11%20-10%2C5.5%20-10%2C-5.5%22/%3E%3Cpolygon%20points=%220%2C-5%204.5%2C3.5%20-4.5%2C3.5%22/%3E%3C/g%3E%3Ccircle%20cx=%2214%22%20cy=%2290%22%20r=%221.4%22/%3E%3Ccircle%20cx=%2296%22%20cy=%2220%22%20r=%221.9%22/%3E%3Ccircle%20cx=%22150%22%20cy=%22110%22%20r=%222.4%22/%3E%3Ccircle%20cx=%22214%22%20cy=%22150%22%20r=%221.4%22/%3E%3Ccircle%20cx=%22300%22%20cy=%2240%22%20r=%221.9%22/%3E%3Ccircle%20cx=%2258%22%20cy=%22280%22%20r=%222.4%22/%3E%3Ccircle%20cx=%22160%22%20cy=%22300%22%20r=%221.4%22/%3E%3Ccircle%20cx=%22316%22%20cy=%22150%22%20r=%221.9%22/%3E%3Ccircle%20cx=%2220%22%20cy=%22200%22%20r=%222.4%22/%3E%3Ccircle%20cx=%22110%22%20cy=%22170%22%20r=%221.4%22/%3E%3Ccircle%20cx=%22250%22%20cy=%2212%22%20r=%221.9%22/%3E%3C/g%3E%3C/svg%3E");
+    --m-red: url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2060%2060%22%3E%3Cpath%20d=%22M22%2030%20H38%20C38%2042%2037%2052%2035%2057%20H25%20C23%2052%2022%2042%2022%2030Z%22%20fill=%22%23F8EFD8%22/%3E%0A%3Cpath%20d=%22M22%2030%20H38%20C38%2033%2038%2035%2037.8%2037%20H22.2%20C22%2035%2022%2033%2022%2030Z%22%20fill=%22%23000%22%20opacity=%22.14%22/%3E%0A%3Cpath%20d=%22M4%2032%20C4%2015%2018%205%2030%205%20C42%205%2056%2015%2056%2032%20C56%2034%2054%2035%2052%2035%20H8%20C6%2035%204%2034%204%2032Z%22%20fill=%22%23D8473C%22/%3E%0A%3Cpath%20d=%22M9%2029%20C9%2019%2017%2011%2027%208.5%20C20%2013%2015%2020%2014%2029Z%22%20fill=%22%23FF9A8A%22%20opacity=%22.55%22/%3E%0A%3Ccircle%20cx=%2219%22%20cy=%2221%22%20r=%224.2%22%20fill=%22%23FFF6E2%22/%3E%0A%3Ccircle%20cx=%2235%22%20cy=%2214.5%22%20r=%223.2%22%20fill=%22%23FFF6E2%22/%3E%0A%3Ccircle%20cx=%2245%22%20cy=%2225%22%20r=%224%22%20fill=%22%23FFF6E2%22/%3E%0A%3Ccircle%20cx=%2228%22%20cy=%2227.5%22%20r=%222.4%22%20fill=%22%23FFF6E2%22/%3E%0A%3Cpath%20d=%22M4%2032%20C4%2034%206%2035%208%2035%20H52%20C54%2035%2056%2034%2056%2032%22%20fill=%22none%22%20stroke=%22%23000%22%20stroke-opacity=%22.18%22%20stroke-width=%221.2%22/%3E%3C/svg%3E");
+    --m-orange: url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2060%2060%22%3E%3Cpath%20d=%22M22%2030%20H38%20C38%2042%2037%2052%2035%2057%20H25%20C23%2052%2022%2042%2022%2030Z%22%20fill=%22%23F6EBCB%22/%3E%0A%3Cpath%20d=%22M22%2030%20H38%20C38%2033%2038%2035%2037.8%2037%20H22.2%20C22%2035%2022%2033%2022%2030Z%22%20fill=%22%23000%22%20opacity=%22.14%22/%3E%0A%3Cpath%20d=%22M4%2032%20C4%2015%2018%205%2030%205%20C42%205%2056%2015%2056%2032%20C56%2034%2054%2035%2052%2035%20H8%20C6%2035%204%2034%204%2032Z%22%20fill=%22%23F2923F%22/%3E%0A%3Cpath%20d=%22M9%2029%20C9%2019%2017%2011%2027%208.5%20C20%2013%2015%2020%2014%2029Z%22%20fill=%22%23FFD08A%22%20opacity=%22.55%22/%3E%0A%3Ccircle%20cx=%2219%22%20cy=%2221%22%20r=%224.2%22%20fill=%22%23FFF3DA%22/%3E%0A%3Ccircle%20cx=%2235%22%20cy=%2214.5%22%20r=%223.2%22%20fill=%22%23FFF3DA%22/%3E%0A%3Ccircle%20cx=%2245%22%20cy=%2225%22%20r=%224%22%20fill=%22%23FFF3DA%22/%3E%0A%3Ccircle%20cx=%2228%22%20cy=%2227.5%22%20r=%222.4%22%20fill=%22%23FFF3DA%22/%3E%0A%3Cpath%20d=%22M4%2032%20C4%2034%206%2035%208%2035%20H52%20C54%2035%2056%2034%2056%2032%22%20fill=%22none%22%20stroke=%22%23000%22%20stroke-opacity=%22.18%22%20stroke-width=%221.2%22/%3E%3C/svg%3E");
+    --m-teal: url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2060%2060%22%3E%3Cpath%20d=%22M22%2030%20H38%20C38%2042%2037%2052%2035%2057%20H25%20C23%2052%2022%2042%2022%2030Z%22%20fill=%22%23DDF6EC%22/%3E%0A%3Cpath%20d=%22M22%2030%20H38%20C38%2033%2038%2035%2037.8%2037%20H22.2%20C22%2035%2022%2033%2022%2030Z%22%20fill=%22%23000%22%20opacity=%22.14%22/%3E%0A%3Cpath%20d=%22M4%2032%20C4%2015%2018%205%2030%205%20C42%205%2056%2015%2056%2032%20C56%2034%2054%2035%2052%2035%20H8%20C6%2035%204%2034%204%2032Z%22%20fill=%22%2319C3A0%22/%3E%0A%3Cpath%20d=%22M9%2029%20C9%2019%2017%2011%2027%208.5%20C20%2013%2015%2020%2014%2029Z%22%20fill=%22%239CFFE9%22%20opacity=%22.55%22/%3E%0A%3Ccircle%20cx=%2219%22%20cy=%2221%22%20r=%224.2%22%20fill=%22%23E2FFF7%22/%3E%0A%3Ccircle%20cx=%2235%22%20cy=%2214.5%22%20r=%223.2%22%20fill=%22%23E2FFF7%22/%3E%0A%3Ccircle%20cx=%2245%22%20cy=%2225%22%20r=%224%22%20fill=%22%23E2FFF7%22/%3E%0A%3Ccircle%20cx=%2228%22%20cy=%2227.5%22%20r=%222.4%22%20fill=%22%23E2FFF7%22/%3E%0A%3Cpath%20d=%22M4%2032%20C4%2034%206%2035%208%2035%20H52%20C54%2035%2056%2034%2056%2032%22%20fill=%22none%22%20stroke=%22%23000%22%20stroke-opacity=%22.18%22%20stroke-width=%221.2%22/%3E%3C/svg%3E");
+    --m-purple: url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2060%2060%22%3E%3Cpath%20d=%22M22%2030%20H38%20C38%2042%2037%2052%2035%2057%20H25%20C23%2052%2022%2042%2022%2030Z%22%20fill=%22%23E7DDF5%22/%3E%0A%3Cpath%20d=%22M22%2030%20H38%20C38%2033%2038%2035%2037.8%2037%20H22.2%20C22%2035%2022%2033%2022%2030Z%22%20fill=%22%23000%22%20opacity=%22.14%22/%3E%0A%3Cpath%20d=%22M4%2032%20C4%2015%2018%205%2030%205%20C42%205%2056%2015%2056%2032%20C56%2034%2054%2035%2052%2035%20H8%20C6%2035%204%2034%204%2032Z%22%20fill=%22%23A66FE0%22/%3E%0A%3Cpath%20d=%22M9%2029%20C9%2019%2017%2011%2027%208.5%20C20%2013%2015%2020%2014%2029Z%22%20fill=%22%23E0C4FF%22%20opacity=%22.55%22/%3E%0A%3Ccircle%20cx=%2219%22%20cy=%2221%22%20r=%224.2%22%20fill=%22%23F4EBFF%22/%3E%0A%3Ccircle%20cx=%2235%22%20cy=%2214.5%22%20r=%223.2%22%20fill=%22%23F4EBFF%22/%3E%0A%3Ccircle%20cx=%2245%22%20cy=%2225%22%20r=%224%22%20fill=%22%23F4EBFF%22/%3E%0A%3Ccircle%20cx=%2228%22%20cy=%2227.5%22%20r=%222.4%22%20fill=%22%23F4EBFF%22/%3E%0A%3Cpath%20d=%22M4%2032%20C4%2034%206%2035%208%2035%20H52%20C54%2035%2056%2034%2056%2032%22%20fill=%22none%22%20stroke=%22%23000%22%20stroke-opacity=%22.18%22%20stroke-width=%221.2%22/%3E%3C/svg%3E");
     color-scheme: dark;
   }
 
@@ -35,13 +85,14 @@
   body {
     margin: 0;
     background:
-      radial-gradient(ellipse at 20% -10%, rgba(255,106,51,0.12), transparent 42%),
-      radial-gradient(ellipse at 90% 5%, rgba(143,227,74,0.05), transparent 38%),
+      var(--pattern) 0 0 / 320px 320px repeat,
+      radial-gradient(ellipse at 12% 0%, rgba(160,210,90,0.08), transparent 42%),
+      radial-gradient(ellipse at 92% 40%, rgba(123,232,196,0.07), transparent 42%),
       var(--bg);
-    color: var(--ink);
+    color: var(--cream);
     font-family: var(--font-body);
-    font-size: 17px;
-    line-height: 1.65;
+    font-size: 19px;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
@@ -51,244 +102,667 @@
   img { max-width: 100%; display: block; }
   button { font-family: inherit; }
 
-  h1, h2, h3 { font-family: var(--font-display); margin: 0; line-height: 1.18; }
-  .brand-font { font-family: var(--font-display); font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+  h1, h2, h3 { font-family: var(--font-display); margin: 0; line-height: 1.14; color: var(--cream); }
 
+  :focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
+
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   .wrap { max-width: 1160px; margin: 0 auto; padding: 0 32px; position: relative; }
 
+  /* nav */
   .site-nav {
     position: sticky; top: 0; z-index: 40;
-    background: rgba(13, 16, 19, 0.9);
+    background: rgba(5,13,9,0.94);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--line-strong);
+    border-bottom: 1.5px solid rgba(222,240,200,0.16);
   }
-  .site-nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+  .site-nav .wrap { display: flex; align-items: center; justify-content: space-between; height: var(--nav-h); }
   .brandmark { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-  .brand-logo { height: 48px; width: auto; flex-shrink: 0; }
+  .brand-logo { height: 50px; width: auto; flex-shrink: 0; }
   .brand-logo img { height: 100%; width: auto; object-fit: contain; }
-  .brandmark span { font-size: 1.25rem; color: var(--ember); }
+  .brand-font { font-family: var(--font-display); font-weight: 800; font-size: 1.35rem; letter-spacing: 0.05em; color: var(--cream); }
 
+  /* buttons */
   .btn {
-    display: inline-flex; align-items: center; gap: 9px;
-    font-family: var(--font-body); font-weight: 700; font-size: 0.96rem;
-    padding: 14px 30px; border-radius: 2px; text-decoration: none;
-    border: 2px solid transparent; cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+    font-family: var(--font-ui); font-weight: 800; font-size: 1.05rem; line-height: 1.2;
+    padding: 13px 28px; border-radius: var(--leaf-r-sm); text-decoration: none;
+    border: 2px solid transparent; cursor: pointer; text-align: center;
+    transition: background-color .15s ease, color .15s ease, border-color .15s ease;
   }
-  .btn-primary {
-    background: var(--ember); color: #0D1013; border-color: var(--ember);
-  }
-  .btn-primary:hover { background: var(--ember-deep); border-color: var(--ember-deep); }
-  .btn-ghost { background: transparent; color: var(--venom); border-color: var(--venom-deep); }
-  .btn-ghost:hover { background: rgba(143,227,74,0.1); border-color: var(--venom); }
+  .btn-sm { padding: 9px 20px; font-size: 1rem; }
+  .btn-primary { background: var(--ember); color: var(--ink); border-color: var(--ember); }
+  .btn-primary:hover { background: var(--ember-hover); border-color: var(--ember-hover); }
+  .btn-ghost { background: transparent; color: var(--cream); border-color: rgba(246,242,220,0.7); }
+  .btn-ghost:hover { background: var(--cream); color: var(--night); border-color: var(--cream); }
 
   .badge-soon {
-    display: inline-block; font-size: 0.68rem; font-weight: 800; color: #0D1013;
-    background: var(--venom); border-radius: 3px; padding: 4px 11px; white-space: nowrap;
-    letter-spacing: 0.3px; text-transform: uppercase;
+    display: inline-block; font-family: var(--font-ui); font-size: 0.86rem; font-weight: 700; color: var(--glow-soft);
+    background: rgba(123,232,196,0.14); border: 1px solid rgba(123,232,196,0.5); border-radius: 99px;
+    padding: 3px 12px; white-space: nowrap; line-height: 1.4; vertical-align: middle;
+  }
+  .badge-hot { background: var(--ember); border-color: var(--ember); color: var(--ink); }
+
+  /* launch banner: lantern light on the forest floor */
+  html.launched .pre-only { display: none !important; }
+  html:not(.launched) .post-only { display: none !important; }
+  .launch {
+    position: relative; overflow: hidden; color: var(--cream);
+    background:
+      radial-gradient(circle at 83% 52%, rgba(196,240,110,0.22), transparent 31%),
+      radial-gradient(circle at 4% 0%, rgba(120,200,120,0.10), transparent 36%),
+      linear-gradient(100deg, #04100A 0%, #0A2116 55%, #0F3020 100%);
+    border-bottom: 4px solid transparent;
+    border-image: linear-gradient(90deg, transparent, #FFC857 25%, #F07A2B 75%, transparent) 1;
+  }
+  .launch-inner {
+    display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+    gap: 48px; align-items: center; padding-top: 56px; padding-bottom: 60px;
+  }
+  html.launched .launch-inner { grid-template-columns: minmax(0, 1fr); }
+  .launch h2 { font-size: clamp(1.9rem, 3.8vw, 3rem); font-weight: 800; letter-spacing: 0.01em; line-height: 1.14; max-width: 19ch; text-shadow: 0 2px 16px rgba(0,0,0,0.45); }
+  html.launched .launch h2 { max-width: none; }
+  .launch-sub { margin-top: 18px; font-size: 1.28rem; max-width: 44ch; color: var(--cream); }
+  .launch-actions { margin-top: 28px; display: flex; gap: 14px; flex-wrap: wrap; }
+  .count-panel { display: flex; flex-direction: column; gap: 22px; align-items: center; }
+  .count-tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; width: 100%; max-width: 480px; padding: 0 10px; }
+  .tile { display: flex; flex-direction: column; align-items: center; filter: drop-shadow(0 10px 14px rgba(0,0,0,0.35)); }
+  .tile .cap {
+    display: block; width: 116%; height: 50px; position: relative; z-index: 1; margin-bottom: -3px;
+    border-radius: 50% 50% 10px 10px / 100% 100% 10px 10px;
+    background:
+      radial-gradient(circle at 20% 56%, #FFF6E2 0 5px, transparent 5.5px),
+      radial-gradient(circle at 50% 30%, #FFF6E2 0 4.2px, transparent 4.7px),
+      radial-gradient(circle at 80% 56%, #FFF6E2 0 5.4px, transparent 5.9px),
+      radial-gradient(circle at 36% 80%, #FFF6E2 0 2.6px, transparent 3px),
+      radial-gradient(circle at 66% 78%, #FFF6E2 0 2.8px, transparent 3.2px),
+      linear-gradient(180deg, #EE5F50 0%, #C23A2E 100%);
+    box-shadow: inset 0 -5px 0 rgba(0,0,0,0.16);
+  }
+  .tile .stem {
+    width: 86%; text-align: center; padding: 14px 2px 12px;
+    background: linear-gradient(180deg, #FBF3D9, #EBE0BD);
+    border-radius: 0 0 24px 24px / 0 0 20px 20px; color: var(--ink);
+  }
+  .tile b { display: block; font-family: var(--font-display); font-weight: 800; font-size: clamp(1.9rem, 3.4vw, 2.7rem); line-height: 1; font-variant-numeric: lining-nums tabular-nums; color: #143520; }
+  .tile span { display: block; margin-top: 6px; font-family: var(--font-ui); font-size: 0.95rem; font-weight: 800; color: #2F5A3C; }
+  .count-note { font-family: var(--font-ui); font-weight: 700; font-size: 1.12rem; color: #FFF1C8; text-align: center; text-shadow: 0 1px 8px rgba(0,0,0,0.4); }
+
+  /* hero: golden hour behind the pines */
+  .hero {
+    position: relative; overflow: hidden;
+    background:
+      radial-gradient(ellipse at 70% 100%, rgba(190,225,100,0.36), transparent 44%),
+      linear-gradient(180deg, #030908 0%, #08191A 30%, #0B2419 58%, #14382A 80%, #5E7F36 100%);
+    padding: 64px 0 215px;
+  }
+  .hero-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: 40px; align-items: center; z-index: 3; }
+  .kicker { font-family: var(--font-ui); font-weight: 800; color: var(--gold-soft); font-size: 1.2rem; margin-bottom: 16px; max-width: 34ch; line-height: 1.35; }
+  .hero h1 { font-size: clamp(2.5rem, 5.6vw, 4.5rem); font-weight: 900; letter-spacing: 0.01em; line-height: 1.06; text-shadow: 0 3px 0 rgba(0,0,0,0.28), 0 8px 28px rgba(0,0,0,0.35); }
+  .tagline { margin-top: 22px; font-size: 1.3rem; color: var(--cream-dim); max-width: 40ch; }
+  .hero-actions { margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap; }
+  .hero-logo { margin-bottom: -130px; justify-self: center; width: min(460px, 100%); }
+  .hero-logo img { width: 100%; height: auto; filter: drop-shadow(0 0 34px rgba(255,186,80,0.55)) drop-shadow(0 14px 18px rgba(0,0,0,0.55)); }
+  .gnarl { position: absolute; top: 0; bottom: 0; width: min(440px, 46vw); height: 100%; z-index: 0; pointer-events: none; }
+  .gnarl-left { left: 0; -webkit-mask-image: linear-gradient(to right, #000 58%, transparent 100%); mask-image: linear-gradient(to right, #000 58%, transparent 100%); }
+  .gnarl-right { right: 0; -webkit-mask-image: linear-gradient(to left, #000 58%, transparent 100%); mask-image: linear-gradient(to left, #000 58%, transparent 100%); }
+  .eyes { position: absolute; left: 0; right: 0; bottom: -1px; width: 100%; height: 230px; z-index: 1; pointer-events: none; }
+  .fog {
+    position: absolute; left: -8%; right: -8%; bottom: 30px; height: 280px; z-index: 1; pointer-events: none;
+    background:
+      radial-gradient(ellipse 42% 48% at 20% 62%, rgba(190,230,205,0.20), transparent 70%),
+      radial-gradient(ellipse 38% 44% at 58% 74%, rgba(190,230,205,0.16), transparent 70%),
+      radial-gradient(ellipse 34% 40% at 90% 56%, rgba(190,230,205,0.15), transparent 70%);
+  }
+  .treeline { position: absolute; left: 0; right: 0; bottom: -1px; width: 100%; height: 230px; z-index: 1; }
+  .mush-overlay { position: absolute; left: 0; right: 0; bottom: -1px; width: 100%; height: 150px; z-index: 2; }
+  @media (prefers-reduced-motion: no-preference) {
+    .fog { animation: drift 44s ease-in-out infinite alternate; }
+    @keyframes drift { from { transform: translateX(-3%); } to { transform: translateX(3%); } }
+    .eye-pair { transform-box: fill-box; transform-origin: center; animation: blink 12s infinite; }
+    @keyframes blink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(0.08); } }
+    .breathe { animation: breathe 5.5s ease-in-out infinite; }
+    @keyframes breathe { 0%, 100% { opacity: 0.82; } 50% { opacity: 1; } }
   }
 
-  .hero { padding: 60px 0 40px; text-align: center; }
-  .hero-copy { max-width: 720px; margin: 0 auto; }
-  .hero-logo { width: 220px; margin: 0 auto 24px; }
-  .hero-logo img { width: 100%; height: auto; object-fit: contain; }
-  .kicker {
-    font-family: var(--font-display); font-weight: 600;
-    color: var(--ember); font-size: 1.1rem; margin-bottom: 18px;
-  }
-  .hero h1 { font-size: clamp(2.4rem, 5vw, 3.6rem); font-weight: 800; color: var(--ink); letter-spacing: 0.2px; }
-  .tagline { margin-top: 22px; font-size: 1.14rem; color: var(--ink-dim); }
-  .hero-actions { margin-top: 32px; display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
-
+  /* tabs: the forest floor */
   .tab-bar {
-    position: sticky; top: 76px; z-index: 30;
-    background: var(--bg-raise);
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
+    position: sticky; top: var(--nav-h); z-index: 30;
+    background: var(--floor);
     overflow-x: auto;
     -ms-overflow-style: none; scrollbar-width: none;
+    border-bottom: 1.5px solid rgba(222,240,200,0.14);
   }
   .tab-bar::-webkit-scrollbar { display: none; }
-  .tab-bar-inner { display: flex; gap: 6px; max-width: 1160px; margin: 0 auto; padding: 0 20px; }
+  .tab-bar-inner { display: flex; gap: 6px; max-width: 1160px; margin: 0 auto; padding: 8px 20px 0; }
   .tab-btn {
-    background: transparent; border: none; border-bottom: 3px solid transparent;
-    color: var(--ink-dim); font-weight: 700; font-size: 0.86rem;
-    text-transform: uppercase; letter-spacing: 0.4px;
-    padding: 17px 18px; cursor: pointer; white-space: nowrap;
-    border-radius: 3px 3px 0 0;
+    background: transparent; border: none;
+    color: var(--cream-dim); font-family: var(--font-ui); font-weight: 800; font-size: 1.08rem;
+    padding: 13px 20px 12px; cursor: pointer; white-space: nowrap;
+    border-radius: 4px 14px 0 0;
   }
-  .tab-btn:hover { color: var(--ink); }
-  .tab-btn.active { color: #0D1013; background: var(--ember); border-bottom-color: var(--ember); }
+  .tab-btn:hover { color: #FFFFFF; background: rgba(255,255,255,0.09); }
+  .tab-btn.active { color: var(--ink); background: var(--ember); }
 
   .tab-panel { display: none; }
   .tab-panel.active { display: block; }
 
-  .band { padding: 64px 0 88px; }
+  .band { padding: 64px 0 64px; }
   .section-head { max-width: 700px; margin-bottom: 40px; }
   .section-head.center { margin-left: auto; margin-right: auto; text-align: center; }
-  .section-head h2 { font-size: clamp(1.9rem, 3.2vw, 2.4rem); font-weight: 700; color: var(--ember); letter-spacing: 0.2px; }
-  .section-head .dek { margin-top: 14px; font-size: 1.06rem; color: var(--ink-dim); max-width: 62ch; }
+  .section-head h2 { font-size: clamp(1.9rem, 3.4vw, 2.6rem); font-weight: 800; letter-spacing: 0.02em; }
+  .section-head h2::after, .guild h2::after {
+    content: ''; display: block; width: 200px; height: 28px; margin-top: 14px;
+    background:
+      var(--m-red) center / 26px no-repeat,
+      linear-gradient(var(--rule), var(--rule)) left center / 76px 1.5px no-repeat,
+      linear-gradient(var(--rule), var(--rule)) right center / 76px 1.5px no-repeat;
+  }
+  .section-head.center h2::after, .guild h2::after { margin-left: auto; margin-right: auto; }
+  .section-head .dek { margin-top: 14px; font-size: 1.22rem; color: var(--cream-dim); max-width: 62ch; }
   .section-head.center .dek { margin-left: auto; margin-right: auto; }
+  .text-link, .section-head a, .dek2 a, .notice a { color: var(--gold-soft); text-decoration: underline; text-underline-offset: 3px; font-weight: 700; }
 
   .callout {
-    background: var(--surface);
-    border-left: 4px solid var(--ember);
-    padding: 44px 48px;
-    box-shadow: 0 30px 60px -30px rgba(0,0,0,0.7);
+    position: relative;
+    background: linear-gradient(160deg, #22463A 0%, #183429 100%);
+    border: 1.5px solid var(--line);
+    border-radius: 8px 44px 8px 44px;
+    padding: 46px 52px;
   }
-  .callout .section-head { margin-bottom: 22px; }
-  .callout p { color: var(--ink-dim); font-size: 1.03rem; margin-bottom: 15px; }
+  .callout::after, .follow::after, .support-block::after {
+    content: ''; position: absolute; right: 44px; top: -46px; width: 170px; height: 54px; pointer-events: none;
+    background:
+      var(--m-red) right 0 bottom 0 / 54px no-repeat,
+      var(--m-teal) right 62px bottom 0 / 38px no-repeat,
+      var(--m-orange) right 108px bottom 0 / 26px no-repeat;
+  }
+  .callout .section-head { margin-bottom: 20px; }
+  .callout p { color: var(--cream); font-size: 1.22rem; margin-bottom: 15px; max-width: 68ch; }
   .callout p:last-child { margin-bottom: 0; }
-  .callout strong { color: var(--ink); }
+
+
+  .steps { margin-top: 36px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  @media (max-width: 800px) { .steps { grid-template-columns: 1fr; } }
+  .step { position: relative; background: var(--card); border: 1.5px solid var(--line); border-radius: var(--leaf-r); padding: 26px 26px 28px; }
+  .step .ico { width: 66px; height: 66px; border-radius: 50%; background: rgba(10,30,18,0.4); border: 1.5px solid rgba(255,222,158,0.45); display: grid; place-items: center; margin-bottom: 16px; }
+  .step svg { width: 38px; height: 38px; stroke: var(--gold-soft); fill: none; stroke-width: 2.8; stroke-linecap: round; stroke-linejoin: round; }
+  .step .n { position: absolute; top: 18px; right: 24px; font-family: var(--font-display); font-weight: 800; font-size: 1.7rem; color: rgba(246,242,220,0.35); }
+  .step h3 { font-size: 1.28rem; font-weight: 800; color: var(--gold-soft); margin-bottom: 6px; letter-spacing: 0.02em; }
+  .step p { color: var(--cream-dim); font-size: 1.12rem; }
+
+  .follow {
+    position: relative;
+    margin-top: 62px; background: var(--card);
+    border: 1.5px solid var(--line); border-radius: var(--leaf-r);
+    padding: 30px 36px; display: flex; gap: 28px; align-items: center; justify-content: space-between; flex-wrap: wrap;
+  }
+  .follow::after { top: -46px; }
+  .follow h3 { font-size: 1.45rem; font-weight: 800; margin-bottom: 6px; color: var(--gold-soft); }
+  .follow p { color: var(--cream-dim); max-width: 50ch; }
+  .follow .btn-row { display: flex; gap: 10px; flex-wrap: wrap; }
 
   .notice {
-    border: 1px solid var(--line);
-    border-left: 3px solid var(--ember);
-    background: var(--surface);
-    padding: 26px 30px;
-    margin-bottom: 44px;
+    border: 1.5px solid var(--line); background: rgba(10,30,18,0.32);
+    border-radius: var(--leaf-r-sm);
+    padding: 24px 30px; margin-bottom: 52px;
   }
-  .notice p { color: var(--ink-dim); font-size: 0.95rem; margin-bottom: 12px; }
+  .notice p { color: var(--cream-dim); font-size: 1.1rem; margin-bottom: 12px; }
   .notice p:last-child { margin-bottom: 0; }
-  .notice strong { color: var(--ember); }
-  .notice a { color: var(--venom); text-decoration: underline; }
+  .notice strong { color: var(--gold); }
 
-  .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+  .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 52px 28px; }
   @media (max-width: 1000px) { .project-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 640px) { .project-grid { grid-template-columns: 1fr; } }
 
   .project-card {
-    border: 1px solid var(--line);
-    border-top: 2px solid var(--line-strong);
-    background: var(--surface);
-    padding: 24px;
+    position: relative;
+    border: 1.5px solid var(--line);
+    background: var(--card);
+    border-radius: var(--leaf-r);
+    padding: 26px 24px 24px;
     min-width: 0;
   }
-  .project-card h3 { font-size: 1.1rem; font-weight: 700; color: var(--ember); margin-bottom: 6px; }
-  .project-card .blurb { color: var(--ink-dim); font-size: 0.9rem; margin-bottom: 16px; }
-  .project-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
+  .project-card::after {
+    content: ''; position: absolute; top: -30px; right: 26px; width: 44px; height: 44px; pointer-events: none;
+    background: var(--m-red) center / contain no-repeat;
+  }
+  .project-card::before {
+    content: ''; position: absolute; top: -17px; right: 76px; width: 26px; height: 26px; pointer-events: none;
+    background: var(--m-orange) center / contain no-repeat;
+  }
+  .project-grid > .project-card:nth-child(3n+2)::after { background-image: var(--m-teal); filter: drop-shadow(0 0 6px rgba(123,232,196,0.7)); }
+  .project-grid > .project-card:nth-child(3n+2)::before { background-image: var(--m-red); }
+  .project-grid > .project-card:nth-child(3n)::after { background-image: var(--m-orange); }
+  .project-grid > .project-card:nth-child(3n)::before { background-image: var(--m-teal); filter: drop-shadow(0 0 5px rgba(123,232,196,0.7)); }
+  .project-card h3 { font-size: 1.22rem; font-weight: 800; margin-bottom: 6px; letter-spacing: 0.02em; color: var(--gold-soft); }
+  .project-card .blurb { color: var(--cream-dim); font-size: 1.05rem; margin-bottom: 16px; }
+  .project-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px; }
   .photo-frame {
     position: relative;
     aspect-ratio: 1 / 1;
     border: 1px solid var(--line);
-    background: var(--surface-2);
+    background: var(--frame);
+    border-radius: 8px;
     display: flex; align-items: center; justify-content: center;
     text-align: center; padding: 10px;
   }
   .photo-frame::before, .photo-frame::after {
     content: ''; position: absolute; width: 16px; height: 16px; pointer-events: none;
-    border-color: var(--ember); opacity: 0.85;
+    border-color: var(--ember); opacity: 0.9;
   }
-  .photo-frame::before { top: -1px; left: -1px; border-style: solid; border-width: 2px 0 0 2px; }
-  .photo-frame::after { bottom: -1px; right: -1px; border-style: solid; border-width: 0 2px 2px 0; }
+  .photo-frame::before { top: -1px; left: -1px; border-style: solid; border-width: 2px 0 0 2px; border-top-left-radius: 8px; }
+  .photo-frame::after { bottom: -1px; right: -1px; border-style: solid; border-width: 0 2px 2px 0; border-bottom-right-radius: 8px; }
   .photo-frame.stl-frame { aspect-ratio: 16 / 10; }
-  .photo-frame img { width: 100%; height: 100%; object-fit: contain; display: block; }
-  .photo-frame span { display: none; color: var(--ink-dim); font-size: 0.78rem; }
+  .photo-frame img { width: 100%; height: 100%; object-fit: contain; display: block; border-radius: 6px; }
+  .photo-frame span { display: none; color: var(--cream-dim); font-family: var(--font-ui); font-size: 0.88rem; line-height: 1.2; }
   .photo-frame.missing img { display: none; }
   .photo-frame.missing span { display: block; }
+  .photo-frame.missing {
+    background: var(--frame) var(--placeholder) center 10% / 62% auto no-repeat;
+    align-items: flex-end; padding-bottom: 8px;
+  }
+  .photo-frame.stl-frame.missing { display: none; }
+  .banner-frame.missing { background-size: auto 78%; background-position: center 30%; }
   .banner-frame { aspect-ratio: 3 / 1; margin-bottom: 40px; }
   .banner-frame img { object-fit: cover; }
-  .project-stl { margin-bottom: 14px; }
-  .project-meta { font-size: 0.85rem; color: var(--ink-dim); margin-bottom: 14px; }
+  .project-stl .photo-frame { margin-bottom: 14px; }
+  .project-meta { font-family: var(--font-ui); font-size: 0.98rem; color: var(--cream-dim); margin-bottom: 14px; line-height: 1.4; }
   .project-badges { display: flex; gap: 8px; flex-wrap: wrap; }
   .future-card {
-    border-style: dashed; border-top-style: dashed; border-color: var(--line-strong);
+    border-style: dashed; border-color: rgba(222,240,200,0.4);
     display: flex; flex-direction: column; justify-content: center;
     text-align: center; min-height: 220px; background: transparent;
   }
-  .future-card h3 { color: var(--ink-dim); }
+  .project-grid > .project-card.future-card::before, .project-grid > .project-card.future-card::after { display: none; }
+  .future-card h3 { color: var(--cream); }
 
+  /* halloween: the same forest, after dark */
   .halloween-block {
-    border: 1px solid var(--violet-deep);
-    padding: 44px;
-    background: linear-gradient(180deg, rgba(173,124,232,0.09), rgba(13,16,19,0));
+    border: 1.5px solid #6E52AB;
+    border-radius: 10px 54px 10px 54px;
+    padding: 56px 48px 48px;
+    background:
+      radial-gradient(circle at 85% 0%, rgba(255,176,102,0.22), transparent 26%),
+      linear-gradient(180deg, #281C46 0%, #160F2B 100%);
   }
-  .halloween-block .section-head h2 { color: var(--violet); }
-  .halloween-block .notice { border-left-color: var(--violet-deep); background: rgba(173,124,232,0.08); }
-  .halloween-block .notice strong { color: var(--violet); }
-  .halloween-block .project-card h3 { color: var(--violet); }
-  .halloween-block .photo-frame::before, .halloween-block .photo-frame::after { border-color: var(--violet); }
-  .halloween-block .badge-soon { background: var(--violet); }
+  .halloween-block .section-head h2::after { background:
+      var(--m-purple) center / 26px no-repeat,
+      linear-gradient(var(--rule), var(--rule)) left center / 76px 1.5px no-repeat,
+      linear-gradient(var(--rule), var(--rule)) right center / 76px 1.5px no-repeat; }
+  .halloween-block .section-head h2 { color: var(--moon); }
+  .halloween-block .section-head .dek { color: var(--moon-dim); }
+  .halloween-block .notice { background: rgba(255,255,255,0.07); border-color: rgba(228,212,255,0.3); }
+  .halloween-block .notice p { color: #D6CBEE; }
+  .halloween-block .notice strong { color: var(--pumpkin); }
+  .halloween-block .project-card { background: #34275C; border-color: rgba(228,212,255,0.26); }
+  .halloween-block .project-card h3 { color: var(--moon); }
+  .halloween-block .project-card .blurb,
+  .halloween-block .project-meta { color: #CFC4EA; }
+  .halloween-block .photo-frame { background-color: #3F3070; border-color: rgba(228,212,255,0.26); }
+  .halloween-block .photo-frame span { color: #CFC4EA; }
+  .halloween-block .badge-soon { background: rgba(228,212,255,0.16); color: #F0E6FF; border-color: rgba(228,212,255,0.42); }
+  .halloween-block .project-card::after { background-image: var(--m-purple); }
+  .halloween-block .project-card::before { background-image: var(--m-orange); }
+  .halloween-block .project-grid > .project-card:nth-child(n)::after { background-image: var(--m-purple); filter: none; }
+  .halloween-block .project-grid > .project-card:nth-child(2n)::after { background-image: var(--m-orange); }
+  .halloween-block .project-grid > .project-card:nth-child(n)::before { background-image: var(--m-orange); filter: none; }
+  .halloween-block .project-grid > .project-card:nth-child(2n)::before { background-image: var(--m-purple); }
   @media (max-width: 1300px) { .halloween-block .project-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 750px) { .halloween-block .project-grid { grid-template-columns: 1fr; } }
-  @media (max-width: 900px) { .halloween-block { padding: 26px; } .callout { padding: 36px 30px; } }
+  @media (max-width: 900px) { .halloween-block { padding: 38px 26px 26px; } .callout { padding: 34px 28px; } }
 
   .guild { text-align: center; }
-  .guild h2 { font-size: clamp(2rem, 3.4vw, 2.6rem); color: var(--ember); }
-  .guild p.dek2 { margin: 18px auto 0; max-width: 54ch; color: var(--ink-dim); font-size: 1.08rem; }
-  .guild .hero-actions { margin-top: 32px; }
-  .guild a.inline-link, .section-head a, .dek2 a { color: var(--venom); text-decoration: underline; }
+  .guild h2 { font-size: clamp(2.1rem, 3.8vw, 2.9rem); font-weight: 800; letter-spacing: 0.02em; }
+  .guild p.dek2 { margin: 18px auto 0; max-width: 54ch; color: var(--cream-dim); font-size: 1.25rem; }
+  .guild .hero-actions { margin-top: 30px; justify-content: center; }
+  .guild .con-note { margin-top: 36px; }
+  .guild .notice { text-align: center; margin-top: 56px; margin-bottom: 0; }
 
-  .find-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .find-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 52px 24px; }
   @media (max-width: 700px) { .find-grid { grid-template-columns: 1fr; } }
-  .find-card { border-left: 3px solid var(--venom); padding: 6px 0 6px 20px; }
-  .find-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--ember); margin-bottom: 6px; }
-  .find-card p { color: var(--ink-dim); font-size: 0.94rem; }
+  .find-card { position: relative; background: var(--card); border: 1.5px solid var(--line); border-radius: var(--leaf-r); padding: 28px; }
+  .find-card h3 { font-size: 1.3rem; font-weight: 800; margin-bottom: 8px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; color: var(--gold-soft); }
+  .find-card p { color: var(--cream-dim); font-size: 1.1rem; }
+  .find-card .btn { margin-top: 20px; }
+  .find-card::after { content: ''; position: absolute; top: -30px; right: 26px; width: 44px; height: 44px; background: var(--m-teal) center / contain no-repeat; filter: drop-shadow(0 0 6px rgba(123,232,196,0.7)); pointer-events: none; }
+  .find-card.hot::after { background-image: var(--m-red); filter: none; }
+  .find-card.hot {
+    background: var(--card);
+    border-color: rgba(255,200,87,0.8);
+    box-shadow: 0 0 0 1px rgba(255,200,87,0.35), 0 0 34px rgba(255,200,87,0.2);
+  }
+  .find-card.hot p { color: var(--cream); }
+
+  .social-row { margin-top: 44px; text-align: center; }
+  .social-row h3 { font-size: 1.4rem; font-weight: 800; margin-bottom: 18px; }
+  .contact-row { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 30px; }
+  .social-row .contact-row { margin-top: 0; }
 
   .support-block {
-    margin-top: 48px; background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--venom);
-    padding: 30px 34px; display: flex; align-items: center; justify-content: space-between; gap: 28px; flex-wrap: wrap;
+    position: relative;
+    margin-top: 72px;
+    background: var(--card);
+    border: 1.5px solid rgba(255,200,87,0.8);
+    box-shadow: 0 0 0 1px rgba(255,200,87,0.35), 0 0 34px rgba(255,200,87,0.2);
+    border-radius: 8px 40px 8px 40px;
+    padding: 32px 38px; display: flex; align-items: center; justify-content: space-between; gap: 28px; flex-wrap: wrap;
   }
-  .support-block h3 { font-size: 1.25rem; font-weight: 700; color: var(--ember); margin-bottom: 8px; }
-  .support-block p { color: var(--ink-dim); font-size: 0.97rem; max-width: 62ch; }
+  .support-block h3 { font-size: 1.4rem; font-weight: 800; margin-bottom: 8px; color: var(--gold-soft); }
+  .support-block p { color: var(--cream); font-size: 1.12rem; max-width: 62ch; }
   .support-block .btn { flex-shrink: 0; }
 
-  .contact-row { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; margin-top: 30px; }
+  .field {
+    display: block; width: 100%; padding: 14px 16px; margin-bottom: 14px;
+    background: #0B1D14; border: 1.5px solid rgba(246,242,220,0.45); border-radius: var(--leaf-r-sm);
+    color: var(--cream); font-family: var(--font-body); font-size: 1.1rem;
+  }
+  .field::placeholder { color: #B9CDAA; }
+  .field:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(255,200,87,0.4); }
+  textarea.field { resize: vertical; }
+  .form-error { display: none; color: #FFB9AC; font-family: var(--font-ui); font-weight: 800; font-size: 1.02rem; margin-bottom: 14px; }
+  .con-form { max-width: 520px; margin: 0 auto; }
 
-  footer { padding: 56px 0 32px; border-top: 1px solid var(--line-strong); }
+  /* footer */
+  footer { background: var(--night); color: var(--cream); padding: 40px 0 32px; }
+  .foot-forest { position: relative; height: 150px; margin-top: 24px; overflow: hidden; }
+  .foot-forest svg { position: absolute; left: 0; right: 0; bottom: -1px; width: 100%; }
+  .foot-forest .foot-trees { height: 150px; z-index: 1; }
+  .foot-forest .foot-mush { height: 100px; z-index: 2; }
   .footer-top {
     display: flex; justify-content: space-between; align-items: flex-start; gap: 32px; flex-wrap: wrap;
-    padding-bottom: 34px; border-bottom: 1px solid var(--line);
+    padding-bottom: 34px; border-bottom: 1px solid rgba(222,240,200,0.2);
   }
-  .footer-brand { display: flex; align-items: center; gap: 10px; font-size: 1.1rem; color: var(--ember); }
-  .footer-brand .brand-logo { height: 34px; }
-  .footer-tag { margin-top: 10px; color: var(--ink-dim); font-size: 0.95rem; max-width: 34ch; }
-  .footer-links { display: flex; gap: 44px; flex-wrap: wrap; }
-  .footer-links h4 { font-size: 0.76rem; font-weight: 700; color: var(--ink-dim); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.6px; }
+  .footer-brand { display: flex; align-items: center; gap: 10px; }
+  .footer-brand .brand-logo { height: 44px; }
+  .footer-tag { margin-top: 12px; color: #C9DDB8; font-size: 1.08rem; max-width: 34ch; }
+  .share-btn { margin-top: 18px; background: transparent; color: var(--cream); border-color: rgba(246,242,220,0.6); }
+  .share-btn:hover { background: var(--cream); color: var(--night); }
+  .footer-links { display: flex; gap: 48px; flex-wrap: wrap; }
+  .footer-links h4 { font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: var(--gold); margin: 0 0 12px; letter-spacing: 0.04em; }
   .footer-links ul { list-style: none; margin: 0; padding: 0; }
   .footer-links li { margin-bottom: 9px; }
-  .footer-links a { text-decoration: none; color: var(--ink); font-size: 0.94rem; }
-  .footer-links a:hover { color: var(--venom); }
-  .footer-bottom { margin-top: 22px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; color: var(--ink-dim); font-size: 0.85rem; }
+  .footer-links a { text-decoration: none; color: var(--cream); font-family: var(--font-ui); font-weight: 700; font-size: 1.05rem; }
+  .footer-links a:hover { color: var(--gold); text-decoration: underline; }
+  .footer-bottom { margin-top: 22px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; color: #B3CC9F; font-family: var(--font-ui); font-size: 0.98rem; }
+
+  @media (max-width: 860px) {
+    .launch-inner { grid-template-columns: minmax(0, 1fr); gap: 34px; padding-top: 42px; padding-bottom: 44px; }
+    .launch h2 { max-width: 20ch; }
+    .hero { padding: 40px 0 170px; }
+    .hero-grid { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+    .hero-logo { order: -1; width: min(300px, 80%); margin-bottom: 0; }
+    .hero-copy { text-align: left; }
+    .treeline { height: 190px; }
+    .mush-overlay { height: 130px; }
+    .count-panel { align-items: flex-start; }
+    .gnarl { opacity: 0.8; width: 58vw; }
+  }
+  @media (max-width: 640px) {
+    :root { --nav-h: 64px; }
+    .wrap { padding-left: 20px; padding-right: 20px; }
+    .brand-logo { height: 42px; }
+    .brand-font { font-size: 1.1rem; }
+    .btn-sm { padding: 8px 16px; }
+    .count-tiles { gap: 14px; padding: 0 6px; }
+    .tile .cap { height: 38px; }
+    .tile .stem { padding: 10px 2px 9px; }
+    .band { padding: 48px 0 48px; }
+    .foot-forest { height: 120px; }
+    .foot-forest .foot-trees { height: 120px; }
+    .foot-forest .foot-mush { height: 80px; }
+    .follow, .support-block { padding: 26px 24px; }
+    .callout::after, .follow::after, .support-block::after { right: 18px; transform: scale(0.8); transform-origin: right bottom; }
+    .halloween-block { padding: 34px 20px 20px; }
+  }
+
 </style>
 </head>
 <body>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="m-red" viewBox="0 0 60 60"><path d="M22 30 H38 C38 42 37 52 35 57 H25 C23 52 22 42 22 30Z" fill="#F8EFD8"/>
+<path d="M22 30 H38 C38 33 38 35 37.8 37 H22.2 C22 35 22 33 22 30Z" fill="#000" opacity=".14"/>
+<path d="M4 32 C4 15 18 5 30 5 C42 5 56 15 56 32 C56 34 54 35 52 35 H8 C6 35 4 34 4 32Z" fill="#D8473C"/>
+<path d="M9 29 C9 19 17 11 27 8.5 C20 13 15 20 14 29Z" fill="#FF9A8A" opacity=".55"/>
+<circle cx="19" cy="21" r="4.2" fill="#FFF6E2"/>
+<circle cx="35" cy="14.5" r="3.2" fill="#FFF6E2"/>
+<circle cx="45" cy="25" r="4" fill="#FFF6E2"/>
+<circle cx="28" cy="27.5" r="2.4" fill="#FFF6E2"/>
+<path d="M4 32 C4 34 6 35 8 35 H52 C54 35 56 34 56 32" fill="none" stroke="#000" stroke-opacity=".18" stroke-width="1.2"/></symbol>
+<symbol id="m-orange" viewBox="0 0 60 60"><path d="M22 30 H38 C38 42 37 52 35 57 H25 C23 52 22 42 22 30Z" fill="#F6EBCB"/>
+<path d="M22 30 H38 C38 33 38 35 37.8 37 H22.2 C22 35 22 33 22 30Z" fill="#000" opacity=".14"/>
+<path d="M4 32 C4 15 18 5 30 5 C42 5 56 15 56 32 C56 34 54 35 52 35 H8 C6 35 4 34 4 32Z" fill="#F2923F"/>
+<path d="M9 29 C9 19 17 11 27 8.5 C20 13 15 20 14 29Z" fill="#FFD08A" opacity=".55"/>
+<circle cx="19" cy="21" r="4.2" fill="#FFF3DA"/>
+<circle cx="35" cy="14.5" r="3.2" fill="#FFF3DA"/>
+<circle cx="45" cy="25" r="4" fill="#FFF3DA"/>
+<circle cx="28" cy="27.5" r="2.4" fill="#FFF3DA"/>
+<path d="M4 32 C4 34 6 35 8 35 H52 C54 35 56 34 56 32" fill="none" stroke="#000" stroke-opacity=".18" stroke-width="1.2"/></symbol>
+<symbol id="m-teal" viewBox="0 0 60 60"><path d="M22 30 H38 C38 42 37 52 35 57 H25 C23 52 22 42 22 30Z" fill="#DDF6EC"/>
+<path d="M22 30 H38 C38 33 38 35 37.8 37 H22.2 C22 35 22 33 22 30Z" fill="#000" opacity=".14"/>
+<path d="M4 32 C4 15 18 5 30 5 C42 5 56 15 56 32 C56 34 54 35 52 35 H8 C6 35 4 34 4 32Z" fill="#19C3A0"/>
+<path d="M9 29 C9 19 17 11 27 8.5 C20 13 15 20 14 29Z" fill="#9CFFE9" opacity=".55"/>
+<circle cx="19" cy="21" r="4.2" fill="#E2FFF7"/>
+<circle cx="35" cy="14.5" r="3.2" fill="#E2FFF7"/>
+<circle cx="45" cy="25" r="4" fill="#E2FFF7"/>
+<circle cx="28" cy="27.5" r="2.4" fill="#E2FFF7"/>
+<path d="M4 32 C4 34 6 35 8 35 H52 C54 35 56 34 56 32" fill="none" stroke="#000" stroke-opacity=".18" stroke-width="1.2"/></symbol>
+<symbol id="m-purple" viewBox="0 0 60 60"><path d="M22 30 H38 C38 42 37 52 35 57 H25 C23 52 22 42 22 30Z" fill="#E7DDF5"/>
+<path d="M22 30 H38 C38 33 38 35 37.8 37 H22.2 C22 35 22 33 22 30Z" fill="#000" opacity=".14"/>
+<path d="M4 32 C4 15 18 5 30 5 C42 5 56 15 56 32 C56 34 54 35 52 35 H8 C6 35 4 34 4 32Z" fill="#A66FE0"/>
+<path d="M9 29 C9 19 17 11 27 8.5 C20 13 15 20 14 29Z" fill="#E0C4FF" opacity=".55"/>
+<circle cx="19" cy="21" r="4.2" fill="#F4EBFF"/>
+<circle cx="35" cy="14.5" r="3.2" fill="#F4EBFF"/>
+<circle cx="45" cy="25" r="4" fill="#F4EBFF"/>
+<circle cx="28" cy="27.5" r="2.4" fill="#F4EBFF"/>
+<path d="M4 32 C4 34 6 35 8 35 H52 C54 35 56 34 56 32" fill="none" stroke="#000" stroke-opacity=".18" stroke-width="1.2"/></symbol>
+<linearGradient id="d20g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFE59A"/><stop offset="1" stop-color="#EE8F2A"/></linearGradient>
+<symbol id="d20" viewBox="0 0 64 64">
+  <polygon points="32,3 58,18 58,46 32,61 6,46 6,18" fill="url(#d20g)" stroke="#1B2A1E" stroke-width="2.6" stroke-linejoin="round"/>
+  <polygon points="32,17 47,42 17,42" fill="#FFF3C4" fill-opacity=".45" stroke="#1B2A1E" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M32 3V17M58 18L47 42M6 18L17 42M32 61L17 42M32 61L47 42M58 46L47 42M6 46L17 42M17 42H47" fill="none" stroke="#1B2A1E" stroke-width="1.7" stroke-linejoin="round"/>
+</symbol>
+<filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs></svg>
+
 <header class="site-nav">
   <div class="wrap">
     <a href="/" class="brandmark">
-      <span class="brand-logo"><img src="logo.jpg" alt="Gnomewright logo" onerror="this.parentElement.style.display='none';"></span>
+      <span class="brand-logo"><img src="favicon.png" alt="" onerror="this.parentElement.style.display='none';"></span>
       <span class="brand-font">Gnomewright</span>
     </a>
+    <a href="https://gnomewright.etsy.com" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Etsy shop</a>
   </div>
 </header>
 
-<section class="hero">
-  <div class="wrap hero-copy">
-    <div class="hero-logo"><img src="logo.jpg" alt="Gnomewright, a gnome hand painting a terrain piece" onerror="this.parentElement.style.display='none';"></div>
-    <p class="kicker">Terrain and tiny worlds for wargamers, book nook builders, and collectors alike</p>
-    <h1>Built small. Played big.</h1>
-    <p class="tagline">We design, print, and hand finish tabletop terrain and miniatures, and we're building a community for people who love this hobby too.</p>
-    <div class="hero-actions">
-      <button class="btn btn-primary" onclick="activateTab('projects')">See the projects</button>
-      <button class="btn btn-ghost" onclick="activateTab('guild')">Join the guild</button>
+<section class="launch" aria-labelledby="launch-title">
+  <div class="wrap launch-inner">
+    <div>
+      <h2 id="launch-title">
+        <span class="pre-only">The Gnomewright Etsy shop opens December 1st</span>
+        <span class="post-only">The Gnomewright Etsy shop is open</span>
+      </h2>
+      <p class="launch-sub">
+        <span class="pre-only">Hand painted terrain, designed, printed, and finished by one gnome. Be there for the first pieces on opening day.</span>
+        <span class="post-only">Hand painted terrain, designed, printed, and finished by one gnome. Come take a look at what is on the shelf.</span>
+      </p>
+      <div class="launch-actions">
+        <a href="https://gnomewright.etsy.com" class="btn btn-primary" target="_blank" rel="noopener"><span class="pre-only">Visit the Etsy shop</span><span class="post-only">Shop on Etsy</span></a>
+        <a href="https://www.facebook.com/share/1EmSV5TRPx/" class="btn btn-ghost" target="_blank" rel="noopener"><span class="pre-only">Get launch news on Facebook</span><span class="post-only">Follow on Facebook</span></a>
+      </div>
+    </div>
+    <div class="count-panel pre-only">
+      <p class="sr-only">The Etsy shop opens December 1st, 2026.</p>
+      <div class="count-tiles" aria-hidden="true">
+        <div class="tile"><i class="cap"></i><div class="stem"><b id="cd-d">00</b><span>days</span></div></div>
+        <div class="tile"><i class="cap"></i><div class="stem"><b id="cd-h">00</b><span>hours</span></div></div>
+        <div class="tile"><i class="cap"></i><div class="stem"><b id="cd-m">00</b><span>minutes</span></div></div>
+        <div class="tile"><i class="cap"></i><div class="stem"><b id="cd-s">00</b><span>seconds</span></div></div>
+      </div>
+      <p class="count-note">Until opening day, December 1st.</p>
     </div>
   </div>
 </section>
 
-<nav class="tab-bar">
-  <div class="tab-bar-inner">
-    <button class="tab-btn active" data-tab="workbench" onclick="activateTab('workbench')">The Workbench</button>
-    <button class="tab-btn" data-tab="projects" onclick="activateTab('projects')">Projects</button>
-    <button class="tab-btn" data-tab="halloween" onclick="activateTab('halloween')">Halloween Village</button>
-    <button class="tab-btn" data-tab="guild" onclick="activateTab('guild')">The Guild</button>
-    <button class="tab-btn" data-tab="conventions" onclick="activateTab('conventions')">Conventions</button>
-    <button class="tab-btn" data-tab="findus" onclick="activateTab('findus')">Find Us</button>
+<section class="hero">
+  <svg class="gnarl gnarl-left" viewBox="0 0 440 760" preserveAspectRatio="xMinYMax slice" aria-hidden="true" focusable="false"><g fill="none" stroke="#030907" stroke-linecap="round" stroke-linejoin="round"><path d="M70.0 780.0 Q66.1 615.0 118.3 482.3" stroke-width="34.0"/><path d="M118.3 482.3 Q169.9 373.0 277.2 323.4" stroke-width="20.0"/><path d="M277.2 323.4 Q373.4 313.9 442.9 267.6" stroke-width="12.7"/><path d="M442.9 267.6 Q513.5 274.7 574.3 280.5" stroke-width="8.7"/><path d="M574.3 280.5 Q625.2 297.5 656.0 328.4" stroke-width="5.7"/><path d="M656.0 328.4 Q668.0 368.8 691.2 398.8" stroke-width="3.5"/><path d="M691.2 398.8 Q692.1 425.9 676.9 443.2" stroke-width="2.2"/><path d="M691.2 398.8 Q721.1 410.5 748.2 423.9" stroke-width="2.4"/><path d="M691.2 398.8 Q691.6 428.0 690.9 446.0" stroke-width="2.2"/><path d="M656.0 328.4 Q694.8 333.4 725.1 328.0" stroke-width="3.8"/><path d="M725.1 328.0 Q744.6 344.8 759.5 351.4" stroke-width="2.6"/><path d="M725.1 328.0 Q751.9 312.0 765.6 285.2" stroke-width="2.2"/><path d="M656.0 328.4 Q689.0 352.3 700.7 383.0" stroke-width="3.9"/><path d="M700.7 383.0 Q707.5 414.2 696.7 435.2" stroke-width="2.4"/><path d="M700.7 383.0 Q719.4 405.4 743.5 407.7" stroke-width="2.7"/><path d="M700.7 383.0 Q702.8 415.3 694.3 446.2" stroke-width="2.4"/><path d="M574.3 280.5 Q628.6 270.7 667.3 233.5" stroke-width="5.5"/><path d="M667.3 233.5 Q708.6 232.2 747.7 241.9" stroke-width="3.3"/><path d="M747.7 241.9 Q776.2 245.5 795.8 266.8" stroke-width="2.2"/><path d="M747.7 241.9 Q777.7 237.5 799.0 229.7" stroke-width="2.1"/><path d="M747.7 241.9 Q763.4 262.3 786.2 272.2" stroke-width="1.9"/><path d="M667.3 233.5 Q686.0 198.0 705.0 171.0" stroke-width="3.4"/><path d="M705.0 171.0 Q723.4 150.6 749.6 149.6" stroke-width="2.3"/><path d="M705.0 171.0 Q702.5 144.7 705.6 122.4" stroke-width="2.3"/><path d="M705.0 171.0 Q728.1 160.0 753.0 155.4" stroke-width="2.1"/><path d="M667.3 233.5 Q700.3 247.6 734.2 252.1" stroke-width="3.4"/><path d="M734.2 252.1 Q748.6 269.3 760.1 287.4" stroke-width="2.4"/><path d="M734.2 252.1 Q752.4 235.8 775.8 234.3" stroke-width="2.3"/><path d="M442.9 267.6 Q485.9 213.7 525.0 169.0" stroke-width="8.7"/><path d="M525.0 169.0 Q563.4 149.2 600.4 152.3" stroke-width="5.5"/><path d="M600.4 152.3 Q634.9 152.5 659.1 175.8" stroke-width="3.6"/><path d="M659.1 175.8 Q669.3 200.7 693.9 210.4" stroke-width="2.5"/><path d="M659.1 175.8 Q680.5 173.3 694.3 175.5" stroke-width="2.5"/><path d="M659.1 175.8 Q676.8 188.3 684.2 203.0" stroke-width="2.3"/><path d="M600.4 152.3 Q629.6 142.0 641.4 114.8" stroke-width="3.2"/><path d="M641.4 114.8 Q660.6 111.4 681.4 113.4" stroke-width="1.9"/><path d="M641.4 114.8 Q646.0 94.6 664.0 81.4" stroke-width="2.2"/><path d="M641.4 114.8 Q662.4 110.6 681.7 114.3" stroke-width="2.1"/><path d="M600.4 152.3 Q627.9 162.5 656.7 152.4" stroke-width="3.7"/><path d="M656.7 152.4 Q679.5 157.0 694.1 170.0" stroke-width="2.5"/><path d="M656.7 152.4 Q675.6 146.0 688.7 135.0" stroke-width="2.4"/><path d="M525.0 169.0 Q540.2 127.5 539.5 85.1" stroke-width="5.6"/><path d="M539.5 85.1 Q557.1 59.4 571.7 32.0" stroke-width="3.7"/><path d="M571.7 32.0 Q588.2 16.3 610.6 6.6" stroke-width="2.5"/><path d="M571.7 32.0 Q577.2 12.2 583.1 -7.8" stroke-width="2.3"/><path d="M571.7 32.0 Q590.4 26.9 601.7 16.6" stroke-width="2.3"/><path d="M539.5 85.1 Q538.1 52.2 531.6 26.8" stroke-width="3.9"/><path d="M531.6 26.8 Q535.7 2.4 552.0 -19.8" stroke-width="2.5"/><path d="M531.6 26.8 Q511.9 11.4 500.3 -5.6" stroke-width="2.3"/><path d="M531.6 26.8 Q530.7 6.3 544.0 -7.5" stroke-width="2.6"/><path d="M277.2 323.4 Q302.2 231.1 281.3 152.9" stroke-width="13.0"/><path d="M281.3 152.9 Q333.2 103.5 363.8 42.9" stroke-width="7.7"/><path d="M363.8 42.9 Q405.9 12.8 445.0 -0.1" stroke-width="5.2"/><path d="M445.0 -0.1 Q482.6 2.3 519.0 0.1" stroke-width="3.6"/><path d="M519.0 0.1 Q540.9 14.3 554.0 37.6" stroke-width="2.4"/><path d="M519.0 0.1 Q542.2 -13.5 563.2 -32.8" stroke-width="2.3"/><path d="M445.0 -0.1 Q471.6 -28.6 492.1 -49.9" stroke-width="3.6"/><path d="M492.1 -49.9 Q519.1 -61.7 546.2 -67.6" stroke-width="2.2"/><path d="M492.1 -49.9 Q503.5 -77.3 501.1 -102.3" stroke-width="2.4"/><path d="M445.0 -0.1 Q484.6 7.5 517.5 21.7" stroke-width="3.2"/><path d="M517.5 21.7 Q538.2 41.2 555.5 61.6" stroke-width="2.2"/><path d="M517.5 21.7 Q546.7 22.2 564.7 22.9" stroke-width="2.2"/><path d="M517.5 21.7 Q534.6 48.5 555.0 65.5" stroke-width="2.2"/><path d="M363.8 42.9 Q342.5 -5.4 349.4 -55.4" stroke-width="5.2"/><path d="M349.4 -55.4 Q371.5 -81.3 377.9 -101.8" stroke-width="3.4"/><path d="M377.9 -101.8 Q400.9 -103.8 413.5 -117.0" stroke-width="2.1"/><path d="M377.9 -101.8 Q376.0 -124.6 374.2 -148.9" stroke-width="2.1"/><path d="M349.4 -55.4 Q322.5 -80.6 311.7 -104.6" stroke-width="3.3"/><path d="M311.7 -104.6 Q299.6 -126.5 301.4 -149.8" stroke-width="2.3"/><path d="M311.7 -104.6 Q290.3 -116.6 272.2 -122.2" stroke-width="2.1"/><path d="M311.7 -104.6 Q318.4 -131.1 312.4 -158.8" stroke-width="2.2"/><path d="M281.3 152.9 Q239.3 103.2 205.2 64.0" stroke-width="8.4"/><path d="M205.2 64.0 Q197.7 20.8 180.2 -8.4" stroke-width="5.6"/><path d="M180.2 -8.4 Q174.2 -42.0 190.8 -74.6" stroke-width="3.7"/><path d="M190.8 -74.6 Q204.8 -95.6 217.6 -109.0" stroke-width="2.3"/><path d="M190.8 -74.6 Q171.9 -91.7 164.7 -111.7" stroke-width="2.2"/><path d="M190.8 -74.6 Q197.3 -95.5 209.4 -107.3" stroke-width="2.3"/><path d="M180.2 -8.4 Q163.1 -36.2 142.3 -49.7" stroke-width="3.6"/><path d="M142.3 -49.7 Q131.0 -72.3 123.7 -98.1" stroke-width="2.1"/><path d="M142.3 -49.7 Q118.1 -45.8 96.8 -49.3" stroke-width="2.2"/><path d="M205.2 64.0 Q156.4 69.5 115.4 48.3" stroke-width="5.5"/><path d="M115.4 48.3 Q96.3 22.3 66.5 12.4" stroke-width="3.3"/><path d="M66.5 12.4 Q66.6 -9.8 65.9 -22.3" stroke-width="2.2"/><path d="M66.5 12.4 Q44.8 10.9 28.3 11.9" stroke-width="2.3"/><path d="M66.5 12.4 Q55.0 -9.3 46.2 -27.6" stroke-width="2.2"/><path d="M115.4 48.3 Q81.9 58.8 56.1 66.7" stroke-width="3.2"/><path d="M56.1 66.7 Q34.9 49.4 13.3 38.3" stroke-width="1.9"/><path d="M56.1 66.7 Q39.7 83.2 32.3 95.4" stroke-width="1.9"/><path d="M56.1 66.7 Q35.9 50.0 14.2 51.6" stroke-width="1.9"/><path d="M118.3 482.3 Q81.9 363.5 12.8 289.7" stroke-width="21.1"/><path d="M12.8 289.7 Q-9.5 198.4 13.2 113.8" stroke-width="13.5"/><path d="M13.2 113.8 Q48.3 64.0 64.3 14.3" stroke-width="8.6"/><path d="M64.3 14.3 Q103.9 3.1 130.4 -22.4" stroke-width="5.5"/><path d="M130.4 -22.4 Q157.8 -15.7 181.6 -14.5" stroke-width="3.4"/><path d="M181.6 -14.5 Q188.8 2.9 202.4 8.9" stroke-width="2.1"/><path d="M181.6 -14.5 Q202.1 -15.4 214.2 -18.4" stroke-width="2.2"/><path d="M130.4 -22.4 Q143.3 -46.0 154.5 -69.2" stroke-width="3.7"/><path d="M154.5 -69.2 Q170.8 -73.5 185.3 -88.2" stroke-width="2.4"/><path d="M154.5 -69.2 Q150.5 -86.4 160.8 -100.0" stroke-width="2.3"/><path d="M64.3 14.3 Q67.2 -26.6 50.1 -52.6" stroke-width="6.0"/><path d="M50.1 -52.6 Q58.6 -78.7 59.3 -106.1" stroke-width="4.1"/><path d="M59.3 -106.1 Q71.9 -121.5 85.0 -129.3" stroke-width="2.4"/><path d="M59.3 -106.1 Q61.7 -123.1 51.3 -131.4" stroke-width="2.7"/><path d="M59.3 -106.1 Q78.0 -115.6 80.7 -135.2" stroke-width="2.8"/><path d="M50.1 -52.6 Q22.8 -70.0 9.6 -95.6" stroke-width="3.6"/><path d="M9.6 -95.6 Q2.0 -117.6 2.6 -132.0" stroke-width="2.4"/><path d="M9.6 -95.6 Q-15.9 -94.7 -32.4 -104.9" stroke-width="2.2"/><path d="M9.6 -95.6 Q7.5 -119.7 -3.8 -134.4" stroke-width="2.2"/><path d="M50.1 -52.6 Q56.3 -82.6 74.0 -97.8" stroke-width="4.2"/><path d="M74.0 -97.8 Q90.1 -113.8 108.0 -119.4" stroke-width="2.8"/><path d="M74.0 -97.8 Q76.7 -119.9 84.4 -136.1" stroke-width="2.4"/><path d="M74.0 -97.8 Q92.9 -98.7 112.4 -108.2" stroke-width="2.5"/><path d="M13.2 113.8 Q-27.1 61.7 -37.3 12.0" stroke-width="9.1"/><path d="M-37.3 12.0 Q-35.4 -30.5 -15.8 -65.0" stroke-width="6.4"/><path d="M-15.8 -65.0 Q14.7 -78.3 34.7 -103.4" stroke-width="3.9"/><path d="M34.7 -103.4 Q60.2 -104.9 74.1 -112.3" stroke-width="2.6"/><path d="M34.7 -103.4 Q47.7 -120.3 53.0 -143.4" stroke-width="2.5"/><path d="M-15.8 -65.0 Q-25.8 -94.9 -28.2 -117.2" stroke-width="4.2"/><path d="M-28.2 -117.2 Q-22.2 -139.2 -8.8 -154.6" stroke-width="2.9"/><path d="M-28.2 -117.2 Q-44.4 -128.9 -62.5 -138.2" stroke-width="2.6"/><path d="M-28.2 -117.2 Q-17.7 -136.4 -15.1 -155.2" stroke-width="2.8"/><path d="M-15.8 -65.0 Q5.4 -84.7 28.0 -92.3" stroke-width="4.0"/><path d="M28.0 -92.3 Q49.5 -85.7 73.1 -83.0" stroke-width="2.8"/><path d="M28.0 -92.3 Q45.8 -106.7 50.4 -123.9" stroke-width="2.8"/><path d="M-37.3 12.0 Q-85.0 -10.3 -112.1 -44.4" stroke-width="6.3"/><path d="M-112.1 -44.4 Q-139.4 -64.7 -148.7 -98.3" stroke-width="4.0"/><path d="M-148.7 -98.3 Q-148.3 -122.1 -152.3 -143.6" stroke-width="2.5"/><path d="M-148.7 -98.3 Q-171.0 -104.1 -188.5 -116.9" stroke-width="2.5"/><path d="M-112.1 -44.4 Q-153.3 -52.0 -189.5 -42.2" stroke-width="4.4"/><path d="M-189.5 -42.2 Q-215.5 -56.2 -225.5 -78.9" stroke-width="3.1"/><path d="M-189.5 -42.2 Q-217.7 -36.0 -233.8 -14.4" stroke-width="2.7"/><path d="M-189.5 -42.2 Q-214.8 -48.8 -236.9 -59.6" stroke-width="2.9"/><path d="M12.8 289.7 Q-68.6 233.2 -118.5 170.9" stroke-width="14.3"/><path d="M-118.5 170.9 Q-147.1 106.9 -146.9 51.8" stroke-width="8.7"/><path d="M-146.9 51.8 Q-136.8 -0.9 -110.7 -39.7" stroke-width="5.5"/><path d="M-110.7 -39.7 Q-79.3 -51.7 -68.4 -76.4" stroke-width="3.2"/><path d="M-68.4 -76.4 Q-43.1 -76.3 -19.5 -75.2" stroke-width="2.2"/><path d="M-68.4 -76.4 Q-59.5 -95.4 -57.2 -106.9" stroke-width="1.9"/><path d="M-110.7 -39.7 Q-108.7 -78.0 -118.8 -107.9" stroke-width="3.7"/><path d="M-118.8 -107.9 Q-106.6 -129.6 -96.0 -149.4" stroke-width="2.2"/><path d="M-118.8 -107.9 Q-131.9 -130.6 -151.3 -137.8" stroke-width="2.3"/><path d="M-118.8 -107.9 Q-114.7 -133.5 -104.3 -150.0" stroke-width="2.4"/><path d="M-110.7 -39.7 Q-74.5 -54.7 -45.7 -70.5" stroke-width="3.2"/><path d="M-45.7 -70.5 Q-16.7 -64.3 1.3 -62.3" stroke-width="2.0"/><path d="M-45.7 -70.5 Q-31.0 -96.3 -19.5 -118.1" stroke-width="2.2"/><path d="M-45.7 -70.5 Q-14.9 -74.1 6.1 -64.9" stroke-width="2.0"/><path d="M-146.9 51.8 Q-192.2 27.8 -211.9 -16.9" stroke-width="5.6"/><path d="M-211.9 -16.9 Q-213.7 -57.4 -230.0 -87.8" stroke-width="3.8"/><path d="M-230.0 -87.8 Q-220.9 -117.6 -199.8 -143.9" stroke-width="2.2"/><path d="M-230.0 -87.8 Q-246.7 -111.1 -267.2 -132.3" stroke-width="2.3"/><path d="M-211.9 -16.9 Q-244.3 -10.6 -266.1 -16.8" stroke-width="3.9"/><path d="M-266.1 -16.8 Q-286.4 -21.3 -303.9 -29.3" stroke-width="2.6"/><path d="M-266.1 -16.8 Q-282.1 -3.6 -296.1 3.2" stroke-width="2.7"/><path d="M-118.5 170.9 Q-197.3 176.9 -264.0 140.4" stroke-width="8.8"/><path d="M-264.0 140.4 Q-319.2 112.0 -345.6 74.5" stroke-width="5.2"/><path d="M-345.6 74.5 Q-363.3 36.0 -374.6 1.9" stroke-width="3.6"/><path d="M-374.6 1.9 Q-367.9 -27.7 -361.3 -50.9" stroke-width="2.4"/><path d="M-374.6 1.9 Q-397.5 -13.2 -410.8 -31.3" stroke-width="2.3"/><path d="M-345.6 74.5 Q-390.9 62.7 -425.2 72.0" stroke-width="3.2"/><path d="M-425.2 72.0 Q-455.2 55.9 -485.8 48.1" stroke-width="1.9"/><path d="M-425.2 72.0 Q-453.2 82.9 -476.6 96.5" stroke-width="2.0"/><path d="M-345.6 74.5 Q-367.6 36.9 -375.9 -1.7" stroke-width="3.4"/><path d="M-375.9 -1.7 Q-373.7 -31.6 -365.3 -49.6" stroke-width="2.1"/><path d="M-375.9 -1.7 Q-408.7 -9.9 -426.9 -28.0" stroke-width="2.3"/><path d="M-375.9 -1.7 Q-379.3 -32.5 -374.2 -60.6" stroke-width="2.2"/><path d="M-264.0 140.4 Q-310.4 170.8 -342.5 203.4" stroke-width="5.6"/><path d="M-342.5 203.4 Q-376.5 195.4 -403.4 188.6" stroke-width="3.5"/><path d="M-403.4 188.6 Q-419.6 170.8 -433.0 154.2" stroke-width="2.5"/><path d="M-403.4 188.6 Q-425.8 198.2 -442.8 209.5" stroke-width="2.4"/><path d="M-342.5 203.4 Q-360.8 237.1 -364.6 268.9" stroke-width="3.5"/><path d="M-364.6 268.9 Q-376.7 289.3 -393.5 292.7" stroke-width="2.0"/><path d="M-364.6 268.9 Q-364.8 294.0 -359.8 313.4" stroke-width="2.0"/><path d="M-342.5 203.4 Q-382.4 215.3 -419.7 211.1" stroke-width="3.8"/><path d="M-419.7 211.1 Q-444.4 200.7 -469.9 189.9" stroke-width="2.3"/><path d="M-419.7 211.1 Q-437.3 234.1 -455.2 256.1" stroke-width="2.5"/><path d="M-419.7 211.1 Q-442.3 196.7 -462.1 194.3" stroke-width="2.3"/><path d="M130.0 780.0 Q145.6 648.9 189.1 549.8" stroke-width="18.0"/><path d="M189.1 549.8 Q285.2 513.5 343.5 438.3" stroke-width="10.6"/><path d="M343.5 438.3 Q411.8 452.1 464.6 453.8" stroke-width="7.3"/><path d="M464.6 453.8 Q508.6 485.4 538.7 526.3" stroke-width="4.4"/><path d="M538.7 526.3 Q544.4 559.7 550.9 581.9" stroke-width="3.1"/><path d="M550.9 581.9 Q539.3 605.2 524.9 622.1" stroke-width="2.1"/><path d="M550.9 581.9 Q570.7 592.5 585.5 606.0" stroke-width="2.0"/><path d="M538.7 526.3 Q572.9 544.4 608.2 545.2" stroke-width="2.7"/><path d="M608.2 545.2 Q626.8 567.5 645.4 586.7" stroke-width="1.9"/><path d="M608.2 545.2 Q632.8 547.7 652.2 540.4" stroke-width="1.7"/><path d="M464.6 453.8 Q509.1 425.7 557.9 420.0" stroke-width="4.5"/><path d="M557.9 420.0 Q593.9 417.2 621.5 419.4" stroke-width="2.7"/><path d="M621.5 419.4 Q642.1 431.2 649.1 448.7" stroke-width="1.7"/><path d="M621.5 419.4 Q645.0 404.7 670.6 401.4" stroke-width="1.7"/><path d="M621.5 419.4 Q642.9 432.6 655.3 443.5" stroke-width="1.6"/><path d="M557.9 420.0 Q571.2 385.5 595.8 363.4" stroke-width="2.6"/><path d="M595.8 363.4 Q618.6 346.6 646.3 337.3" stroke-width="1.8"/><path d="M595.8 363.4 Q604.7 337.1 605.0 309.0" stroke-width="1.6"/><path d="M595.8 363.4 Q622.5 353.3 648.2 343.0" stroke-width="1.7"/><path d="M343.5 438.3 Q355.8 364.9 388.0 315.4" stroke-width="7.2"/><path d="M388.0 315.4 Q435.6 299.2 464.0 269.9" stroke-width="4.9"/><path d="M464.0 269.9 Q496.8 281.9 525.7 278.9" stroke-width="3.2"/><path d="M525.7 278.9 Q547.9 292.5 559.3 307.5" stroke-width="2.1"/><path d="M525.7 278.9 Q549.9 268.7 567.2 262.5" stroke-width="1.9"/><path d="M464.0 269.9 Q475.0 239.7 481.1 215.4" stroke-width="2.9"/><path d="M481.1 215.4 Q495.8 197.6 510.9 183.0" stroke-width="1.7"/><path d="M481.1 215.4 Q474.4 193.7 473.7 171.0" stroke-width="1.9"/><path d="M464.0 269.9 Q497.0 260.0 527.6 254.7" stroke-width="2.9"/><path d="M527.6 254.7 Q549.2 262.4 563.2 268.1" stroke-width="1.8"/><path d="M527.6 254.7 Q546.0 242.1 549.5 217.4" stroke-width="1.7"/><path d="M388.0 315.4 Q371.3 270.4 364.1 228.9" stroke-width="4.2"/><path d="M364.1 228.9 Q373.7 196.2 388.2 167.4" stroke-width="2.8"/><path d="M388.2 167.4 Q403.8 149.7 424.8 139.0" stroke-width="1.6"/><path d="M388.2 167.4 Q385.5 143.3 375.6 124.5" stroke-width="1.9"/><path d="M388.2 167.4 Q409.0 154.1 413.7 129.3" stroke-width="1.9"/><path d="M364.1 228.9 Q334.2 208.6 300.1 202.0" stroke-width="2.7"/><path d="M300.1 202.0 Q288.1 182.4 269.2 171.7" stroke-width="1.6"/><path d="M300.1 202.0 Q274.6 206.3 256.1 210.7" stroke-width="1.8"/><path d="M364.1 228.9 Q371.7 192.8 368.5 156.1" stroke-width="2.5"/><path d="M368.5 156.1 Q377.9 132.8 400.2 118.8" stroke-width="1.7"/><path d="M368.5 156.1 Q350.8 137.2 337.4 117.5" stroke-width="1.6"/><path d="M368.5 156.1 Q385.3 137.3 396.2 121.6" stroke-width="1.5"/><path d="M189.1 549.8 Q144.1 466.3 124.7 382.0" stroke-width="11.7"/><path d="M124.7 382.0 Q124.1 319.9 145.3 271.6" stroke-width="7.6"/><path d="M145.3 271.6 Q177.2 237.5 204.1 207.3" stroke-width="4.9"/><path d="M204.1 207.3 Q233.6 203.3 258.8 196.2" stroke-width="3.4"/><path d="M258.8 196.2 Q279.0 202.8 293.4 202.4" stroke-width="2.1"/><path d="M258.8 196.2 Q279.9 187.7 287.8 168.0" stroke-width="2.3"/><path d="M204.1 207.3 Q208.8 178.2 207.5 152.7" stroke-width="3.1"/><path d="M207.5 152.7 Q217.9 134.7 226.2 124.4" stroke-width="1.9"/><path d="M207.5 152.7 Q210.0 129.4 194.6 106.2" stroke-width="1.8"/><path d="M207.5 152.7 Q223.5 139.0 238.1 122.6" stroke-width="2.1"/><path d="M204.1 207.3 Q233.9 192.5 259.0 202.5" stroke-width="3.4"/><path d="M259.0 202.5 Q282.5 211.0 299.9 222.4" stroke-width="2.2"/><path d="M259.0 202.5 Q277.0 189.0 295.0 180.8" stroke-width="2.3"/><path d="M145.3 271.6 Q143.6 225.9 115.9 190.0" stroke-width="5.1"/><path d="M115.9 190.0 Q114.2 156.2 130.8 129.2" stroke-width="3.6"/><path d="M130.8 129.2 Q141.1 109.7 160.0 98.2" stroke-width="2.3"/><path d="M130.8 129.2 Q129.0 105.7 123.7 85.9" stroke-width="2.1"/><path d="M130.8 129.2 Q146.3 112.6 160.5 106.2" stroke-width="2.2"/><path d="M115.9 190.0 Q91.1 166.3 63.2 154.5" stroke-width="3.0"/><path d="M63.2 154.5 Q55.4 131.5 43.2 107.6" stroke-width="1.8"/><path d="M63.2 154.5 Q38.9 162.3 20.6 154.6" stroke-width="2.1"/><path d="M63.2 154.5 Q50.5 136.5 52.1 118.4" stroke-width="1.8"/><path d="M115.9 190.0 Q110.0 158.7 121.2 133.7" stroke-width="3.6"/><path d="M121.2 133.7 Q129.3 112.9 136.4 104.4" stroke-width="2.5"/><path d="M121.2 133.7 Q108.9 115.5 99.2 102.2" stroke-width="2.5"/><path d="M121.2 133.7 Q127.9 113.7 144.8 98.3" stroke-width="2.5"/><path d="M124.7 382.0 Q80.2 338.2 39.3 305.8" stroke-width="7.6"/><path d="M39.3 305.8 Q31.1 258.4 13.2 218.5" stroke-width="5.2"/><path d="M13.2 218.5 Q11.7 186.1 18.6 161.8" stroke-width="3.3"/><path d="M18.6 161.8 Q31.4 144.5 45.1 136.0" stroke-width="2.1"/><path d="M18.6 161.8 Q7.0 142.3 -3.6 123.4" stroke-width="2.0"/><path d="M13.2 218.5 Q-14.0 194.7 -46.8 188.7" stroke-width="3.5"/><path d="M-46.8 188.7 Q-69.0 171.7 -81.1 144.7" stroke-width="2.2"/><path d="M-46.8 188.7 Q-72.5 190.9 -96.3 187.1" stroke-width="2.2"/><path d="M13.2 218.5 Q24.3 186.7 29.6 157.0" stroke-width="3.5"/><path d="M29.6 157.0 Q48.2 138.9 64.0 127.4" stroke-width="2.1"/><path d="M29.6 157.0 Q22.2 131.6 14.5 105.5" stroke-width="2.2"/><path d="M29.6 157.0 Q45.2 140.5 59.2 122.5" stroke-width="2.1"/><path d="M39.3 305.8 Q-10.2 307.9 -56.5 297.5" stroke-width="4.7"/><path d="M-56.5 297.5 Q-86.3 271.7 -111.3 249.2" stroke-width="2.7"/><path d="M-111.3 249.2 Q-119.3 222.4 -125.3 202.0" stroke-width="1.6"/><path d="M-111.3 249.2 Q-135.8 243.3 -160.4 239.1" stroke-width="1.8"/><path d="M-111.3 249.2 Q-128.5 228.6 -130.2 199.4" stroke-width="1.9"/><path d="M-56.5 297.5 Q-84.1 322.4 -102.7 338.5" stroke-width="2.9"/><path d="M-102.7 338.5 Q-125.8 338.6 -139.1 336.4" stroke-width="1.7"/><path d="M-102.7 338.5 Q-108.0 361.8 -113.7 382.5" stroke-width="2.0"/><path d="M-102.7 338.5 Q-130.6 339.4 -154.0 349.5" stroke-width="2.0"/><path d="M-56.5 297.5 Q-92.2 282.4 -118.8 267.4" stroke-width="3.0"/><path d="M-118.8 267.4 Q-138.5 249.8 -147.9 224.3" stroke-width="2.0"/><path d="M-118.8 267.4 Q-143.9 260.2 -166.1 273.4" stroke-width="1.9"/><path d="M-118.8 267.4 Q-123.4 239.4 -136.1 213.2" stroke-width="1.7"/></g></svg>
+  <svg class="gnarl gnarl-right" viewBox="0 0 440 760" preserveAspectRatio="xMaxYMax slice" aria-hidden="true" focusable="false"><g fill="none" stroke="#030907" stroke-linecap="round" stroke-linejoin="round"><path d="M370.0 780.0 Q313.2 625.1 327.8 479.3" stroke-width="34.0"/><path d="M327.8 479.3 Q407.0 410.7 416.8 314.4" stroke-width="20.7"/><path d="M416.8 314.4 Q472.0 265.8 537.7 244.6" stroke-width="13.3"/><path d="M537.7 244.6 Q583.3 239.3 625.8 238.8" stroke-width="8.1"/><path d="M625.8 238.8 Q656.3 240.2 679.5 256.4" stroke-width="5.7"/><path d="M679.5 256.4 Q692.6 275.0 711.5 288.5" stroke-width="3.6"/><path d="M711.5 288.5 Q710.8 304.8 710.1 322.4" stroke-width="2.1"/><path d="M711.5 288.5 Q727.1 294.0 744.5 296.4" stroke-width="2.3"/><path d="M679.5 256.4 Q701.3 251.9 718.1 255.2" stroke-width="3.7"/><path d="M718.1 255.2 Q730.7 262.5 741.5 262.9" stroke-width="2.2"/><path d="M718.1 255.2 Q726.3 241.7 734.5 228.2" stroke-width="2.4"/><path d="M718.1 255.2 Q732.1 260.3 746.7 271.3" stroke-width="2.3"/><path d="M625.8 238.8 Q655.4 227.5 682.6 208.6" stroke-width="4.9"/><path d="M682.6 208.6 Q702.2 206.5 714.5 208.0" stroke-width="3.3"/><path d="M714.5 208.0 Q728.7 209.7 733.0 221.1" stroke-width="2.1"/><path d="M714.5 208.0 Q728.3 203.1 735.2 203.9" stroke-width="2.2"/><path d="M682.6 208.6 Q688.7 189.0 706.1 174.4" stroke-width="3.2"/><path d="M706.1 174.4 Q716.7 165.2 733.9 161.8" stroke-width="2.2"/><path d="M706.1 174.4 Q705.6 161.5 706.8 152.6" stroke-width="2.2"/><path d="M537.7 244.6 Q557.3 189.5 601.9 158.9" stroke-width="8.4"/><path d="M601.9 158.9 Q637.8 147.1 665.4 129.3" stroke-width="5.0"/><path d="M665.4 129.3 Q688.7 135.3 712.0 137.8" stroke-width="3.4"/><path d="M712.0 137.8 Q723.7 149.9 739.0 157.6" stroke-width="2.0"/><path d="M712.0 137.8 Q727.0 130.8 747.3 136.3" stroke-width="2.2"/><path d="M665.4 129.3 Q677.2 103.6 695.6 90.4" stroke-width="3.0"/><path d="M695.6 90.4 Q714.4 81.9 731.8 75.1" stroke-width="2.1"/><path d="M695.6 90.4 Q704.8 73.7 699.9 61.6" stroke-width="1.9"/><path d="M665.4 129.3 Q686.4 146.2 714.7 144.1" stroke-width="3.3"/><path d="M714.7 144.1 Q724.1 160.1 736.0 165.7" stroke-width="2.3"/><path d="M714.7 144.1 Q735.5 144.9 754.0 137.9" stroke-width="2.2"/><path d="M601.9 158.9 Q602.1 118.9 603.1 90.2" stroke-width="5.3"/><path d="M603.1 90.2 Q623.0 69.9 628.2 44.8" stroke-width="3.6"/><path d="M628.2 44.8 Q644.9 35.7 666.7 34.8" stroke-width="2.5"/><path d="M628.2 44.8 Q627.8 26.0 626.9 7.3" stroke-width="2.2"/><path d="M628.2 44.8 Q646.7 36.5 657.2 25.1" stroke-width="2.2"/><path d="M603.1 90.2 Q592.3 66.5 580.2 51.1" stroke-width="3.4"/><path d="M580.2 51.1 Q584.5 32.2 593.3 21.8" stroke-width="2.0"/><path d="M580.2 51.1 Q567.3 40.6 554.6 36.4" stroke-width="2.2"/><path d="M603.1 90.2 Q617.8 62.4 622.6 41.0" stroke-width="3.6"/><path d="M622.6 41.0 Q640.7 27.0 657.1 18.4" stroke-width="2.2"/><path d="M622.6 41.0 Q616.5 21.8 611.1 2.2" stroke-width="2.4"/><path d="M416.8 314.4 Q395.4 244.5 411.1 179.0" stroke-width="14.0"/><path d="M411.1 179.0 Q416.5 124.1 451.9 89.9" stroke-width="8.3"/><path d="M451.9 89.9 Q491.1 83.1 520.3 58.9" stroke-width="5.1"/><path d="M520.3 58.9 Q550.7 66.4 572.5 75.1" stroke-width="3.1"/><path d="M572.5 75.1 Q589.2 92.9 604.3 110.2" stroke-width="2.0"/><path d="M572.5 75.1 Q596.8 72.2 621.4 63.9" stroke-width="2.1"/><path d="M572.5 75.1 Q590.3 91.4 602.8 108.5" stroke-width="2.0"/><path d="M520.3 58.9 Q547.0 43.8 557.7 22.4" stroke-width="3.3"/><path d="M557.7 22.4 Q578.2 14.0 597.5 16.8" stroke-width="2.1"/><path d="M557.7 22.4 Q562.4 3.8 563.7 -12.9" stroke-width="2.2"/><path d="M557.7 22.4 Q574.3 4.5 601.0 1.1" stroke-width="2.2"/><path d="M451.9 89.9 Q438.8 50.1 425.7 23.3" stroke-width="5.6"/><path d="M425.7 23.3 Q439.3 0.8 451.6 -21.7" stroke-width="3.7"/><path d="M451.6 -21.7 Q466.1 -33.3 479.7 -39.5" stroke-width="2.2"/><path d="M451.6 -21.7 Q451.8 -41.8 443.1 -62.4" stroke-width="2.3"/><path d="M451.6 -21.7 Q466.0 -36.3 481.7 -40.1" stroke-width="2.3"/><path d="M425.7 23.3 Q404.5 1.8 386.8 -8.3" stroke-width="3.5"/><path d="M386.8 -8.3 Q378.7 -26.7 381.5 -44.2" stroke-width="2.4"/><path d="M386.8 -8.3 Q365.5 -7.1 348.9 -7.7" stroke-width="2.3"/><path d="M386.8 -8.3 Q378.5 -28.6 371.1 -45.0" stroke-width="2.2"/><path d="M425.7 23.3 Q439.5 -0.2 435.6 -20.5" stroke-width="3.4"/><path d="M435.6 -20.5 Q452.7 -31.0 456.9 -51.7" stroke-width="2.1"/><path d="M435.6 -20.5 Q431.7 -40.5 439.0 -54.7" stroke-width="2.0"/><path d="M435.6 -20.5 Q447.5 -36.3 469.3 -42.3" stroke-width="2.2"/><path d="M411.1 179.0 Q365.8 156.1 353.7 106.8" stroke-width="9.6"/><path d="M353.7 106.8 Q353.0 70.9 348.3 47.3" stroke-width="6.7"/><path d="M348.3 47.3 Q361.2 28.6 368.1 11.8" stroke-width="4.4"/><path d="M368.1 11.8 Q379.3 1.7 386.3 -7.1" stroke-width="2.9"/><path d="M368.1 11.8 Q364.1 -4.7 365.3 -21.4" stroke-width="2.7"/><path d="M368.1 11.8 Q379.8 0.1 395.6 -2.3" stroke-width="2.8"/><path d="M348.3 47.3 Q338.9 21.5 323.2 6.2" stroke-width="4.4"/><path d="M323.2 6.2 Q325.8 -15.1 321.2 -31.8" stroke-width="2.8"/><path d="M323.2 6.2 Q304.7 0.6 286.3 -11.1" stroke-width="2.9"/><path d="M323.2 6.2 Q325.1 -13.3 316.2 -23.3" stroke-width="2.7"/><path d="M348.3 47.3 Q355.0 21.6 361.3 5.5" stroke-width="4.6"/><path d="M361.3 5.5 Q375.6 -10.3 393.2 -13.9" stroke-width="2.8"/><path d="M361.3 5.5 Q350.0 -9.1 347.0 -21.2" stroke-width="3.1"/><path d="M353.7 106.8 Q318.6 101.1 290.6 100.5" stroke-width="6.3"/><path d="M290.6 100.5 Q273.0 86.9 253.6 82.7" stroke-width="4.2"/><path d="M253.6 82.7 Q245.8 70.8 243.6 55.5" stroke-width="2.9"/><path d="M253.6 82.7 Q239.8 85.3 225.9 85.3" stroke-width="2.6"/><path d="M290.6 100.5 Q265.7 104.6 251.8 117.3" stroke-width="4.2"/><path d="M251.8 117.3 Q237.7 105.7 228.0 105.5" stroke-width="2.6"/><path d="M251.8 117.3 Q233.7 123.3 224.0 142.2" stroke-width="2.8"/><path d="M251.8 117.3 Q234.0 108.1 221.9 99.2" stroke-width="2.8"/><path d="M327.8 479.3 Q253.8 396.6 199.7 320.3" stroke-width="21.9"/><path d="M199.7 320.3 Q213.4 237.7 171.5 165.0" stroke-width="15.1"/><path d="M171.5 165.0 Q183.3 99.7 217.5 57.4" stroke-width="8.9"/><path d="M217.5 57.4 Q252.5 29.7 276.7 2.9" stroke-width="6.1"/><path d="M276.7 2.9 Q303.8 -11.7 333.2 -14.2" stroke-width="4.0"/><path d="M333.2 -14.2 Q354.7 -12.8 367.5 -3.7" stroke-width="2.7"/><path d="M333.2 -14.2 Q347.1 -31.6 358.2 -46.8" stroke-width="2.6"/><path d="M276.7 2.9 Q292.3 -21.7 298.2 -38.9" stroke-width="3.9"/><path d="M298.2 -38.9 Q316.6 -47.2 334.5 -58.7" stroke-width="2.7"/><path d="M298.2 -38.9 Q302.5 -58.6 306.6 -71.9" stroke-width="2.7"/><path d="M276.7 2.9 Q306.0 5.7 334.4 8.1" stroke-width="3.7"/><path d="M334.4 8.1 Q354.1 15.3 373.6 20.3" stroke-width="2.5"/><path d="M334.4 8.1 Q352.3 -0.8 370.5 -10.5" stroke-width="2.5"/><path d="M217.5 57.4 Q201.2 19.4 200.1 -13.5" stroke-width="5.3"/><path d="M200.1 -13.5 Q203.9 -45.4 225.8 -61.6" stroke-width="3.4"/><path d="M225.8 -61.6 Q246.3 -71.5 257.4 -79.6" stroke-width="2.1"/><path d="M225.8 -61.6 Q218.7 -83.7 212.7 -99.5" stroke-width="2.0"/><path d="M225.8 -61.6 Q247.2 -72.7 255.9 -85.5" stroke-width="2.4"/><path d="M200.1 -13.5 Q173.5 -26.8 155.8 -48.6" stroke-width="3.6"/><path d="M155.8 -48.6 Q154.6 -68.3 143.5 -82.8" stroke-width="2.5"/><path d="M155.8 -48.6 Q135.2 -58.5 116.6 -60.0" stroke-width="2.2"/><path d="M171.5 165.0 Q127.7 134.4 108.4 89.8" stroke-width="10.4"/><path d="M108.4 89.8 Q91.9 55.6 96.8 19.7" stroke-width="6.3"/><path d="M96.8 19.7 Q115.8 4.2 123.8 -12.5" stroke-width="4.1"/><path d="M123.8 -12.5 Q134.7 -27.3 146.0 -29.9" stroke-width="2.8"/><path d="M123.8 -12.5 Q120.1 -29.9 112.6 -48.2" stroke-width="2.5"/><path d="M123.8 -12.5 Q136.7 -24.5 148.6 -26.2" stroke-width="2.7"/><path d="M96.8 19.7 Q83.4 -7.3 67.7 -27.0" stroke-width="4.2"/><path d="M67.7 -27.0 Q77.6 -47.2 76.9 -66.6" stroke-width="2.8"/><path d="M67.7 -27.0 Q48.0 -35.9 23.6 -39.0" stroke-width="2.9"/><path d="M67.7 -27.0 Q71.5 -46.0 75.0 -56.0" stroke-width="2.4"/><path d="M96.8 19.7 Q113.9 -2.1 131.3 -18.4" stroke-width="4.2"/><path d="M131.3 -18.4 Q151.3 -17.9 167.6 -24.6" stroke-width="2.9"/><path d="M131.3 -18.4 Q130.0 -38.4 132.4 -55.8" stroke-width="2.9"/><path d="M108.4 89.8 Q70.5 85.5 44.1 81.8" stroke-width="7.2"/><path d="M44.1 81.8 Q25.4 63.0 10.2 43.5" stroke-width="4.9"/><path d="M10.2 43.5 Q5.7 24.9 3.6 7.0" stroke-width="3.1"/><path d="M10.2 43.5 Q-10.3 41.4 -29.5 36.7" stroke-width="3.0"/><path d="M44.1 81.8 Q16.3 79.7 -7.2 88.5" stroke-width="4.9"/><path d="M-7.2 88.5 Q-22.3 78.3 -38.1 73.5" stroke-width="2.9"/><path d="M-7.2 88.5 Q-19.2 106.6 -39.8 119.6" stroke-width="2.9"/><path d="M44.1 81.8 Q19.1 66.2 -4.3 58.2" stroke-width="4.7"/><path d="M-4.3 58.2 Q-8.4 36.8 -15.7 18.9" stroke-width="2.8"/><path d="M-4.3 58.2 Q-23.8 54.8 -35.2 51.4" stroke-width="3.2"/><path d="M199.7 320.3 Q117.0 326.2 59.3 279.3" stroke-width="14.7"/><path d="M59.3 279.3 Q23.2 238.1 -11.2 206.3" stroke-width="8.6"/><path d="M-11.2 206.3 Q-27.7 175.1 -26.3 139.6" stroke-width="6.0"/><path d="M-26.3 139.6 Q-24.8 115.9 -20.9 91.9" stroke-width="3.7"/><path d="M-20.9 91.9 Q-11.4 76.1 -3.2 71.6" stroke-width="2.4"/><path d="M-20.9 91.9 Q-27.9 76.1 -27.7 65.4" stroke-width="2.4"/><path d="M-26.3 139.6 Q-46.7 130.5 -65.5 122.2" stroke-width="3.5"/><path d="M-65.5 122.2 Q-72.9 108.2 -82.8 91.9" stroke-width="2.2"/><path d="M-65.5 122.2 Q-78.9 117.9 -86.2 125.7" stroke-width="2.1"/><path d="M-26.3 139.6 Q-10.1 119.1 0.2 99.9" stroke-width="3.6"/><path d="M0.2 99.9 Q17.1 93.5 34.7 86.1" stroke-width="2.4"/><path d="M0.2 99.9 Q-5.9 83.3 -3.0 64.9" stroke-width="2.3"/><path d="M0.2 99.9 Q15.9 86.7 38.4 79.1" stroke-width="2.1"/><path d="M-11.2 206.3 Q-49.7 213.1 -84.8 208.6" stroke-width="5.5"/><path d="M-84.8 208.6 Q-105.1 186.1 -132.9 173.7" stroke-width="3.5"/><path d="M-132.9 173.7 Q-143.8 158.1 -136.6 142.7" stroke-width="2.3"/><path d="M-132.9 173.7 Q-154.1 168.0 -171.5 169.8" stroke-width="2.4"/><path d="M-132.9 173.7 Q-137.4 152.9 -154.7 138.4" stroke-width="2.4"/><path d="M-84.8 208.6 Q-113.1 219.7 -137.3 229.3" stroke-width="3.8"/><path d="M-137.3 229.3 Q-155.5 236.5 -175.4 227.5" stroke-width="2.5"/><path d="M-137.3 229.3 Q-153.6 245.9 -161.8 259.2" stroke-width="2.6"/><path d="M-137.3 229.3 Q-158.2 234.8 -176.8 233.2" stroke-width="2.6"/><path d="M-84.8 208.6 Q-105.4 190.5 -117.7 173.4" stroke-width="3.3"/><path d="M-117.7 173.4 Q-126.4 156.9 -128.5 135.6" stroke-width="2.0"/><path d="M-117.7 173.4 Q-135.5 173.9 -147.8 165.3" stroke-width="2.0"/><path d="M-117.7 173.4 Q-114.1 153.6 -122.6 131.4" stroke-width="2.3"/><path d="M59.3 279.3 Q5.1 275.4 -32.3 302.3" stroke-width="10.3"/><path d="M-32.3 302.3 Q-71.7 289.7 -91.9 259.5" stroke-width="6.1"/><path d="M-91.9 259.5 Q-116.1 240.8 -123.7 209.0" stroke-width="3.7"/><path d="M-123.7 209.0 Q-124.3 187.8 -122.7 168.0" stroke-width="2.1"/><path d="M-123.7 209.0 Q-146.9 202.2 -164.0 195.1" stroke-width="2.3"/><path d="M-123.7 209.0 Q-127.9 187.8 -134.4 168.7" stroke-width="2.6"/><path d="M-91.9 259.5 Q-118.5 259.9 -134.8 262.6" stroke-width="4.2"/><path d="M-134.8 262.6 Q-150.7 250.0 -165.5 245.2" stroke-width="2.5"/><path d="M-134.8 262.6 Q-152.5 269.4 -163.1 283.3" stroke-width="2.8"/><path d="M-32.3 302.3 Q-50.1 339.6 -79.6 354.5" stroke-width="6.4"/><path d="M-79.6 354.5 Q-108.9 354.9 -136.2 366.9" stroke-width="4.1"/><path d="M-136.2 366.9 Q-156.2 360.4 -177.7 353.8" stroke-width="2.7"/><path d="M-136.2 366.9 Q-148.0 383.1 -152.6 392.0" stroke-width="2.4"/><path d="M-136.2 366.9 Q-159.3 363.9 -178.1 347.1" stroke-width="2.4"/><path d="M-79.6 354.5 Q-96.1 379.4 -90.6 409.2" stroke-width="4.5"/><path d="M-90.6 409.2 Q-112.4 417.7 -124.3 427.8" stroke-width="2.7"/><path d="M-90.6 409.2 Q-79.2 430.0 -74.5 453.8" stroke-width="3.1"/><path d="M310.0 780.0 Q287.0 650.0 246.4 551.9" stroke-width="18.0"/><path d="M246.4 551.9 Q307.5 492.1 324.4 418.6" stroke-width="12.4"/><path d="M324.4 418.6 Q365.8 383.5 404.2 357.0" stroke-width="8.4"/><path d="M404.2 357.0 Q436.6 342.8 471.5 341.7" stroke-width="4.9"/><path d="M471.5 341.7 Q491.3 352.1 504.4 354.2" stroke-width="3.3"/><path d="M504.4 354.2 Q515.1 368.4 529.7 378.0" stroke-width="2.2"/><path d="M504.4 354.2 Q519.5 351.3 537.2 343.6" stroke-width="2.1"/><path d="M471.5 341.7 Q483.6 322.9 506.3 317.9" stroke-width="3.1"/><path d="M506.3 317.9 Q522.2 314.1 530.7 318.0" stroke-width="1.9"/><path d="M506.3 317.9 Q508.5 303.2 517.0 293.7" stroke-width="2.0"/><path d="M404.2 357.0 Q415.6 318.9 425.8 285.3" stroke-width="5.0"/><path d="M425.8 285.3 Q447.8 270.5 464.9 261.7" stroke-width="3.4"/><path d="M464.9 261.7 Q485.4 259.0 501.1 269.2" stroke-width="2.4"/><path d="M464.9 261.7 Q468.9 244.6 486.0 238.6" stroke-width="2.2"/><path d="M464.9 261.7 Q484.8 257.6 506.7 260.5" stroke-width="2.2"/><path d="M425.8 285.3 Q425.0 256.2 416.0 235.3" stroke-width="3.0"/><path d="M416.0 235.3 Q428.4 217.7 430.0 203.0" stroke-width="2.1"/><path d="M416.0 235.3 Q404.7 217.8 386.2 206.6" stroke-width="2.0"/><path d="M416.0 235.3 Q419.8 217.1 427.2 207.8" stroke-width="2.1"/><path d="M324.4 418.6 Q319.0 361.8 303.6 316.1" stroke-width="7.4"/><path d="M303.6 316.1 Q324.0 275.7 317.9 232.6" stroke-width="4.4"/><path d="M317.9 232.6 Q344.0 214.7 346.4 183.6" stroke-width="2.9"/><path d="M346.4 183.6 Q364.8 171.0 381.5 160.9" stroke-width="1.9"/><path d="M346.4 183.6 Q352.4 163.7 350.0 150.9" stroke-width="1.8"/><path d="M317.9 232.6 Q321.8 198.9 310.5 167.7" stroke-width="2.8"/><path d="M310.5 167.7 Q314.7 143.0 331.0 121.4" stroke-width="1.9"/><path d="M310.5 167.7 Q288.6 160.2 278.7 136.5" stroke-width="1.7"/><path d="M317.9 232.6 Q341.8 217.2 347.3 196.0" stroke-width="2.9"/><path d="M347.3 196.0 Q369.8 197.2 387.8 183.5" stroke-width="1.8"/><path d="M347.3 196.0 Q348.6 177.9 357.1 167.5" stroke-width="1.9"/><path d="M347.3 196.0 Q366.5 187.6 386.3 181.7" stroke-width="1.9"/><path d="M303.6 316.1 Q287.1 283.8 264.8 258.6" stroke-width="4.4"/><path d="M264.8 258.6 Q259.8 233.0 268.0 212.2" stroke-width="2.7"/><path d="M268.0 212.2 Q283.1 199.4 290.4 183.0" stroke-width="1.7"/><path d="M268.0 212.2 Q255.9 197.2 252.3 174.0" stroke-width="1.9"/><path d="M268.0 212.2 Q279.6 197.8 280.9 187.6" stroke-width="1.7"/><path d="M264.8 258.6 Q240.7 245.0 224.8 239.4" stroke-width="2.8"/><path d="M224.8 239.4 Q219.6 220.2 218.3 204.1" stroke-width="1.6"/><path d="M224.8 239.4 Q203.8 238.8 191.9 241.9" stroke-width="1.9"/><path d="M246.4 551.9 Q182.9 498.1 113.4 472.9" stroke-width="12.3"/><path d="M113.4 472.9 Q83.3 414.6 54.0 365.2" stroke-width="8.3"/><path d="M54.0 365.2 Q48.7 323.9 66.7 292.6" stroke-width="5.3"/><path d="M66.7 292.6 Q84.2 272.7 103.1 268.2" stroke-width="3.3"/><path d="M103.1 268.2 Q123.9 272.0 146.3 256.8" stroke-width="2.0"/><path d="M103.1 268.2 Q111.2 251.7 116.1 242.4" stroke-width="2.0"/><path d="M66.7 292.6 Q57.9 263.6 58.2 232.6" stroke-width="3.3"/><path d="M58.2 232.6 Q58.9 212.8 65.1 196.2" stroke-width="2.1"/><path d="M58.2 232.6 Q45.2 212.8 32.8 197.5" stroke-width="2.3"/><path d="M58.2 232.6 Q56.0 212.8 66.7 195.8" stroke-width="2.2"/><path d="M54.0 365.2 Q15.2 350.7 -11.8 330.6" stroke-width="5.2"/><path d="M-11.8 330.6 Q-15.4 298.0 -40.9 272.9" stroke-width="3.5"/><path d="M-40.9 272.9 Q-38.4 250.0 -32.8 233.7" stroke-width="2.2"/><path d="M-40.9 272.9 Q-61.1 262.5 -73.1 249.0" stroke-width="2.1"/><path d="M-11.8 330.6 Q-38.4 340.0 -68.0 334.8" stroke-width="3.1"/><path d="M-68.0 334.8 Q-85.9 327.3 -96.4 316.3" stroke-width="1.9"/><path d="M-68.0 334.8 Q-86.3 340.6 -95.7 354.9" stroke-width="1.9"/><path d="M-68.0 334.8 Q-80.7 318.6 -100.9 314.9" stroke-width="2.0"/><path d="M113.4 472.9 Q63.0 490.9 21.9 497.3" stroke-width="7.5"/><path d="M21.9 497.3 Q-19.8 493.7 -56.9 481.9" stroke-width="4.7"/><path d="M-56.9 481.9 Q-81.4 460.5 -104.4 440.2" stroke-width="3.2"/><path d="M-104.4 440.2 Q-109.2 415.7 -108.9 390.8" stroke-width="1.9"/><path d="M-104.4 440.2 Q-124.9 427.9 -152.1 431.1" stroke-width="2.0"/><path d="M-104.4 440.2 Q-112.6 420.1 -118.9 401.9" stroke-width="2.2"/><path d="M-56.9 481.9 Q-87.0 485.1 -106.2 489.6" stroke-width="2.9"/><path d="M-106.2 489.6 Q-119.0 472.9 -131.9 461.8" stroke-width="1.9"/><path d="M-106.2 489.6 Q-123.4 504.7 -141.7 516.5" stroke-width="1.9"/><path d="M-106.2 489.6 Q-127.6 487.4 -137.3 475.0" stroke-width="1.7"/><path d="M-56.9 481.9 Q-71.9 455.3 -82.8 431.4" stroke-width="3.0"/><path d="M-82.8 431.4 Q-75.4 410.6 -74.8 397.8" stroke-width="1.7"/><path d="M-82.8 431.4 Q-99.3 420.8 -111.9 413.3" stroke-width="1.8"/><path d="M21.9 497.3 Q-2.2 532.5 -21.2 557.3" stroke-width="4.5"/><path d="M-21.2 557.3 Q-49.2 571.9 -73.8 586.1" stroke-width="3.0"/><path d="M-73.8 586.1 Q-97.2 588.8 -113.6 586.9" stroke-width="1.9"/><path d="M-73.8 586.1 Q-84.3 605.2 -94.4 624.1" stroke-width="1.9"/><path d="M-21.2 557.3 Q-24.9 585.6 -22.2 603.5" stroke-width="2.8"/><path d="M-22.2 603.5 Q-37.7 618.1 -50.6 637.4" stroke-width="1.9"/><path d="M-22.2 603.5 Q-14.6 623.1 -4.5 632.9" stroke-width="1.8"/></g><path d="M250 120 L234.4 218.8 M250 120 L196.8 204.7 M250 120 L167.8 176.9 M250 120 L152.0 140.1 M250 120 L152.0 99.9 M250 120 L167.8 63.1 M250 120 L196.8 35.3 M250 120 L234.4 21.2 M245.3 149.6 L234.0 145.4 L225.3 137.1 L220.6 126.0 L220.6 114.0 L225.3 102.9 L234.0 94.6 L245.3 90.4 M241.9 171.4 L222.3 164.0 L207.3 149.6 L199.1 130.4 L199.1 109.6 L207.3 90.4 L222.3 76.0 L241.9 68.6 M238.4 193.1 L210.6 182.7 L189.2 162.1 L177.5 134.8 L177.5 105.2 L189.2 77.9 L210.6 57.3 L238.4 46.9 M235.1 213.8 L199.5 200.4 L171.9 174.1 L156.9 139.1 L156.9 100.9 L171.9 65.9 L199.5 39.6 L235.1 26.2" fill="none" stroke="#E6F0E0" stroke-opacity=".34" stroke-width="1.1"/></svg>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="kicker">Terrain and tiny worlds for wargamers, book nook builders, and collectors alike</p>
+      <h1>Built small. Played big.</h1>
+      <p class="tagline">We design, print, and hand finish tabletop terrain and miniatures, and we're building a community for people who love this hobby too.</p>
+      <div class="hero-actions">
+        <button class="btn btn-primary" onclick="activateTab('projects')">See the projects</button>
+        <button class="btn btn-ghost" onclick="activateTab('guild')">Join the guild</button>
+      </div>
+    </div>
+    <div class="hero-logo"><img src="logo.png" alt="Gnomewright, a gnome hand painting a terrain piece" onerror="this.parentElement.style.display='none';"></div>
+  </div>
+  <svg class="treeline" viewBox="0 0 1440 240" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">
+<g fill="#2A5846">
+<polygon points="21.5,39.2 27.7,59.9 24.6,59.9 33.9,80.5 27.7,80.5 40.0,101.2 30.8,101.2 46.2,121.9 -3.3,121.9 12.2,101.2 2.9,101.2 15.3,80.5 9.1,80.5 18.4,59.9 15.3,59.9"/>
+<polygon points="70.2,42.1 75.7,62.1 72.9,62.1 81.2,82.2 75.7,82.2 86.7,102.3 78.5,102.3 92.2,122.4 48.1,122.4 61.9,102.3 53.6,102.3 64.7,82.2 59.2,82.2 67.4,62.1 64.7,62.1"/>
+<polygon points="103.4,41.8 108.9,62.0 106.1,62.0 114.5,82.1 108.9,82.1 120.1,102.2 111.7,102.2 125.7,122.3 81.0,122.3 95.0,102.2 86.6,102.2 97.8,82.1 92.2,82.1 100.6,62.0 97.8,62.0"/>
+<polygon points="183.5,64.8 187.4,80.2 185.4,80.2 191.3,95.6 187.4,95.6 195.2,111.1 189.3,111.1 199.1,126.5 167.8,126.5 177.6,111.1 171.7,111.1 179.6,95.6 175.6,95.6 181.5,80.2 179.6,80.2"/>
+<polygon points="194.4,25.5 201.0,48.9 197.7,48.9 207.7,72.4 201.0,72.4 214.3,95.9 204.3,95.9 220.9,119.4 167.9,119.4 184.4,95.9 174.5,95.9 187.8,72.4 181.1,72.4 191.1,48.9 187.8,48.9"/>
+<polygon points="239.8,16.0 247.5,41.4 243.7,41.4 255.2,66.8 247.5,66.8 262.9,92.3 251.3,92.3 270.6,117.7 209.1,117.7 228.3,92.3 216.8,92.3 232.1,66.8 224.4,66.8 236.0,41.4 232.1,41.4"/>
+<polygon points="320.1,36.1 325.3,57.4 322.7,57.4 330.5,78.7 325.3,78.7 335.7,100.0 327.9,100.0 340.8,121.3 299.4,121.3 312.4,100.0 304.6,100.0 314.9,78.7 309.8,78.7 317.5,57.4 314.9,57.4"/>
+<polygon points="334.4,40.9 339.2,61.2 336.8,61.2 344.0,81.6 339.2,81.6 348.8,101.9 341.6,101.9 353.6,122.2 315.2,122.2 327.2,101.9 320.0,101.9 329.6,81.6 324.8,81.6 332.0,61.2 329.6,61.2"/>
+<polygon points="391.6,56.7 395.6,73.8 393.6,73.8 399.6,90.8 395.6,90.8 403.6,107.9 397.6,107.9 407.6,125.0 375.7,125.0 385.7,107.9 379.7,107.9 387.6,90.8 383.7,90.8 389.6,73.8 387.6,73.8"/>
+<polygon points="454.1,45.8 459.8,65.1 456.9,65.1 465.4,84.4 459.8,84.4 471.1,103.7 462.6,103.7 476.8,123.0 431.4,123.0 445.6,103.7 437.1,103.7 448.4,84.4 442.8,84.4 451.3,65.1 448.4,65.1"/>
+<polygon points="505.0,34.8 510.8,56.4 507.9,56.4 516.6,77.9 510.8,77.9 522.4,99.5 513.7,99.5 528.2,121.1 481.9,121.1 496.3,99.5 487.7,99.5 499.2,77.9 493.4,77.9 502.1,56.4 499.2,56.4"/>
+<polygon points="560.6,44.8 565.5,64.4 563.0,64.4 570.4,83.9 565.5,83.9 575.3,103.4 568.0,103.4 580.2,122.9 540.9,122.9 553.2,103.4 545.8,103.4 555.7,83.9 550.7,83.9 558.1,64.4 555.7,64.4"/>
+<polygon points="626.3,15.2 633.8,40.8 630.0,40.8 641.3,66.4 633.8,66.4 648.8,92.0 637.5,92.0 656.3,117.5 596.3,117.5 615.0,92.0 603.8,92.0 618.8,66.4 611.3,66.4 622.5,40.8 618.8,40.8"/>
+<polygon points="659.0,52.7 663.4,70.6 661.2,70.6 667.9,88.5 663.4,88.5 672.3,106.4 665.6,106.4 676.8,124.3 641.2,124.3 652.3,106.4 645.6,106.4 654.5,88.5 650.1,88.5 656.7,70.6 654.5,70.6"/>
+<polygon points="684.9,66.1 689.2,81.3 687.0,81.3 693.6,96.4 689.2,96.4 697.9,111.6 691.4,111.6 702.3,126.7 667.4,126.7 678.3,111.6 671.8,111.6 680.5,96.4 676.1,96.4 682.7,81.3 680.5,81.3"/>
+<polygon points="738.7,23.4 745.0,47.3 741.8,47.3 751.2,71.2 745.0,71.2 757.4,95.1 748.1,95.1 763.6,119.0 713.9,119.0 729.4,95.1 720.1,95.1 732.5,71.2 726.3,71.2 735.6,47.3 732.5,47.3"/>
+<polygon points="816.2,23.4 821.7,47.3 819.0,47.3 827.3,71.2 821.7,71.2 832.8,95.1 824.5,95.1 838.3,119.0 794.0,119.0 807.9,95.1 799.6,95.1 810.6,71.2 805.1,71.2 813.4,47.3 810.6,47.3"/>
+<polygon points="824.7,19.9 831.2,44.5 827.9,44.5 837.8,69.2 831.2,69.2 844.3,93.8 834.5,93.8 850.9,118.4 798.5,118.4 814.8,93.8 805.0,93.8 818.1,69.2 811.6,69.2 821.4,44.5 818.1,44.5"/>
+<polygon points="913.4,48.1 917.8,67.0 915.6,67.0 922.3,85.8 917.8,85.8 926.8,104.6 920.1,104.6 931.2,123.5 895.5,123.5 906.7,104.6 900.0,104.6 908.9,85.8 904.4,85.8 911.1,67.0 908.9,67.0"/>
+<polygon points="942.8,27.2 948.7,50.3 945.7,50.3 954.5,73.4 948.7,73.4 960.3,96.6 951.6,96.6 966.1,119.7 919.6,119.7 934.1,96.6 925.4,96.6 937.0,73.4 931.2,73.4 939.9,50.3 937.0,50.3"/>
+<polygon points="962.2,51.7 967.7,69.8 964.9,69.8 973.1,87.9 967.7,87.9 978.6,106.0 970.4,106.0 984.1,124.1 940.3,124.1 954.0,106.0 945.8,106.0 956.7,87.9 951.3,87.9 959.5,69.8 956.7,69.8"/>
+<polygon points="1045.6,63.5 1049.5,79.2 1047.6,79.2 1053.5,94.9 1049.5,94.9 1057.4,110.6 1051.5,110.6 1061.3,126.2 1030.0,126.2 1039.8,110.6 1033.9,110.6 1041.7,94.9 1037.8,94.9 1043.7,79.2 1041.7,79.2"/>
+<polygon points="1058.9,66.7 1063.3,81.7 1061.1,81.7 1067.7,96.8 1063.3,96.8 1072.0,111.8 1065.5,111.8 1076.4,126.8 1041.5,126.8 1052.4,111.8 1045.9,111.8 1054.6,96.8 1050.2,96.8 1056.8,81.7 1054.6,81.7"/>
+<polygon points="1111.0,39.2 1116.4,59.9 1113.7,59.9 1121.9,80.6 1116.4,80.6 1127.4,101.2 1119.2,101.2 1132.8,121.9 1089.1,121.9 1102.8,101.2 1094.6,101.2 1105.5,80.6 1100.1,80.6 1108.3,59.9 1105.5,59.9"/>
+<polygon points="1159.7,29.7 1165.1,52.3 1162.4,52.3 1170.6,75.0 1165.1,75.0 1176.0,97.6 1167.8,97.6 1181.5,120.2 1137.9,120.2 1151.5,97.6 1143.3,97.6 1154.2,75.0 1148.8,75.0 1156.9,52.3 1154.2,52.3"/>
+<polygon points="1231.6,63.6 1235.7,79.3 1233.6,79.3 1239.8,94.9 1235.7,94.9 1243.9,110.6 1237.8,110.6 1248.0,126.2 1215.1,126.2 1225.4,110.6 1219.3,110.6 1227.5,94.9 1223.4,94.9 1229.5,79.3 1227.5,79.3"/>
+<polygon points="1256.8,55.2 1262.1,72.6 1259.5,72.6 1267.4,89.9 1262.1,89.9 1272.6,107.3 1264.7,107.3 1277.9,124.7 1235.8,124.7 1248.9,107.3 1241.0,107.3 1251.6,89.9 1246.3,89.9 1254.2,72.6 1251.6,72.6"/>
+<polygon points="1336.0,53.3 1341.3,71.1 1338.7,71.1 1346.6,88.8 1341.3,88.8 1351.8,106.6 1343.9,106.6 1357.1,124.4 1314.9,124.4 1328.1,106.6 1320.2,106.6 1330.7,88.8 1325.5,88.8 1333.4,71.1 1330.7,71.1"/>
+<polygon points="1352.7,48.3 1358.3,67.1 1355.5,67.1 1363.8,85.9 1358.3,85.9 1369.3,104.7 1361.0,104.7 1374.8,123.5 1330.6,123.5 1344.4,104.7 1336.1,104.7 1347.2,85.9 1341.7,85.9 1350.0,67.1 1347.2,67.1"/>
+<polygon points="1423.5,64.5 1428.2,80.0 1425.8,80.0 1432.9,95.4 1428.2,95.4 1437.6,110.9 1430.6,110.9 1442.3,126.4 1404.7,126.4 1416.4,110.9 1409.4,110.9 1418.8,95.4 1414.1,95.4 1421.1,80.0 1418.8,80.0"/>
+<rect x="0" y="136" width="1440" height="104"/>
+</g>
+<g fill="#1A4032">
+<polygon points="11.1,62.1 17.7,85.2 14.4,85.2 24.4,108.4 17.7,108.4 31.1,131.5 21.1,131.5 37.8,154.7 -15.6,154.7 1.1,131.5 -8.9,131.5 4.4,108.4 -2.3,108.4 7.7,85.2 4.4,85.2"/>
+<polygon points="78.7,60.2 84.3,83.7 81.5,83.7 89.9,107.3 84.3,107.3 95.5,130.8 87.1,130.8 101.0,154.3 56.4,154.3 70.3,130.8 62.0,130.8 73.1,107.3 67.6,107.3 75.9,83.7 73.1,83.7"/>
+<polygon points="122.9,45.9 129.6,72.3 126.3,72.3 136.2,98.8 129.6,98.8 142.8,125.3 132.9,125.3 149.4,151.8 96.5,151.8 113.0,125.3 103.1,125.3 116.3,98.8 109.7,98.8 119.6,72.3 116.3,72.3"/>
+<polygon points="216.7,56.4 223.1,80.7 219.9,80.7 229.6,105.0 223.1,105.0 236.0,129.3 226.3,129.3 242.4,153.7 190.9,153.7 207.0,129.3 197.4,129.3 210.2,105.0 203.8,105.0 213.5,80.7 210.2,80.7"/>
+<polygon points="300.3,50.8 307.3,76.3 303.8,76.3 314.2,101.7 307.3,101.7 321.2,127.2 310.8,127.2 328.2,152.6 272.4,152.6 289.8,127.2 279.4,127.2 293.3,101.7 286.4,101.7 296.8,76.3 293.3,76.3"/>
+<polygon points="354.2,65.9 359.6,88.2 356.9,88.2 365.1,110.6 359.6,110.6 370.5,133.0 362.3,133.0 375.9,155.4 332.4,155.4 346.0,133.0 337.9,133.0 348.8,110.6 343.3,110.6 351.5,88.2 348.8,88.2"/>
+<polygon points="417.0,34.1 424.2,63.0 420.6,63.0 431.4,91.9 424.2,91.9 438.6,120.8 427.8,120.8 445.8,149.6 388.1,149.6 406.1,120.8 395.3,120.8 409.7,91.9 402.5,91.9 413.3,63.0 409.7,63.0"/>
+<polygon points="429.5,38.0 438.0,66.1 433.7,66.1 446.4,94.2 438.0,94.2 454.8,122.3 442.2,122.3 463.3,150.3 395.8,150.3 416.9,122.3 404.2,122.3 421.1,94.2 412.7,94.2 425.3,66.1 421.1,66.1"/>
+<polygon points="490.0,27.5 498.9,57.7 494.5,57.7 507.9,88.0 498.9,88.0 516.9,118.2 503.4,118.2 525.8,148.4 454.1,148.4 476.5,118.2 463.1,118.2 481.0,88.0 472.1,88.0 485.5,57.7 481.0,57.7"/>
+<polygon points="576.8,53.9 582.8,78.7 579.8,78.7 588.7,103.6 582.8,103.6 594.7,128.4 585.7,128.4 600.6,153.2 553.1,153.2 567.9,128.4 559.0,128.4 570.9,103.6 565.0,103.6 573.9,78.7 570.9,78.7"/>
+<polygon points="599.6,26.9 607.1,57.2 603.3,57.2 614.7,87.6 607.1,87.6 622.3,118.0 610.9,118.0 629.8,148.3 569.3,148.3 588.2,118.0 576.9,118.0 592.0,87.6 584.4,87.6 595.8,57.2 592.0,57.2"/>
+<polygon points="703.5,62.2 710.3,85.3 706.9,85.3 717.0,108.4 710.3,108.4 723.8,131.6 713.6,131.6 730.5,154.7 676.5,154.7 693.4,131.6 683.2,131.6 696.7,108.4 690.0,108.4 700.1,85.3 696.7,85.3"/>
+<polygon points="756.4,60.3 762.1,83.8 759.2,83.8 767.9,107.3 762.1,107.3 773.6,130.9 765.0,130.9 779.4,154.4 733.4,154.4 747.7,130.9 739.1,130.9 750.6,107.3 744.9,107.3 753.5,83.8 750.6,83.8"/>
+<polygon points="824.5,71.6 829.8,92.8 827.2,92.8 835.1,114.0 829.8,114.0 840.3,135.2 832.4,135.2 845.6,156.4 803.5,156.4 816.6,135.2 808.7,135.2 819.3,114.0 814.0,114.0 821.9,92.8 819.3,92.8"/>
+<polygon points="873.9,32.4 882.0,61.6 878.0,61.6 890.1,90.9 882.0,90.9 898.2,120.1 886.1,120.1 906.3,149.3 841.6,149.3 861.8,120.1 849.7,120.1 865.8,90.9 857.7,90.9 869.9,61.6 865.8,61.6"/>
+<polygon points="915.5,29.1 922.9,59.0 919.2,59.0 930.2,88.9 922.9,88.9 937.6,118.8 926.6,118.8 945.0,148.7 886.0,148.7 904.4,118.8 893.4,118.8 908.1,88.9 900.7,88.9 911.8,59.0 908.1,59.0"/>
+<polygon points="958.1,61.5 964.2,84.8 961.2,84.8 970.4,108.1 964.2,108.1 976.5,131.3 967.3,131.3 982.7,154.6 933.5,154.6 948.9,131.3 939.7,131.3 951.9,108.1 945.8,108.1 955.0,84.8 951.9,84.8"/>
+<polygon points="1021.0,66.2 1026.8,88.5 1023.9,88.5 1032.5,110.8 1026.8,110.8 1038.3,133.1 1029.6,133.1 1044.1,155.4 997.9,155.4 1012.3,133.1 1003.7,133.1 1015.2,110.8 1009.4,110.8 1018.1,88.5 1015.2,88.5"/>
+<polygon points="1114.8,68.4 1120.4,90.3 1117.6,90.3 1126.0,112.1 1120.4,112.1 1131.7,134.0 1123.2,134.0 1137.3,155.8 1092.2,155.8 1106.3,134.0 1097.8,134.0 1109.1,112.1 1103.5,112.1 1111.9,90.3 1109.1,90.3"/>
+<polygon points="1195.8,26.0 1204.3,56.5 1200.1,56.5 1212.9,87.1 1204.3,87.1 1221.4,117.6 1208.6,117.6 1230.0,148.2 1161.6,148.2 1183.0,117.6 1170.2,117.6 1187.3,87.1 1178.7,87.1 1191.5,56.5 1187.3,56.5"/>
+<polygon points="1242.6,45.8 1249.0,72.3 1245.8,72.3 1255.4,98.8 1249.0,98.8 1261.9,125.2 1252.2,125.2 1268.3,151.7 1217.0,151.7 1233.0,125.2 1223.4,125.2 1236.2,98.8 1229.8,98.8 1239.4,72.3 1236.2,72.3"/>
+<polygon points="1259.3,74.1 1265.5,94.8 1262.4,94.8 1271.7,115.5 1265.5,115.5 1277.8,136.2 1268.6,136.2 1284.0,156.8 1234.6,156.8 1250.1,136.2 1240.8,136.2 1253.1,115.5 1247.0,115.5 1256.2,94.8 1253.1,94.8"/>
+<polygon points="1363.3,26.9 1370.3,57.2 1366.8,57.2 1377.4,87.6 1370.3,87.6 1384.5,118.0 1373.9,118.0 1391.6,148.3 1334.9,148.3 1352.6,118.0 1342.0,118.0 1356.2,87.6 1349.1,87.6 1359.7,57.2 1356.2,57.2"/>
+<polygon points="1419.0,50.9 1426.2,76.3 1422.6,76.3 1433.5,101.8 1426.2,101.8 1440.8,127.2 1429.9,127.2 1448.0,152.7 1390.0,152.7 1408.1,127.2 1397.2,127.2 1411.7,101.8 1404.5,101.8 1415.4,76.3 1411.7,76.3"/>
+<rect x="0" y="171" width="1440" height="69"/>
+</g>
+<g fill="#0F2A1F">
+<polygon points="24.1,38.0 32.3,72.9 28.2,72.9 40.6,107.7 32.3,107.7 48.9,142.6 36.5,142.6 57.1,177.4 -9.0,177.4 11.7,142.6 -0.7,142.6 15.8,107.7 7.5,107.7 19.9,72.9 15.8,72.9"/>
+<polygon points="124.1,52.5 133.5,84.3 128.8,84.3 143.0,116.2 133.5,116.2 152.5,148.1 138.3,148.1 162.0,180.0 86.1,180.0 109.8,148.1 95.6,148.1 114.6,116.2 105.1,116.2 119.3,84.3 114.6,84.3"/>
+<polygon points="220.9,54.3 230.0,85.8 225.4,85.8 239.1,117.3 230.0,117.3 248.3,148.8 234.6,148.8 257.4,180.3 184.3,180.3 207.2,148.8 193.5,148.8 211.7,117.3 202.6,117.3 216.3,85.8 211.7,85.8"/>
+<polygon points="316.5,73.6 324.3,101.2 320.4,101.2 332.0,128.7 324.3,128.7 339.8,156.3 328.2,156.3 347.6,183.8 285.5,183.8 304.9,156.3 293.2,156.3 308.8,128.7 301.0,128.7 312.6,101.2 308.8,101.2"/>
+<polygon points="395.3,45.1 404.0,78.5 399.7,78.5 412.8,111.9 404.0,111.9 421.5,145.3 408.4,145.3 430.3,178.7 360.2,178.7 382.1,145.3 369.0,145.3 386.5,111.9 377.8,111.9 390.9,78.5 386.5,78.5"/>
+<polygon points="465.6,45.5 474.7,78.8 470.1,78.8 483.8,112.1 474.7,112.1 492.9,145.4 479.2,145.4 502.0,178.8 429.1,178.8 451.9,145.4 438.2,145.4 456.5,112.1 447.3,112.1 461.0,78.8 456.5,78.8"/>
+<polygon points="531.0,72.0 538.6,99.9 534.8,99.9 546.3,127.7 538.6,127.7 553.9,155.6 542.5,155.6 561.6,183.5 500.4,183.5 519.5,155.6 508.0,155.6 523.3,127.7 515.7,127.7 527.2,99.9 523.3,99.9"/>
+<polygon points="609.6,88.6 616.4,113.1 613.0,113.1 623.2,137.5 616.4,137.5 630.0,162.0 619.8,162.0 636.8,186.5 582.3,186.5 599.4,162.0 589.1,162.0 602.8,137.5 595.9,137.5 606.2,113.1 602.8,113.1"/>
+<polygon points="723.4,44.6 733.0,78.1 728.2,78.1 742.5,111.6 733.0,111.6 752.0,145.1 737.7,145.1 761.6,178.6 685.2,178.6 709.1,145.1 694.8,145.1 713.9,111.6 704.3,111.6 718.6,78.1 713.9,78.1"/>
+<polygon points="750.2,52.6 758.9,84.4 754.6,84.4 767.7,116.3 758.9,116.3 776.4,148.2 763.3,148.2 785.1,180.0 715.2,180.0 737.1,148.2 724.0,148.2 741.4,116.3 732.7,116.3 745.8,84.4 741.4,84.4"/>
+<polygon points="834.8,46.9 842.6,79.9 838.7,79.9 850.5,112.9 842.6,112.9 858.3,146.0 846.5,146.0 866.2,179.0 803.3,179.0 823.0,146.0 811.2,146.0 826.9,112.9 819.1,112.9 830.8,79.9 826.9,79.9"/>
+<polygon points="942.0,91.4 948.6,115.3 945.3,115.3 955.2,139.2 948.6,139.2 961.8,163.1 951.9,163.1 968.4,187.0 915.6,187.0 932.1,163.1 922.2,163.1 935.4,139.2 928.8,139.2 938.7,115.3 935.4,115.3"/>
+<polygon points="998.3,80.3 1005.7,106.5 1002.0,106.5 1013.1,132.7 1005.7,132.7 1020.5,158.9 1009.4,158.9 1027.9,185.0 968.7,185.0 987.2,158.9 976.1,158.9 990.9,132.7 983.5,132.7 994.6,106.5 990.9,106.5"/>
+<polygon points="1079.8,59.2 1088.9,89.7 1084.3,89.7 1098.0,120.2 1088.9,120.2 1107.1,150.7 1093.4,150.7 1116.2,181.2 1043.3,181.2 1066.1,150.7 1052.4,150.7 1070.6,120.2 1061.5,120.2 1075.2,89.7 1070.6,89.7"/>
+<polygon points="1138.5,92.4 1144.5,116.1 1141.5,116.1 1150.5,139.8 1144.5,139.8 1156.6,163.5 1147.5,163.5 1162.6,187.2 1114.5,187.2 1129.5,163.5 1120.5,163.5 1132.5,139.8 1126.5,139.8 1135.5,116.1 1132.5,116.1"/>
+<polygon points="1255.7,81.9 1262.0,107.7 1258.8,107.7 1268.3,133.6 1262.0,133.6 1274.6,159.4 1265.1,159.4 1280.9,185.3 1230.4,185.3 1246.2,159.4 1236.7,159.4 1249.4,133.6 1243.1,133.6 1252.5,107.7 1249.4,107.7"/>
+<polygon points="1355.7,56.7 1363.9,87.7 1359.8,87.7 1372.1,118.7 1363.9,118.7 1380.3,149.7 1368.0,149.7 1388.5,180.8 1322.9,180.8 1343.4,149.7 1331.1,149.7 1347.5,118.7 1339.3,118.7 1351.6,87.7 1347.5,87.7"/>
+<polygon points="1434.5,75.0 1442.1,102.3 1438.3,102.3 1449.8,129.5 1442.1,129.5 1457.4,156.8 1445.9,156.8 1465.1,184.1 1403.9,184.1 1423.0,156.8 1411.5,156.8 1426.8,129.5 1419.2,129.5 1430.6,102.3 1426.8,102.3"/>
+<rect x="0" y="204" width="1440" height="36"/>
+</g>
+<g fill="#08150F">
+<polygon points="8.6,87.7 17.7,118.9 13.2,118.9 26.8,150.1 17.7,150.1 35.9,181.4 22.2,181.4 44.9,212.6 -27.7,212.6 -5.0,181.4 -18.6,181.4 -0.4,150.1 -9.5,150.1 4.1,118.9 -0.4,118.9"/>
+<polygon points="230.4,54.0 240.3,92.1 235.3,92.1 250.2,130.2 240.3,130.2 260.1,168.4 245.3,168.4 270.0,206.5 190.8,206.5 215.5,168.4 200.7,168.4 220.5,130.2 210.6,130.2 225.4,92.1 220.5,92.1"/>
+<polygon points="289.8,96.3 296.9,125.7 293.4,125.7 304.1,155.2 296.9,155.2 311.2,184.7 300.5,184.7 318.3,214.1 261.3,214.1 279.1,184.7 268.4,184.7 282.7,155.2 275.6,155.2 286.3,125.7 282.7,125.7"/>
+<polygon points="387.1,57.2 398.2,94.7 392.6,94.7 409.2,132.2 398.2,132.2 420.2,169.6 403.7,169.6 431.2,207.1 343.1,207.1 370.6,169.6 354.1,169.6 376.1,132.2 365.1,132.2 381.6,94.7 376.1,94.7"/>
+<polygon points="531.2,48.7 541.1,88.0 536.2,88.0 551.0,127.2 541.1,127.2 560.9,166.4 546.0,166.4 570.7,205.6 491.7,205.6 516.4,166.4 501.6,166.4 521.3,127.2 511.5,127.2 526.3,88.0 521.3,88.0"/>
+<polygon points="557.9,86.2 565.9,117.7 561.9,117.7 573.8,149.3 565.9,149.3 581.7,180.8 569.8,180.8 589.7,212.3 526.2,212.3 546.0,180.8 534.1,180.8 550.0,149.3 542.0,149.3 554.0,117.7 550.0,117.7"/>
+<polygon points="675.7,89.0 684.3,119.9 680.0,119.9 692.8,150.9 684.3,150.9 701.4,181.8 688.5,181.8 710.0,212.8 641.3,212.8 662.8,181.8 649.9,181.8 667.1,150.9 658.5,150.9 671.4,119.9 667.1,119.9"/>
+<polygon points="829.8,96.3 838.5,125.8 834.1,125.8 847.1,155.2 838.5,155.2 855.7,184.7 842.8,184.7 864.3,214.1 795.3,214.1 816.9,184.7 803.9,184.7 821.2,155.2 812.6,155.2 825.5,125.8 821.2,125.8"/>
+<polygon points="1016.3,86.1 1023.8,117.6 1020.0,117.6 1031.3,149.2 1023.8,149.2 1038.7,180.7 1027.5,180.7 1046.2,212.3 986.4,212.3 1005.1,180.7 993.8,180.7 1008.8,149.2 1001.3,149.2 1012.5,117.6 1008.8,117.6"/>
+<polygon points="979.7,54.5 988.6,92.6 984.1,92.6 997.5,130.6 988.6,130.6 1006.4,168.6 993.0,168.6 1015.4,206.6 944.0,206.6 966.3,168.6 952.9,168.6 970.7,130.6 961.8,130.6 975.2,92.6 970.7,92.6"/>
+<polygon points="1195.4,77.2 1203.9,110.6 1199.7,110.6 1212.4,144.0 1203.9,144.0 1220.9,177.3 1208.2,177.3 1229.4,210.7 1161.5,210.7 1182.7,177.3 1170.0,177.3 1186.9,144.0 1178.5,144.0 1191.2,110.6 1186.9,110.6"/>
+<polygon points="1319.1,118.6 1325.1,143.5 1322.1,143.5 1331.1,168.4 1325.1,168.4 1337.1,193.2 1328.1,193.2 1343.1,218.1 1295.0,218.1 1310.0,193.2 1301.0,193.2 1313.0,168.4 1307.0,168.4 1316.0,143.5 1313.0,143.5"/>
+<polygon points="1377.6,118.1 1384.9,143.1 1381.3,143.1 1392.2,168.1 1384.9,168.1 1399.5,193.1 1388.6,193.1 1406.8,218.1 1348.4,218.1 1366.7,193.1 1355.7,193.1 1370.3,168.1 1363.0,168.1 1374.0,143.1 1370.3,143.1"/>
+<rect x="0" y="236" width="1440" height="4"/>
+</g>
+<rect x="0" y="222" width="1440" height="18" fill="#08150F"/>
+</svg>
+  <svg class="eyes" viewBox="0 0 1440 240" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false"><g class="eye-pair" style="animation-delay:0.0s" fill="#FFB02E" filter="url(#glow)"><ellipse cx="236" cy="156" rx="5" ry="2.4" transform="rotate(14 236 156)"/><ellipse cx="251" cy="156" rx="5" ry="2.4" transform="rotate(-14 251 156)"/></g><g class="eye-pair" style="animation-delay:3.1s" fill="#B9F25C" filter="url(#glow)"><ellipse cx="492" cy="130" rx="5" ry="2.4" transform="rotate(14 492 130)"/><ellipse cx="507" cy="130" rx="5" ry="2.4" transform="rotate(-14 507 130)"/></g><g class="eye-pair" style="animation-delay:15.5s" fill="#FFB02E" filter="url(#glow)"><ellipse cx="808" cy="168" rx="5" ry="2.4" transform="rotate(14 808 168)"/><ellipse cx="823" cy="168" rx="5" ry="2.4" transform="rotate(-14 823 168)"/></g><g class="eye-pair" style="animation-delay:6.2s" fill="#FFB02E" filter="url(#glow)"><ellipse cx="958" cy="146" rx="5" ry="2.4" transform="rotate(14 958 146)"/><ellipse cx="973" cy="146" rx="5" ry="2.4" transform="rotate(-14 973 146)"/></g><g class="eye-pair" style="animation-delay:9.3s" fill="#B9F25C" filter="url(#glow)"><ellipse cx="1188" cy="170" rx="5" ry="2.4" transform="rotate(14 1188 170)"/><ellipse cx="1203" cy="170" rx="5" ry="2.4" transform="rotate(-14 1203 170)"/></g><g class="eye-pair" style="animation-delay:12.4s" fill="#FFB02E" filter="url(#glow)"><ellipse cx="1344" cy="138" rx="5" ry="2.4" transform="rotate(14 1344 138)"/><ellipse cx="1359" cy="138" rx="5" ry="2.4" transform="rotate(-14 1359 138)"/></g><g class="eye-pair" style="animation-delay:18.6s" fill="#B9F25C" filter="url(#glow)"><ellipse cx="96" cy="120" rx="5" ry="2.4" transform="rotate(14 96 120)"/><ellipse cx="111" cy="120" rx="5" ry="2.4" transform="rotate(-14 111 120)"/></g></svg>
+  <div class="fog" aria-hidden="true"></div>
+  <svg class="mush-overlay" viewBox="0 0 1440 150" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">
+<use href="#m-purple" x="1373.2" y="133.1" width="27.5" height="27.5"/>
+<use href="#m-orange" x="938.9" y="129.0" width="29.7" height="29.7"/>
+<use href="#m-teal" x="1314.8" y="130.2" width="30.8" height="30.8" filter="url(#glow)" class="breathe"/>
+<use href="#m-teal" x="1026.0" y="125.5" width="31.5" height="31.5" filter="url(#glow)" class="breathe"/>
+<use href="#m-red" x="799.2" y="126.1" width="34.6" height="34.6"/>
+<use href="#m-red" x="349.4" y="121.1" width="35.2" height="35.2"/>
+<use href="#m-teal" x="1221.2" y="123.7" width="36.8" height="36.8" filter="url(#glow)" class="breathe"/>
+<use href="#m-red" x="143.2" y="121.3" width="37.1" height="37.1"/>
+<use href="#m-orange" x="181.2" y="123.2" width="37.3" height="37.3"/>
+<use href="#m-orange" x="76.6" y="116.5" width="39.1" height="39.1"/>
+<use href="#m-red" x="290.5" y="115.8" width="40.0" height="40.0"/>
+<use href="#m-teal" x="388.0" y="116.1" width="40.8" height="40.8" filter="url(#glow)" class="breathe"/>
+<use href="#m-teal" x="627.0" y="117.9" width="42.0" height="42.0" filter="url(#glow)" class="breathe"/>
+<use href="#m-teal" x="721.1" y="110.3" width="45.8" height="45.8" filter="url(#glow)" class="breathe"/>
+<use href="#m-red" x="1135.7" y="108.3" width="49.3" height="49.3"/>
+<use href="#m-teal" x="849.8" y="106.6" width="50.6" height="50.6" filter="url(#glow)" class="breathe"/>
+<use href="#m-teal" x="540.9" y="103.7" width="53.7" height="53.7" filter="url(#glow)" class="breathe"/>
+<use href="#m-teal" x="1038.0" y="89.1" width="66.5" height="66.5" filter="url(#glow)" class="breathe"/>
+<use href="#m-teal" x="656.2" y="82.9" width="72.5" height="72.5" filter="url(#glow)" class="breathe"/>
+<use href="#m-purple" x="-2.7" y="69.7" width="85.5" height="85.5"/>
+<use href="#m-teal" x="1222.4" y="70.3" width="88.8" height="88.8" filter="url(#glow)" class="breathe"/>
+<use href="#m-orange" x="427.7" y="70.4" width="90.2" height="90.2"/>
+<g transform="rotate(-14 700 112)"><use href="#d20" x="668" y="84" width="64" height="64" filter="url(#glow)"/></g>
+</svg>
+</section>
+
+<nav class="tab-bar" aria-label="Sections">
+  <div class="tab-bar-inner" role="tablist">
+    <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="tab-workbench" data-tab="workbench" onclick="activateTab('workbench')">The Workbench</button>
+    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-projects" data-tab="projects" onclick="activateTab('projects')">Projects</button>
+    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-halloween" data-tab="halloween" onclick="activateTab('halloween')">Halloween Village</button>
+    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-guild" data-tab="guild" onclick="activateTab('guild')">The Guild</button>
+    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-conventions" data-tab="conventions" onclick="activateTab('conventions')">Conventions</button>
+    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-findus" data-tab="findus" onclick="activateTab('findus')">Find Us</button>
   </div>
 </nav>
 
 <main>
 
-  <section id="tab-workbench" class="tab-panel active band">
+  <section id="tab-workbench" class="tab-panel active band" role="tabpanel">
     <div class="wrap">
       <div class="callout">
         <div class="section-head">
@@ -298,10 +772,44 @@
         <p>Gnomewright is a solo gnome workshop based in the north woods, which means every piece that leaves the shop has actually been designed, printed, and painted by the same set of hands, not a warehouse and not a print farm.</p>
         <p>We're just starting out, but we're looking forward to growing this into something bigger, a full catalog of printable designs and a real community of builders trading ideas, tricks, and encouragement along the way.</p>
       </div>
+
+      <div class="steps">
+        <div class="step">
+          <span class="n" aria-hidden="true">1</span>
+          <div class="ico"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 7 54 19.5v25L32 57 10 44.5v-25Z"/><path d="M32 32 10 19.5M32 32l22-12.5M32 32v25"/></svg></div>
+          <h3>Designed</h3>
+          <p>Every wall, ruin, and dungeon tile starts as hard geometry in Fusion 360, then gets weathered in Blender.</p>
+        </div>
+        <div class="step">
+          <span class="n" aria-hidden="true">2</span>
+          <div class="ico"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 42 32 55l24-13"/><path d="M8 31 32 44l24-13"/><path d="M8 20 32 33l24-13L32 7Z"/></svg></div>
+          <h3>Printed</h3>
+          <p>Printed here in the north woods workshop, one layer at a time.</p>
+        </div>
+        <div class="step">
+          <span class="n" aria-hidden="true">3</span>
+          <div class="ico"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M53 9 30 32"/><path d="M30 32c-7-1-13 3-13 10 0 5-3 8-7 10 11 4 25 1 26-9 .6-5-2-9-6-11Z"/><path d="M50 12l3 3"/></svg></div>
+          <h3>Painted</h3>
+          <p>Finished by hand, so every piece is one of a kind.</p>
+        </div>
+      </div>
+
+      <div class="follow">
+        <div>
+          <h3>Follow the workshop</h3>
+          <p>Work in progress photos, launch news, and a look behind the scenes on every build.</p>
+        </div>
+        <div class="btn-row">
+          <a href="https://www.facebook.com/share/1EmSV5TRPx/" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/gnomewright/" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.tiktok.com/@gnomewright" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://discord.gg/sgGanAFED" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">Discord</a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="tab-projects" class="tab-panel band">
+  <section id="tab-projects" class="tab-panel band" role="tabpanel">
     <div class="wrap">
       <div class="section-head center">
         <h2>Projects</h2>
@@ -309,7 +817,7 @@
       </div>
 
       <div class="notice">
-        <p><strong>Nothing shown here is available for purchase just yet.</strong> STL files are headed to Thangs, and finished, hand painted pieces are being prepared for sale on Etsy soon.</p>
+        <p><strong>Not everything shown here is for sale yet.</strong> The Etsy shop launches December 1st, and finished, hand painted pieces will be added in stages from there. STL files are headed to Thangs.</p>
         <p>Printed pieces may vary slightly from the photos shown and can include small imperfections that are a normal part of the three dimensional printing process.</p>
         <p>Every finished piece is painted by hand, so each one is one of a kind and may look slightly different from the photos shown.</p>
         <p>Most projects on this page are built to a rough one quarter inch scale. This is a rough estimate only, meant as a general guide for size and comparison rather than an exact measurement. Pieces are not designed to an exact scale.</p>
@@ -322,16 +830,16 @@
           <div class="project-photos">
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: underhollow_burrow_photo1.jpg -->
-              <div class="photo-frame"><img src="underhollow_burrow_photo1.jpg" alt="Underhollow Burrow photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="underhollow_burrow_photo1.jpg" alt="Underhollow Burrow photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: underhollow_burrow_photo2.jpg -->
-              <div class="photo-frame"><img src="underhollow_burrow_photo2.jpg" alt="Underhollow Burrow photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="underhollow_burrow_photo2.jpg" alt="Underhollow Burrow photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
           </div>
           <div class="project-stl">
             <!-- Photo slot for an STL render or screenshot. Suggested file name: underhollow_burrow_stl.jpg -->
-            <div class="photo-frame stl-frame"><img src="underhollow_burrow_stl.jpg" alt="Underhollow Burrow STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
+            <div class="photo-frame stl-frame"><img loading="lazy" decoding="async" src="underhollow_burrow_stl.jpg" alt="Underhollow Burrow STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
           </div>
           <p class="project-meta">Estimated filament to print without supports: estimate coming soon</p>
           <div class="project-badges">
@@ -345,16 +853,16 @@
           <div class="project-photos">
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: ufoopsies_photo1.jpg -->
-              <div class="photo-frame"><img src="ufoopsies_photo1.jpg" alt="UFOopsies photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="ufoopsies_photo1.jpg" alt="UFOopsies photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: ufoopsies_photo2.jpg -->
-              <div class="photo-frame"><img src="ufoopsies_photo2.jpg" alt="UFOopsies photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="ufoopsies_photo2.jpg" alt="UFOopsies photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
           </div>
           <div class="project-stl">
             <!-- Photo slot for an STL render or screenshot. Suggested file name: ufoopsies_stl.jpg -->
-            <div class="photo-frame stl-frame"><img src="ufoopsies_stl.jpg" alt="UFOopsies STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
+            <div class="photo-frame stl-frame"><img loading="lazy" decoding="async" src="ufoopsies_stl.jpg" alt="UFOopsies STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
           </div>
           <p class="project-meta">Estimated filament to print without supports: estimate coming soon</p>
           <div class="project-badges">
@@ -368,16 +876,16 @@
           <div class="project-photos">
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: swamp_cabin_photo1.jpg -->
-              <div class="photo-frame"><img src="swamp_cabin_photo1.jpg" alt="Swamp Cabin photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="swamp_cabin_photo1.jpg" alt="Swamp Cabin photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: swamp_cabin_photo2.jpg -->
-              <div class="photo-frame"><img src="swamp_cabin_photo2.jpg" alt="Swamp Cabin photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="swamp_cabin_photo2.jpg" alt="Swamp Cabin photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
           </div>
           <div class="project-stl">
             <!-- Photo slot for an STL render or screenshot. Suggested file name: swamp_cabin_stl.jpg -->
-            <div class="photo-frame stl-frame"><img src="swamp_cabin_stl.jpg" alt="Swamp Cabin STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
+            <div class="photo-frame stl-frame"><img loading="lazy" decoding="async" src="swamp_cabin_stl.jpg" alt="Swamp Cabin STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
           </div>
           <p class="project-meta">Estimated filament to print without supports: estimate coming soon</p>
           <div class="project-badges">
@@ -391,16 +899,16 @@
           <div class="project-photos">
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: mossglen_fae_cottage_photo1.jpg -->
-              <div class="photo-frame"><img src="mossglen_fae_cottage_photo1.jpg" alt="Mossglen Fae Cottage photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="mossglen_fae_cottage_photo1.jpg" alt="Mossglen Fae Cottage photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: mossglen_fae_cottage_photo2.jpg -->
-              <div class="photo-frame"><img src="mossglen_fae_cottage_photo2.jpg" alt="Mossglen Fae Cottage photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="mossglen_fae_cottage_photo2.jpg" alt="Mossglen Fae Cottage photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
           </div>
           <div class="project-stl">
             <!-- Photo slot for an STL render or screenshot. Suggested file name: mossglen_fae_cottage_stl.jpg -->
-            <div class="photo-frame stl-frame"><img src="mossglen_fae_cottage_stl.jpg" alt="Mossglen Fae Cottage STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
+            <div class="photo-frame stl-frame"><img loading="lazy" decoding="async" src="mossglen_fae_cottage_stl.jpg" alt="Mossglen Fae Cottage STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
           </div>
           <p class="project-meta">Estimated filament to print without supports: estimate coming soon</p>
           <div class="project-badges">
@@ -414,16 +922,16 @@
           <div class="project-photos">
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: hollowgrain_barn_photo1.jpg -->
-              <div class="photo-frame"><img src="hollowgrain_barn_photo1.jpg" alt="Hollowgrain Barn photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="hollowgrain_barn_photo1.jpg" alt="Hollowgrain Barn photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: hollowgrain_barn_photo2.jpg -->
-              <div class="photo-frame"><img src="hollowgrain_barn_photo2.jpg" alt="Hollowgrain Barn photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="hollowgrain_barn_photo2.jpg" alt="Hollowgrain Barn photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
           </div>
           <div class="project-stl">
             <!-- Photo slot for an STL render or screenshot. Suggested file name: hollowgrain_barn_stl.jpg -->
-            <div class="photo-frame stl-frame"><img src="hollowgrain_barn_stl.jpg" alt="Hollowgrain Barn STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
+            <div class="photo-frame stl-frame"><img loading="lazy" decoding="async" src="hollowgrain_barn_stl.jpg" alt="Hollowgrain Barn STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
           </div>
           <p class="project-meta">Estimated filament to print without supports: estimate coming soon</p>
           <div class="project-badges">
@@ -437,16 +945,16 @@
           <div class="project-photos">
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: redbrick_hearth_house_photo1.jpg -->
-              <div class="photo-frame"><img src="redbrick_hearth_house_photo1.jpg" alt="Redbrick Hearth House photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="redbrick_hearth_house_photo1.jpg" alt="Redbrick Hearth House photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: redbrick_hearth_house_photo2.jpg -->
-              <div class="photo-frame"><img src="redbrick_hearth_house_photo2.jpg" alt="Redbrick Hearth House photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="redbrick_hearth_house_photo2.jpg" alt="Redbrick Hearth House photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
           </div>
           <div class="project-stl">
             <!-- Photo slot for an STL render or screenshot. Suggested file name: redbrick_hearth_house_stl.jpg -->
-            <div class="photo-frame stl-frame"><img src="redbrick_hearth_house_stl.jpg" alt="Redbrick Hearth House STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
+            <div class="photo-frame stl-frame"><img loading="lazy" decoding="async" src="redbrick_hearth_house_stl.jpg" alt="Redbrick Hearth House STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
           </div>
           <p class="project-meta">Estimated filament to print without supports: estimate coming soon</p>
           <div class="project-badges">
@@ -460,24 +968,24 @@
           <div class="project-photos">
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: castle_dice_tower_photo1.jpg -->
-              <div class="photo-frame"><img src="castle_dice_tower_photo1.jpg" alt="Castle Dice Tower photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="castle_dice_tower_photo1.jpg" alt="Castle Dice Tower photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: castle_dice_tower_photo2.jpg -->
-              <div class="photo-frame"><img src="castle_dice_tower_photo2.jpg" alt="Castle Dice Tower photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="castle_dice_tower_photo2.jpg" alt="Castle Dice Tower photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: castle_dice_tower_photo3.jpg -->
-              <div class="photo-frame"><img src="castle_dice_tower_photo3.jpg" alt="Castle Dice Tower photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="castle_dice_tower_photo3.jpg" alt="Castle Dice Tower photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: castle_dice_tower_photo4.jpg -->
-              <div class="photo-frame"><img src="castle_dice_tower_photo4.jpg" alt="Castle Dice Tower photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="castle_dice_tower_photo4.jpg" alt="Castle Dice Tower photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
           </div>
           <div class="project-stl">
             <!-- Photo slot for an STL render or screenshot. Suggested file name: castle_dice_tower_stl.jpg -->
-            <div class="photo-frame stl-frame"><img src="castle_dice_tower_stl.jpg" alt="Castle Dice Tower STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
+            <div class="photo-frame stl-frame"><img loading="lazy" decoding="async" src="castle_dice_tower_stl.jpg" alt="Castle Dice Tower STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
           </div>
           <p class="project-meta">Estimated filament to print without supports: estimate coming soon</p>
           <div class="project-badges">
@@ -495,7 +1003,7 @@
     </div>
   </section>
 
-  <section id="tab-halloween" class="tab-panel band">
+  <section id="tab-halloween" class="tab-panel band" role="tabpanel">
     <div class="wrap">
       <div class="halloween-block">
         <div class="section-head center">
@@ -505,7 +1013,7 @@
 
         <div class="photo-frame banner-frame">
           <!-- Banner photo slot. This one shows the whole shelf display, not shrink to fit like the others. Suggested file name: halloween_banner.jpg -->
-          <img src="halloween_banner.jpg" alt="The full Halloween Village display" onerror="this.style.display='none';this.parentElement.classList.add('missing');">
+          <img loading="lazy" decoding="async" src="halloween_banner.jpg" alt="The full Halloween Village display" onerror="this.style.display='none';this.parentElement.classList.add('missing');">
           <span>Photo coming soon</span>
         </div>
 
@@ -521,16 +1029,16 @@
           <div class="project-photos">
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: shadowspan_bridge_photo1.jpg -->
-              <div class="photo-frame"><img src="shadowspan_bridge_photo1.jpg" alt="Shadowspan Bridge photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="shadowspan_bridge_photo1.jpg" alt="Shadowspan Bridge photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: shadowspan_bridge_photo2.jpg -->
-              <div class="photo-frame"><img src="shadowspan_bridge_photo2.jpg" alt="Shadowspan Bridge photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="shadowspan_bridge_photo2.jpg" alt="Shadowspan Bridge photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
           </div>
           <div class="project-stl">
             <!-- Photo slot for an STL render or screenshot. Suggested file name: shadowspan_bridge_stl.jpg -->
-            <div class="photo-frame stl-frame"><img src="shadowspan_bridge_stl.jpg" alt="Shadowspan Bridge STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
+            <div class="photo-frame stl-frame"><img loading="lazy" decoding="async" src="shadowspan_bridge_stl.jpg" alt="Shadowspan Bridge STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
           </div>
           <p class="project-meta">Estimated filament to print without supports: estimate coming soon</p>
           <div class="project-badges">
@@ -544,16 +1052,16 @@
           <div class="project-photos">
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: cauldron_hollow_cabin_photo1.jpg -->
-              <div class="photo-frame"><img src="cauldron_hollow_cabin_photo1.jpg" alt="Cauldron Hollow Cabin photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="cauldron_hollow_cabin_photo1.jpg" alt="Cauldron Hollow Cabin photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: cauldron_hollow_cabin_photo2.jpg -->
-              <div class="photo-frame"><img src="cauldron_hollow_cabin_photo2.jpg" alt="Cauldron Hollow Cabin photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="cauldron_hollow_cabin_photo2.jpg" alt="Cauldron Hollow Cabin photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
           </div>
           <div class="project-stl">
             <!-- Photo slot for an STL render or screenshot. Suggested file name: cauldron_hollow_cabin_stl.jpg -->
-            <div class="photo-frame stl-frame"><img src="cauldron_hollow_cabin_stl.jpg" alt="Cauldron Hollow Cabin STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
+            <div class="photo-frame stl-frame"><img loading="lazy" decoding="async" src="cauldron_hollow_cabin_stl.jpg" alt="Cauldron Hollow Cabin STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
           </div>
           <p class="project-meta">Estimated filament to print without supports: estimate coming soon</p>
           <div class="project-badges">
@@ -567,16 +1075,16 @@
           <div class="project-photos">
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: new_england_townhouses_photo1.jpg -->
-              <div class="photo-frame"><img src="new_england_townhouses_photo1.jpg" alt="New England Townhouses photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="new_england_townhouses_photo1.jpg" alt="New England Townhouses photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: new_england_townhouses_photo2.jpg -->
-              <div class="photo-frame"><img src="new_england_townhouses_photo2.jpg" alt="New England Townhouses photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="new_england_townhouses_photo2.jpg" alt="New England Townhouses photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
           </div>
           <div class="project-stl">
             <!-- Photo slot for an STL render or screenshot. Suggested file name: new_england_townhouses_stl.jpg -->
-            <div class="photo-frame stl-frame"><img src="new_england_townhouses_stl.jpg" alt="New England Townhouses STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
+            <div class="photo-frame stl-frame"><img loading="lazy" decoding="async" src="new_england_townhouses_stl.jpg" alt="New England Townhouses STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
           </div>
           <p class="project-meta">Estimated filament to print without supports: estimate coming soon</p>
           <div class="project-badges">
@@ -590,16 +1098,16 @@
           <div class="project-photos">
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: cobblestone_shopfronts_photo1.jpg -->
-              <div class="photo-frame"><img src="cobblestone_shopfronts_photo1.jpg" alt="Cobblestone Shopfronts photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="cobblestone_shopfronts_photo1.jpg" alt="Cobblestone Shopfronts photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: cobblestone_shopfronts_photo2.jpg -->
-              <div class="photo-frame"><img src="cobblestone_shopfronts_photo2.jpg" alt="Cobblestone Shopfronts photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="cobblestone_shopfronts_photo2.jpg" alt="Cobblestone Shopfronts photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
           </div>
           <div class="project-stl">
             <!-- Photo slot for an STL render or screenshot. Suggested file name: cobblestone_shopfronts_stl.jpg -->
-            <div class="photo-frame stl-frame"><img src="cobblestone_shopfronts_stl.jpg" alt="Cobblestone Shopfronts STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
+            <div class="photo-frame stl-frame"><img loading="lazy" decoding="async" src="cobblestone_shopfronts_stl.jpg" alt="Cobblestone Shopfronts STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
           </div>
           <p class="project-meta">Estimated filament to print without supports: estimate coming soon</p>
           <div class="project-badges">
@@ -613,16 +1121,16 @@
           <div class="project-photos">
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: ravenscroft_manor_photo1.jpg -->
-              <div class="photo-frame"><img src="ravenscroft_manor_photo1.jpg" alt="Ravenscroft Manor photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="ravenscroft_manor_photo1.jpg" alt="Ravenscroft Manor photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: ravenscroft_manor_photo2.jpg -->
-              <div class="photo-frame"><img src="ravenscroft_manor_photo2.jpg" alt="Ravenscroft Manor photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="ravenscroft_manor_photo2.jpg" alt="Ravenscroft Manor photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
           </div>
           <div class="project-stl">
             <!-- Photo slot for an STL render or screenshot. Suggested file name: ravenscroft_manor_stl.jpg -->
-            <div class="photo-frame stl-frame"><img src="ravenscroft_manor_stl.jpg" alt="Ravenscroft Manor STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
+            <div class="photo-frame stl-frame"><img loading="lazy" decoding="async" src="ravenscroft_manor_stl.jpg" alt="Ravenscroft Manor STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
           </div>
           <p class="project-meta">Estimated filament to print without supports: estimate coming soon</p>
           <div class="project-badges">
@@ -636,16 +1144,16 @@
           <div class="project-photos">
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: ivywall_brick_house_photo1.jpg -->
-              <div class="photo-frame"><img src="ivywall_brick_house_photo1.jpg" alt="Ivywall Brick House photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="ivywall_brick_house_photo1.jpg" alt="Ivywall Brick House photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: ivywall_brick_house_photo2.jpg -->
-              <div class="photo-frame"><img src="ivywall_brick_house_photo2.jpg" alt="Ivywall Brick House photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="ivywall_brick_house_photo2.jpg" alt="Ivywall Brick House photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
           </div>
           <div class="project-stl">
             <!-- Photo slot for an STL render or screenshot. Suggested file name: ivywall_brick_house_stl.jpg -->
-            <div class="photo-frame stl-frame"><img src="ivywall_brick_house_stl.jpg" alt="Ivywall Brick House STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
+            <div class="photo-frame stl-frame"><img loading="lazy" decoding="async" src="ivywall_brick_house_stl.jpg" alt="Ivywall Brick House STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
           </div>
           <p class="project-meta">Estimated filament to print without supports: estimate coming soon</p>
           <div class="project-badges">
@@ -659,16 +1167,16 @@
           <div class="project-photos">
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: willowbrook_farmhouse_photo1.jpg -->
-              <div class="photo-frame"><img src="willowbrook_farmhouse_photo1.jpg" alt="Willowbrook Farmhouse photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="willowbrook_farmhouse_photo1.jpg" alt="Willowbrook Farmhouse photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
             <div class="photo-slot">
               <!-- Photo slot. Add style="background-image:url('data:image/jpeg;base64,...')" once you have a real photo. Suggested file name: willowbrook_farmhouse_photo2.jpg -->
-              <div class="photo-frame"><img src="willowbrook_farmhouse_photo2.jpg" alt="Willowbrook Farmhouse photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
+              <div class="photo-frame"><img loading="lazy" decoding="async" src="willowbrook_farmhouse_photo2.jpg" alt="Willowbrook Farmhouse photo" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>Photo coming soon</span></div>
             </div>
           </div>
           <div class="project-stl">
             <!-- Photo slot for an STL render or screenshot. Suggested file name: willowbrook_farmhouse_stl.jpg -->
-            <div class="photo-frame stl-frame"><img src="willowbrook_farmhouse_stl.jpg" alt="Willowbrook Farmhouse STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
+            <div class="photo-frame stl-frame"><img loading="lazy" decoding="async" src="willowbrook_farmhouse_stl.jpg" alt="Willowbrook Farmhouse STL preview" onerror="this.style.display='none';this.parentElement.classList.add('missing');"><span>STL preview coming soon</span></div>
           </div>
           <p class="project-meta">Estimated filament to print without supports: estimate coming soon</p>
           <div class="project-badges">
@@ -681,7 +1189,7 @@
     </div>
   </section>
 
-  <section id="tab-guild" class="tab-panel band guild">
+  <section id="tab-guild" class="tab-panel band guild" role="tabpanel">
     <div class="wrap">
       <h2>Join the Guild</h2>
       <p class="dek2">Somewhere between a tavern and a workshop, a Discord full of terrain builders, painters, and dungeon masters trading work in progress shots, arguing over the best print settings, and losing entire evenings to just one more tile.</p>
@@ -689,46 +1197,46 @@
         <a href="https://discord.gg/sgGanAFED" class="btn btn-primary" target="_blank" rel="noopener">Join on Discord</a>
       </div>
 
-      <p class="dek2" style="margin-top:36px;">Gnomewright will be at Twin Cities Con, November 20 through 22, 2026 in Minneapolis, with more shows to be announced for 2027. <a href="#" onclick="activateTab('conventions');return false;" style="color: var(--venom); text-decoration: underline;">Full convention details here</a>.</p>
+      <p class="dek2 con-note">Gnomewright will be at Twin Cities Con, November 20 through 22, 2026 in Minneapolis, with more shows to be announced for 2027. <a href="#" onclick="activateTab('conventions');return false;">Full convention details here</a>.</p>
 
-      <div class="notice" style="text-align:center; margin-top:56px;">
+      <div class="notice">
         <p><strong>Got a question, want to talk shop, or just curious about anything Gnomewright, conventions included?</strong> Reach out however is easiest, we would love to hear from you.</p>
       </div>
       <div class="contact-row">
         <a href="https://discord.gg/sgGanAFED" class="btn btn-ghost" target="_blank" rel="noopener">Discord</a>
         <a href="https://www.instagram.com/gnomewright/" class="btn btn-ghost" target="_blank" rel="noopener">Instagram</a>
-        <a href="#" class="btn btn-ghost">Facebook</a>
+        <a href="https://www.facebook.com/share/1EmSV5TRPx/" class="btn btn-ghost" target="_blank" rel="noopener">Facebook</a>
         <a href="https://www.tiktok.com/@gnomewright" class="btn btn-ghost" target="_blank" rel="noopener">TikTok</a>
         <a href="mailto:gnomewright.contact@gmail.com" class="btn btn-ghost">Email us</a>
       </div>
     </div>
   </section>
 
-  <section id="tab-conventions" class="tab-panel band">
+  <section id="tab-conventions" class="tab-panel band" role="tabpanel">
     <div class="wrap">
       <div class="section-head center">
         <h2>Conventions</h2>
-        <p class="dek">Twin Cities Con is the first stop on the calendar, running November 20 through 22, 2026 at the Minneapolis Convention Center. More events to be announced throughout 2027. A full vendor booth setup is planned to begin in 2027 as well. Visit the <a href="https://www.twincitiescon.com/" target="_blank" rel="noopener" style="color: var(--venom); text-decoration: underline;">Twin Cities Con website</a> for details.</p>
+        <p class="dek">Twin Cities Con is the first stop on the calendar, running November 20 through 22, 2026 at the Minneapolis Convention Center. More events to be announced throughout 2027. A full vendor booth setup is planned to begin in 2027 as well. Visit the <a href="https://www.twincitiescon.com/" target="_blank" rel="noopener">Twin Cities Con website</a> for details.</p>
       </div>
       <div class="notice" style="text-align:center;">
-        <p>Want to meet up and see the work in person before then. Reach out through any of the links below and let us know.</p>
+        <p>Want to meet up and see the work in person before then? Reach out through any of the links below and let us know.</p>
       </div>
       <div class="contact-row">
         <a href="https://discord.gg/sgGanAFED" class="btn btn-ghost" target="_blank" rel="noopener">Gnomewright on Discord</a>
         <a href="https://www.instagram.com/gnomewright/" class="btn btn-ghost" target="_blank" rel="noopener">Gnomewright on Instagram</a>
-        <a href="#" class="btn btn-ghost">Gnomewright on Facebook</a>
+        <a href="https://www.facebook.com/share/1EmSV5TRPx/" class="btn btn-ghost" target="_blank" rel="noopener">Gnomewright on Facebook</a>
         <a href="https://www.tiktok.com/@gnomewright" class="btn btn-ghost" target="_blank" rel="noopener">Gnomewright on TikTok</a>
         <a href="mailto:gnomewright.contact@gmail.com" class="btn btn-ghost">Email us</a>
       </div>
 
       <div class="section-head center" style="margin-top:64px;">
         <h2>Recommend a convention</h2>
-        <p class="dek">Know a show Gnomewright should check out? Tell us below, or browse conventions yourself on <a href="https://fancons.com/" target="_blank" rel="noopener" style="color: var(--venom); text-decoration: underline;">fancons.com</a>.</p>
+        <p class="dek">Know a show Gnomewright should check out? Tell us below, or browse conventions yourself on <a href="https://fancons.com/" target="_blank" rel="noopener">fancons.com</a>.</p>
       </div>
-      <div style="max-width:520px; margin:0 auto;">
-        <input type="text" id="con-name" placeholder="Convention name and location" style="width:100%; padding:14px 16px; margin-bottom:14px; background:var(--surface); border:1px solid var(--border-warm); color:var(--cream); font-family:var(--font-body); font-size:1rem;">
-        <textarea id="con-details" placeholder="Anything else we should know? Dates, why it might be a good fit, that sort of thing." rows="4" style="width:100%; padding:14px 16px; margin-bottom:14px; background:var(--surface); border:1px solid var(--border-warm); color:var(--cream); font-family:var(--font-body); font-size:1rem; resize:vertical;"></textarea>
-        <p id="con-status" style="display:none; color:var(--ember); font-size:0.9rem; margin-bottom:14px;">Please add a convention name first.</p>
+      <div class="con-form">
+        <input type="text" id="con-name" class="field" placeholder="Convention name and location" aria-label="Convention name and location">
+        <textarea id="con-details" class="field" rows="4" placeholder="Anything else we should know? Dates, why it might be a good fit, that sort of thing." aria-label="Details about the convention"></textarea>
+        <p id="con-status" class="form-error" role="alert">Please add a convention name first.</p>
         <div style="text-align:center;">
           <button class="btn btn-primary" onclick="sendConRecommendation()">Send recommendation</button>
         </div>
@@ -736,20 +1244,31 @@
     </div>
   </section>
 
-  <section id="tab-findus" class="tab-panel band">
+  <section id="tab-findus" class="tab-panel band" role="tabpanel">
     <div class="wrap">
       <div class="section-head center">
         <h2>Find Gnomewright</h2>
-        <p class="dek">The shop is being built alongside the workshop. Here is where things are headed.</p>
+        <p class="dek">The Etsy shop launches December 1st. Here is where everything else lives and where it is headed.</p>
       </div>
       <div class="find-grid">
-        <div class="find-card">
-          <h3>Etsy shop <span class="badge-soon">Opening soon</span></h3>
+        <div class="find-card hot">
+          <h3>Etsy shop <span class="badge-soon badge-hot"><span class="pre-only">Opens December 1st</span><span class="post-only">Open now</span></span></h3>
           <p>Finished, hand painted terrain and miniatures, shipped ready to place on the table.</p>
+          <a href="https://gnomewright.etsy.com" class="btn btn-primary" target="_blank" rel="noopener">Visit the Etsy shop</a>
         </div>
         <div class="find-card">
           <h3>Thangs library <span class="badge-soon">In progress</span></h3>
           <p>Test printed, print and play STL files for builders who would rather run their own printer.</p>
+        </div>
+      </div>
+
+      <div class="social-row">
+        <h3>Follow along</h3>
+        <div class="contact-row">
+          <a href="https://www.facebook.com/share/1EmSV5TRPx/" class="btn btn-ghost" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/gnomewright/" class="btn btn-ghost" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.tiktok.com/@gnomewright" class="btn btn-ghost" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://discord.gg/sgGanAFED" class="btn btn-ghost" target="_blank" rel="noopener">Discord</a>
         </div>
       </div>
 
@@ -765,15 +1284,132 @@
 
 </main>
 
+<div class="foot-forest" aria-hidden="true">
+  <svg class="foot-trees" viewBox="0 0 1440 150" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">
+<g fill="#10211A">
+<polygon points="6.8,9.3 10.7,23.4 8.7,23.4 14.6,37.5 10.7,37.5 18.5,51.6 12.6,51.6 22.4,65.6 -8.9,65.6 0.9,51.6 -5.0,51.6 2.8,37.5 -1.1,37.5 4.8,23.4 2.8,23.4"/>
+<polygon points="76.0,23.5 79.2,34.7 77.6,34.7 82.4,45.9 79.2,45.9 85.7,57.0 80.8,57.0 88.9,68.2 63.0,68.2 71.1,57.0 66.3,57.0 72.7,45.9 69.5,45.9 74.3,34.7 72.7,34.7"/>
+<polygon points="146.0,14.6 149.5,27.6 147.7,27.6 153.0,40.6 149.5,40.6 156.5,53.6 151.2,53.6 159.9,66.6 132.0,66.6 140.8,53.6 135.5,53.6 142.5,40.6 139.0,40.6 144.2,27.6 142.5,27.6"/>
+<polygon points="165.1,29.9 167.6,39.8 166.3,39.8 170.2,49.6 167.6,49.6 172.7,59.5 168.9,59.5 175.3,69.3 154.9,69.3 161.2,59.5 157.4,59.5 162.5,49.6 160.0,49.6 163.8,39.8 162.5,39.8"/>
+<polygon points="236.3,27.9 239.2,38.2 237.7,38.2 242.2,48.5 239.2,48.5 245.2,58.7 240.7,58.7 248.2,69.0 224.4,69.0 231.8,58.7 227.3,58.7 233.3,48.5 230.3,48.5 234.8,38.2 233.3,38.2"/>
+<polygon points="267.7,23.0 270.4,34.3 269.0,34.3 273.0,45.6 270.4,45.6 275.6,56.8 271.7,56.8 278.3,68.1 257.1,68.1 263.7,56.8 259.8,56.8 265.1,45.6 262.4,45.6 266.4,34.3 265.1,34.3"/>
+<polygon points="362.4,7.8 366.7,22.2 364.6,22.2 370.9,36.6 366.7,36.6 375.2,51.0 368.8,51.0 379.4,65.4 345.4,65.4 356.1,51.0 349.7,51.0 358.2,36.6 353.9,36.6 360.3,22.2 358.2,22.2"/>
+<polygon points="392.3,29.0 394.8,39.0 393.6,39.0 397.4,49.1 394.8,49.1 400.0,59.1 396.1,59.1 402.6,69.2 382.0,69.2 388.4,59.1 384.6,59.1 389.7,49.1 387.1,49.1 391.0,39.0 389.7,39.0"/>
+<polygon points="437.0,26.5 440.2,37.1 438.6,37.1 443.4,47.6 440.2,47.6 446.5,58.2 441.8,58.2 449.7,68.7 424.3,68.7 432.2,58.2 427.5,58.2 433.8,47.6 430.6,47.6 435.4,37.1 433.8,37.1"/>
+<polygon points="481.1,25.4 484.3,36.1 482.7,36.1 487.4,46.9 484.3,46.9 490.6,57.7 485.8,57.7 493.7,68.5 468.5,68.5 476.4,57.7 471.7,57.7 478.0,46.9 474.8,46.9 479.6,36.1 478.0,36.1"/>
+<polygon points="518.8,2.2 522.9,17.7 520.8,17.7 527.0,33.3 522.9,33.3 531.1,48.8 525.0,48.8 535.2,64.3 502.3,64.3 512.6,48.8 506.4,48.8 514.7,33.3 510.5,33.3 516.7,17.7 514.7,17.7"/>
+<polygon points="594.4,19.7 597.6,31.7 596.0,31.7 600.8,43.6 597.6,43.6 603.9,55.6 599.2,55.6 607.1,67.5 581.6,67.5 589.6,55.6 584.8,55.6 591.2,43.6 588.0,43.6 592.8,31.7 591.2,31.7"/>
+<polygon points="625.1,28.9 628.1,39.0 626.6,39.0 631.1,49.0 628.1,49.0 634.1,59.1 629.6,59.1 637.0,69.2 613.3,69.2 620.7,59.1 616.2,59.1 622.2,49.0 619.2,49.0 623.7,39.0 622.2,39.0"/>
+<polygon points="679.3,6.6 682.9,21.2 681.1,21.2 686.5,35.9 682.9,35.9 690.1,50.5 684.7,50.5 693.7,65.1 664.8,65.1 673.9,50.5 668.4,50.5 675.7,35.9 672.1,35.9 677.5,21.2 675.7,21.2"/>
+<polygon points="772.2,3.2 776.6,18.5 774.4,18.5 781.0,33.9 776.6,33.9 785.4,49.2 778.8,49.2 789.8,64.5 754.6,64.5 765.6,49.2 759.0,49.2 767.8,33.9 763.4,33.9 770.0,18.5 767.8,18.5"/>
+<polygon points="812.0,12.6 815.8,26.0 813.9,26.0 819.7,39.4 815.8,39.4 823.5,52.8 817.7,52.8 827.3,66.2 796.7,66.2 806.3,52.8 800.5,52.8 808.2,39.4 804.4,39.4 810.1,26.0 808.2,26.0"/>
+<polygon points="827.2,15.7 830.9,28.5 829.1,28.5 834.7,41.2 830.9,41.2 838.4,54.0 832.8,54.0 842.1,66.8 812.3,66.8 821.6,54.0 816.0,54.0 823.5,41.2 819.8,41.2 825.3,28.5 823.5,28.5"/>
+<polygon points="883.1,2.3 887.7,17.8 885.4,17.8 892.3,33.3 887.7,33.3 896.9,48.9 890.0,48.9 901.5,64.4 864.7,64.4 876.2,48.9 869.3,48.9 878.5,33.3 873.9,33.3 880.8,17.8 878.5,17.8"/>
+<polygon points="946.3,19.0 949.5,31.1 947.9,31.1 952.7,43.2 949.5,43.2 955.9,55.3 951.1,55.3 959.1,67.4 933.5,67.4 941.5,55.3 936.7,55.3 943.1,43.2 939.9,43.2 944.7,31.1 943.1,31.1"/>
+<polygon points="996.4,0.2 1000.5,16.1 998.5,16.1 1004.7,32.1 1000.5,32.1 1008.8,48.0 1002.6,48.0 1013.0,64.0 979.8,64.0 990.2,48.0 983.9,48.0 992.2,32.1 988.1,32.1 994.3,16.1 992.2,16.1"/>
+<polygon points="1027.5,27.2 1030.5,37.6 1029.0,37.6 1033.4,48.0 1030.5,48.0 1036.4,58.4 1032.0,58.4 1039.4,68.9 1015.7,68.9 1023.1,58.4 1018.6,58.4 1024.6,48.0 1021.6,48.0 1026.0,37.6 1024.6,37.6"/>
+<polygon points="1133.6,15.1 1137.0,28.0 1135.3,28.0 1140.5,40.9 1137.0,40.9 1143.9,53.8 1138.8,53.8 1147.4,66.7 1119.8,66.7 1128.4,53.8 1123.2,53.8 1130.1,40.9 1126.7,40.9 1131.9,28.0 1130.1,28.0"/>
+<polygon points="1160.0,7.6 1163.6,22.0 1161.8,22.0 1167.2,36.4 1163.6,36.4 1170.7,50.9 1165.4,50.9 1174.3,65.3 1145.7,65.3 1154.6,50.9 1149.3,50.9 1156.4,36.4 1152.8,36.4 1158.2,22.0 1156.4,22.0"/>
+<polygon points="1214.7,13.3 1218.4,26.6 1216.6,26.6 1222.1,39.8 1218.4,39.8 1225.8,53.1 1220.2,53.1 1229.4,66.4 1200.0,66.4 1209.2,53.1 1203.7,53.1 1211.1,39.8 1207.4,39.8 1212.9,26.6 1211.1,26.6"/>
+<polygon points="1241.9,24.9 1244.7,35.8 1243.3,35.8 1247.5,46.7 1244.7,46.7 1250.3,57.6 1246.1,57.6 1253.1,68.4 1230.7,68.4 1237.7,57.6 1233.5,57.6 1239.1,46.7 1236.3,46.7 1240.5,35.8 1239.1,35.8"/>
+<polygon points="1335.6,19.6 1338.9,31.6 1337.2,31.6 1342.2,43.5 1338.9,43.5 1345.5,55.5 1340.5,55.5 1348.8,67.5 1322.4,67.5 1330.6,55.5 1325.7,55.5 1332.3,43.5 1329.0,43.5 1333.9,31.6 1332.3,31.6"/>
+<polygon points="1351.9,26.9 1354.4,37.4 1353.2,37.4 1356.9,47.9 1354.4,47.9 1359.3,58.3 1355.6,58.3 1361.8,68.8 1342.0,68.8 1348.2,58.3 1344.5,58.3 1349.4,47.9 1347.0,47.9 1350.7,37.4 1349.4,37.4"/>
+<polygon points="1432.0,6.7 1435.8,21.3 1433.9,21.3 1439.6,35.9 1435.8,35.9 1443.4,50.5 1437.7,50.5 1447.2,65.2 1416.9,65.2 1426.3,50.5 1420.7,50.5 1428.2,35.9 1424.5,35.9 1430.1,21.3 1428.2,21.3"/>
+<rect x="0" y="74" width="1440" height="76"/>
+</g>
+<g fill="#0C1A13">
+<polygon points="45.9,19.7 51.1,37.0 48.5,37.0 56.2,54.2 51.1,54.2 61.4,71.5 53.6,71.5 66.5,88.8 25.4,88.8 38.2,71.5 30.5,71.5 40.8,54.2 35.6,54.2 43.4,37.0 40.8,37.0"/>
+<polygon points="131.2,29.3 135.8,44.7 133.5,44.7 140.5,60.0 135.8,60.0 145.1,75.3 138.2,75.3 149.8,90.6 112.6,90.6 124.2,75.3 117.2,75.3 126.5,60.0 121.9,60.0 128.9,44.7 126.5,44.7"/>
+<polygon points="196.9,22.7 201.8,39.4 199.3,39.4 206.7,56.1 201.8,56.1 211.7,72.7 204.3,72.7 216.6,89.4 177.1,89.4 189.5,72.7 182.1,72.7 191.9,56.1 187.0,56.1 194.4,39.4 191.9,39.4"/>
+<polygon points="228.4,30.5 232.2,45.6 230.3,45.6 236.0,60.6 232.2,60.6 239.7,75.7 234.1,75.7 243.5,90.8 213.4,90.8 222.8,75.7 217.1,75.7 224.7,60.6 220.9,60.6 226.6,45.6 224.7,45.6"/>
+<polygon points="321.6,38.2 324.8,51.7 323.2,51.7 328.0,65.2 324.8,65.2 331.2,78.7 326.4,78.7 334.4,92.1 308.8,92.1 316.8,78.7 312.0,78.7 318.4,65.2 315.2,65.2 320.0,51.7 318.4,51.7"/>
+<polygon points="382.0,16.1 386.8,34.2 384.4,34.2 391.6,52.2 386.8,52.2 396.4,70.2 389.2,70.2 401.2,88.2 362.7,88.2 374.8,70.2 367.5,70.2 377.2,52.2 372.4,52.2 379.6,34.2 377.2,34.2"/>
+<polygon points="449.7,42.1 452.9,54.8 451.3,54.8 456.1,67.5 452.9,67.5 459.3,80.2 454.5,80.2 462.4,92.9 437.0,92.9 445.0,80.2 440.2,80.2 446.5,67.5 443.4,67.5 448.1,54.8 446.5,54.8"/>
+<polygon points="475.8,28.9 479.5,44.3 477.7,44.3 483.3,59.7 479.5,59.7 487.1,75.1 481.4,75.1 490.8,90.5 460.7,90.5 470.1,75.1 464.5,75.1 472.0,59.7 468.3,59.7 473.9,44.3 472.0,44.3"/>
+<polygon points="525.4,31.8 529.8,46.6 527.6,46.6 534.2,61.4 529.8,61.4 538.6,76.2 532.0,76.2 543.0,91.0 507.8,91.0 518.8,76.2 512.2,76.2 521.0,61.4 516.6,61.4 523.2,46.6 521.0,46.6"/>
+<polygon points="656.6,17.1 661.4,35.0 659.0,35.0 666.1,52.8 661.4,52.8 670.9,70.6 663.8,70.6 675.6,88.4 637.6,88.4 649.5,70.6 642.4,70.6 651.9,52.8 647.1,52.8 654.3,35.0 651.9,35.0"/>
+<polygon points="669.4,9.5 674.7,28.9 672.0,28.9 679.9,48.2 674.7,48.2 685.1,67.6 677.3,67.6 690.4,87.0 648.5,87.0 661.6,67.6 653.7,67.6 664.2,48.2 659.0,48.2 666.8,28.9 664.2,28.9"/>
+<polygon points="769.2,43.0 772.3,55.5 770.7,55.5 775.4,68.0 772.3,68.0 778.5,80.5 773.8,80.5 781.6,93.0 756.8,93.0 764.5,80.5 759.9,80.5 766.1,68.0 763.0,68.0 767.6,55.5 766.1,55.5"/>
+<polygon points="842.5,15.4 847.9,33.5 845.2,33.5 853.3,51.7 847.9,51.7 858.7,69.9 850.6,69.9 864.1,88.0 821.0,88.0 834.5,69.9 826.4,69.9 837.2,51.7 831.8,51.7 839.8,33.5 837.2,33.5"/>
+<polygon points="890.9,28.7 895.2,44.1 893.1,44.1 899.4,59.6 895.2,59.6 903.6,75.0 897.3,75.0 907.9,90.4 874.0,90.4 884.6,75.0 878.2,75.0 886.7,59.6 882.5,59.6 888.8,44.1 886.7,44.1"/>
+<polygon points="974.2,32.9 978.2,47.5 976.2,47.5 982.1,62.1 978.2,62.1 986.1,76.6 980.2,76.6 990.0,91.2 958.5,91.2 968.3,76.6 962.4,76.6 970.3,62.1 966.4,62.1 972.3,47.5 970.3,47.5"/>
+<polygon points="998.4,16.3 1002.6,34.3 1000.5,34.3 1006.8,52.3 1002.6,52.3 1010.9,70.3 1004.7,70.3 1015.1,88.2 981.7,88.2 992.2,70.3 985.9,70.3 994.2,52.3 990.1,52.3 996.3,34.3 994.2,34.3"/>
+<polygon points="1093.3,9.7 1097.9,29.0 1095.6,29.0 1102.4,48.3 1097.9,48.3 1106.9,67.7 1100.1,67.7 1111.4,87.0 1075.3,87.0 1086.6,67.7 1079.8,67.7 1088.8,48.3 1084.3,48.3 1091.1,29.0 1088.8,29.0"/>
+<polygon points="1152.2,20.8 1157.2,37.9 1154.7,37.9 1162.2,54.9 1157.2,54.9 1167.2,72.0 1159.7,72.0 1172.3,89.0 1132.1,89.0 1144.7,72.0 1137.2,72.0 1147.2,54.9 1142.2,54.9 1149.7,37.9 1147.2,37.9"/>
+<polygon points="1217.0,34.7 1220.7,48.9 1218.8,48.9 1224.4,63.1 1220.7,63.1 1228.1,77.3 1222.5,77.3 1231.8,91.5 1202.1,91.5 1211.4,77.3 1205.8,77.3 1213.3,63.1 1209.6,63.1 1215.1,48.9 1213.3,48.9"/>
+<polygon points="1309.4,11.4 1314.0,30.4 1311.7,30.4 1318.6,49.4 1314.0,49.4 1323.1,68.3 1316.3,68.3 1327.7,87.3 1291.1,87.3 1302.5,68.3 1295.6,68.3 1304.8,49.4 1300.2,49.4 1307.1,30.4 1304.8,30.4"/>
+<polygon points="1312.6,40.6 1315.7,53.6 1314.2,53.6 1318.7,66.6 1315.7,66.6 1321.8,79.6 1317.2,79.6 1324.8,92.6 1300.5,92.6 1308.1,79.6 1303.5,79.6 1309.6,66.6 1306.6,66.6 1311.1,53.6 1309.6,53.6"/>
+<polygon points="1403.4,38.9 1407.4,52.3 1405.4,52.3 1411.3,65.6 1407.4,65.6 1415.3,78.9 1409.4,78.9 1419.2,92.3 1387.7,92.3 1397.5,78.9 1391.6,78.9 1399.5,65.6 1395.6,65.6 1401.5,52.3 1399.5,52.3"/>
+<rect x="0" y="100" width="1440" height="50"/>
+</g>
+<g fill="#09130E">
+<polygon points="60.4,52.7 64.6,68.1 62.5,68.1 68.7,83.6 64.6,83.6 72.9,99.0 66.7,99.0 77.1,114.4 43.6,114.4 54.1,99.0 47.8,99.0 56.2,83.6 52.0,83.6 58.3,68.1 56.2,68.1"/>
+<polygon points="117.6,37.3 122.2,55.9 119.9,55.9 126.8,74.5 122.2,74.5 131.4,93.1 124.5,93.1 136.0,111.7 99.2,111.7 110.7,93.1 103.8,93.1 113.0,74.5 108.4,74.5 115.3,55.9 113.0,55.9"/>
+<polygon points="191.9,50.3 196.1,66.2 194.0,66.2 200.2,82.1 196.1,82.1 204.3,98.1 198.1,98.1 208.5,114.0 175.4,114.0 185.7,98.1 179.5,98.1 187.8,82.1 183.7,82.1 189.9,66.2 187.8,66.2"/>
+<polygon points="335.8,34.9 340.3,54.0 338.0,54.0 344.8,73.1 340.3,73.1 349.2,92.2 342.5,92.2 353.7,111.2 317.8,111.2 329.1,92.2 322.3,92.2 331.3,73.1 326.8,73.1 333.5,54.0 331.3,54.0"/>
+<polygon points="425.9,21.3 432.2,43.2 429.0,43.2 438.5,65.0 432.2,65.0 444.8,86.9 435.3,86.9 451.1,108.8 400.6,108.8 416.4,86.9 407.0,86.9 419.6,65.0 413.3,65.0 422.7,43.2 419.6,43.2"/>
+<polygon points="523.8,57.7 527.6,72.1 525.7,72.1 531.4,86.5 527.6,86.5 535.3,100.9 529.5,100.9 539.1,115.3 508.5,115.3 518.0,100.9 512.3,100.9 520.0,86.5 516.1,86.5 521.9,72.1 520.0,72.1"/>
+<polygon points="541.8,25.9 546.9,46.8 544.3,46.8 552.0,67.8 546.9,67.8 557.1,88.7 549.5,88.7 562.3,109.6 521.3,109.6 534.1,88.7 526.4,88.7 536.7,67.8 531.6,67.8 539.2,46.8 536.7,46.8"/>
+<polygon points="695.9,47.4 700.6,63.9 698.3,63.9 705.3,80.4 700.6,80.4 710.0,97.0 702.9,97.0 714.6,113.5 677.2,113.5 688.9,97.0 681.9,97.0 691.3,80.4 686.6,80.4 693.6,63.9 691.3,63.9"/>
+<polygon points="746.5,56.2 750.4,71.0 748.5,71.0 754.2,85.7 750.4,85.7 758.0,100.4 752.3,100.4 761.9,115.1 731.2,115.1 740.8,100.4 735.1,100.4 742.7,85.7 738.9,85.7 744.6,71.0 742.7,71.0"/>
+<polygon points="836.1,20.2 841.7,42.3 838.9,42.3 847.3,64.4 841.7,64.4 852.9,86.5 844.5,86.5 858.5,108.6 813.7,108.6 827.7,86.5 819.3,86.5 830.5,64.4 824.9,64.4 833.3,42.3 830.5,42.3"/>
+<polygon points="945.3,34.9 951.1,54.0 948.2,54.0 956.8,73.1 951.1,73.1 962.5,92.2 953.9,92.2 968.3,111.2 922.3,111.2 936.7,92.2 928.1,92.2 939.6,73.1 933.8,73.1 942.4,54.0 939.6,54.0"/>
+<polygon points="995.3,32.8 1000.5,52.3 997.9,52.3 1005.8,71.8 1000.5,71.8 1011.0,91.3 1003.1,91.3 1016.3,110.9 974.3,110.9 987.4,91.3 979.5,91.3 990.0,71.8 984.8,71.8 992.6,52.3 990.0,52.3"/>
+<polygon points="1148.2,17.4 1154.0,40.1 1151.1,40.1 1159.8,62.7 1154.0,62.7 1165.5,85.4 1156.9,85.4 1171.3,108.1 1125.1,108.1 1139.6,85.4 1130.9,85.4 1142.5,62.7 1136.7,62.7 1145.3,40.1 1142.5,40.1"/>
+<polygon points="1234.7,35.9 1239.9,54.8 1237.3,54.8 1245.0,73.7 1239.9,73.7 1250.2,92.5 1242.5,92.5 1255.3,111.4 1214.2,111.4 1227.0,92.5 1219.3,92.5 1229.6,73.7 1224.4,73.7 1232.2,54.8 1229.6,54.8"/>
+<polygon points="1261.8,23.8 1268.3,45.1 1265.0,45.1 1274.8,66.5 1268.3,66.5 1281.2,87.9 1271.5,87.9 1287.7,109.2 1235.9,109.2 1252.1,87.9 1242.4,87.9 1255.3,66.5 1248.9,66.5 1258.6,45.1 1255.3,45.1"/>
+<polygon points="1380.7,44.6 1385.9,61.7 1383.3,61.7 1391.1,78.8 1385.9,78.8 1396.3,95.9 1388.5,95.9 1401.5,113.0 1359.9,113.0 1372.9,95.9 1365.1,95.9 1375.5,78.8 1370.3,78.8 1378.1,61.7 1375.5,61.7"/>
+<rect x="0" y="124" width="1440" height="26"/>
+</g>
+<g fill="#050D09">
+<polygon points="8.9,68.4 12.9,85.1 10.9,85.1 16.9,101.9 12.9,101.9 20.8,118.6 14.9,118.6 24.8,135.3 -6.9,135.3 3.0,118.6 -2.9,118.6 5.0,101.9 1.0,101.9 7.0,85.1 5.0,85.1"/>
+<polygon points="241.6,36.3 247.8,59.6 244.7,59.6 254.0,82.9 247.8,82.9 260.1,106.2 250.9,106.2 266.3,129.5 217.0,129.5 232.4,106.2 223.1,106.2 235.5,82.9 229.3,82.9 238.5,59.6 235.5,59.6"/>
+<polygon points="344.8,71.1 349.3,87.3 347.0,87.3 353.8,103.4 349.3,103.4 358.3,119.6 351.5,119.6 362.8,135.8 326.7,135.8 338.0,119.6 331.2,119.6 340.2,103.4 335.7,103.4 342.5,87.3 340.2,87.3"/>
+<polygon points="449.9,47.7 455.4,68.7 452.7,68.7 460.8,89.6 455.4,89.6 466.3,110.6 458.1,110.6 471.8,131.6 428.1,131.6 441.7,110.6 433.5,110.6 444.5,89.6 439.0,89.6 447.2,68.7 444.5,68.7"/>
+<polygon points="574.9,61.4 579.2,79.6 577.0,79.6 583.5,97.7 579.2,97.7 587.7,115.9 581.3,115.9 592.0,134.1 557.8,134.1 568.5,115.9 562.1,115.9 570.6,97.7 566.4,97.7 572.8,79.6 570.6,79.6"/>
+<polygon points="710.5,60.4 715.7,78.8 713.1,78.8 720.9,97.1 715.7,97.1 726.1,115.5 718.3,115.5 731.3,133.9 689.7,133.9 702.7,115.5 694.9,115.5 705.3,97.1 700.1,97.1 707.9,78.8 705.3,78.8"/>
+<polygon points="896.6,38.0 902.7,60.9 899.6,60.9 908.8,83.9 902.7,83.9 914.9,106.9 905.7,106.9 920.9,129.8 872.3,129.8 887.5,106.9 878.3,106.9 890.5,83.9 884.4,83.9 893.6,60.9 890.5,60.9"/>
+<polygon points="943.9,53.9 949.1,73.6 946.5,73.6 954.4,93.3 949.1,93.3 959.7,113.0 951.8,113.0 964.9,132.7 922.8,132.7 936.0,113.0 928.1,113.0 938.6,93.3 933.3,93.3 941.2,73.6 938.6,73.6"/>
+<polygon points="1131.7,26.7 1137.7,52.0 1134.7,52.0 1143.7,77.3 1137.7,77.3 1149.7,102.5 1140.7,102.5 1155.8,127.8 1107.7,127.8 1122.7,102.5 1113.7,102.5 1125.7,77.3 1119.7,77.3 1128.7,52.0 1125.7,52.0"/>
+<polygon points="1240.7,48.9 1246.6,69.6 1243.7,69.6 1252.5,90.3 1246.6,90.3 1258.4,111.1 1249.6,111.1 1264.3,131.8 1217.2,131.8 1231.9,111.1 1223.0,111.1 1234.8,90.3 1228.9,90.3 1237.8,69.6 1234.8,69.6"/>
+<polygon points="1430.8,35.4 1437.3,58.9 1434.0,58.9 1443.8,82.4 1437.3,82.4 1450.3,105.9 1440.6,105.9 1456.9,129.4 1404.7,129.4 1421.0,105.9 1411.2,105.9 1424.3,82.4 1417.7,82.4 1427.5,58.9 1424.3,58.9"/>
+<rect x="0" y="146" width="1440" height="4"/>
+</g>
+<rect x="0" y="136" width="1440" height="14" fill="#050D09"/>
+</svg>
+  <svg class="foot-mush" viewBox="0 0 1440 100" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">
+<use href="#m-teal" x="1233.4" y="88.5" width="22.2" height="22.2" filter="url(#glow)" class="breathe"/>
+<use href="#m-red" x="579.2" y="87.7" width="22.6" height="22.6"/>
+<use href="#m-red" x="970.1" y="85.7" width="23.5" height="23.5"/>
+<use href="#m-orange" x="213.6" y="84.1" width="25.1" height="25.1"/>
+<use href="#m-orange" x="502.7" y="82.1" width="25.3" height="25.3"/>
+<use href="#m-red" x="742.4" y="79.5" width="26.2" height="26.2"/>
+<use href="#m-red" x="830.2" y="76.8" width="29.0" height="29.0"/>
+<use href="#m-teal" x="445.4" y="73.6" width="35.8" height="35.8" filter="url(#glow)" class="breathe"/>
+<use href="#m-orange" x="19.7" y="74.0" width="36.2" height="36.2"/>
+<use href="#m-teal" x="254.8" y="60.6" width="44.7" height="44.7" filter="url(#glow)" class="breathe"/>
+<use href="#m-red" x="627.6" y="53.8" width="51.3" height="51.3"/>
+<use href="#m-teal" x="310.6" y="55.0" width="54.8" height="54.8" filter="url(#glow)" class="breathe"/>
+<use href="#m-teal" x="917.6" y="53.2" width="55.0" height="55.0" filter="url(#glow)" class="breathe"/>
+<use href="#m-red" x="60.6" y="47.4" width="59.6" height="59.6"/>
+<use href="#m-teal" x="1274.2" y="50.0" width="60.1" height="60.1" filter="url(#glow)" class="breathe"/>
+<use href="#m-red" x="1027.4" y="42.7" width="62.6" height="62.6"/>
+<use href="#m-red" x="1369.7" y="46.9" width="63.3" height="63.3"/>
+<use href="#m-teal" x="1131.2" y="45.2" width="64.2" height="64.2" filter="url(#glow)" class="breathe"/>
+
+</svg>
+</div>
+
 <footer>
   <div class="wrap">
     <div class="footer-top">
       <div>
         <div class="footer-brand">
-          <span class="brand-logo"><img src="logo.jpg" alt="Gnomewright logo" onerror="this.parentElement.style.display='none';"></span>
+          <span class="brand-logo"><img src="favicon.png" alt="" onerror="this.parentElement.style.display='none';"></span>
           <span class="brand-font">Gnomewright</span>
         </div>
         <p class="footer-tag">Handcrafted tabletop terrain, miniatures, and printable designs, made in the north woods.</p>
+        <button type="button" class="btn btn-sm share-btn" id="share-btn" onclick="shareSite()">Share this site</button>
       </div>
       <div class="footer-links">
         <div>
@@ -790,10 +1426,11 @@
         <div>
           <h4>Elsewhere</h4>
           <ul>
-            <li><a href="https://discord.gg/sgGanAFED" target="_blank" rel="noopener">Discord</a></li>
+            <li><a href="https://gnomewright.etsy.com" target="_blank" rel="noopener">Etsy shop</a></li>
+            <li><a href="https://www.facebook.com/share/1EmSV5TRPx/" target="_blank" rel="noopener">Facebook</a></li>
             <li><a href="https://www.instagram.com/gnomewright/" target="_blank" rel="noopener">Instagram</a></li>
-            <li><a href="#">Facebook <span class="badge-soon" style="margin-left:6px;">soon</span></a></li>
             <li><a href="https://www.tiktok.com/@gnomewright" target="_blank" rel="noopener">TikTok</a></li>
+            <li><a href="https://discord.gg/sgGanAFED" target="_blank" rel="noopener">Discord</a></li>
             <li><a href="https://ko-fi.com/gnomewright" target="_blank" rel="noopener">Support the workshop</a></li>
           </ul>
         </div>
@@ -809,17 +1446,20 @@
 <script>
 function activateTab(id) {
   document.querySelectorAll('.tab-panel').forEach(function(p) { p.classList.remove('active'); });
-  document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+  document.querySelectorAll('.tab-btn').forEach(function(b) {
+    b.classList.remove('active');
+    b.setAttribute('aria-selected', 'false');
+  });
   var panel = document.getElementById('tab-' + id);
   var btn = document.querySelector('.tab-btn[data-tab="' + id + '"]');
   if (panel) panel.classList.add('active');
-  if (btn) btn.classList.add('active');
-  history.replaceState && (function() {
-    try { history.replaceState(null, '', '#' + id); } catch (e) {}
-  })();
-  var tabBar = document.querySelector('.tab-bar');
-  if (tabBar) {
-    window.scrollTo({ top: tabBar.offsetTop - 76, behavior: 'smooth' });
+  if (btn) { btn.classList.add('active'); btn.setAttribute('aria-selected', 'true'); }
+  try { history.replaceState(null, '', '#' + id); } catch (e) {}
+  var hero = document.querySelector('.hero');
+  var nav = document.querySelector('.site-nav');
+  if (hero && nav) {
+    var target = hero.offsetTop + hero.offsetHeight - nav.offsetHeight;
+    window.scrollTo({ top: target, behavior: 'smooth' });
   }
 }
 document.addEventListener('DOMContentLoaded', function() {
@@ -829,6 +1469,53 @@ document.addEventListener('DOMContentLoaded', function() {
     activateTab(hash);
   }
 });
+
+/* Launch countdown. Opening day is December 1, 2026 at midnight US Central (06:00 UTC).
+   When that moment passes the banner and badges switch to the "open now" wording on their own. */
+(function() {
+  var LAUNCH = Date.UTC(2026, 11, 1, 6, 0, 0);
+  var root = document.documentElement;
+  function pad(n) { return n < 10 ? '0' + n : '' + n; }
+  function tick() {
+    var diff = LAUNCH - Date.now();
+    if (diff <= 0) { root.classList.add('launched'); return false; }
+    root.classList.remove('launched');
+    var s = Math.floor(diff / 1000);
+    var d = Math.floor(s / 86400); s -= d * 86400;
+    var h = Math.floor(s / 3600); s -= h * 3600;
+    var m = Math.floor(s / 60); s -= m * 60;
+    var set = function(id, v) { var el = document.getElementById(id); if (el) el.textContent = v; };
+    set('cd-d', pad(d)); set('cd-h', pad(h)); set('cd-m', pad(m)); set('cd-s', pad(s));
+    return true;
+  }
+  if (tick()) {
+    var timer = setInterval(function() { if (!tick()) clearInterval(timer); }, 1000);
+  }
+})();
+
+function shareSite() {
+  var url = 'https://gnomewright.com/';
+  var btn = document.getElementById('share-btn');
+  var data = { title: 'Gnomewright', text: 'Hand painted tabletop terrain, designed and finished by one gnome.', url: url };
+  function copied() {
+    if (!btn) return;
+    var old = btn.textContent;
+    btn.textContent = 'Link copied';
+    setTimeout(function() { btn.textContent = old; }, 2200);
+  }
+  if (navigator.share) {
+    navigator.share(data).catch(function() {});
+    return;
+  }
+  try {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(copied, function() { window.prompt('Copy this link', url); });
+      return;
+    }
+  } catch (e) {}
+  window.prompt('Copy this link', url);
+}
+
 function sendConRecommendation() {
   var nameField = document.getElementById('con-name');
   var detailsField = document.getElementById('con-details');
