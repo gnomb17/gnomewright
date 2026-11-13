@@ -43,7 +43,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Alegreya:wght@400;500;700&family=Alegreya+Sans:wght@500;700;800&display=swap" rel="stylesheet">
 <script>
-(function(){var r=document.documentElement;try{var live=Date.now()>=Date.UTC(2026,11,1,6,0,0);if(live)r.classList.add('launched');if(localStorage.getItem('gw-bar-'+(live?'post':'pre'))==='x')r.classList.add('bar-off');}catch(e){}})();
+(function(){if(Date.now()>=Date.UTC(2026,11,1,6,0,0))document.documentElement.classList.add('launched');})();
 </script>
 <noscript><style>.tab-panel{display:block !important;}</style></noscript>
 <style>
@@ -1468,15 +1468,11 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 })();
 
-/* Etsy bubble: the X hides it and remembers that on this device. It comes back once when the shop opens. */
+/* Etsy bubble: the X hides it for this visit only. It is back on every refresh or new visit. */
 (function() {
   var btn = document.getElementById('eb-close');
   if (!btn) return;
-  btn.addEventListener('click', function() {
-    var root = document.documentElement;
-    root.classList.add('bar-off');
-    try { localStorage.setItem('gw-bar-' + (root.classList.contains('launched') ? 'post' : 'pre'), 'x'); } catch (e) {}
-  });
+  btn.addEventListener('click', function() { document.documentElement.classList.add('bar-off'); });
 })();
 
 function shareSite() {
